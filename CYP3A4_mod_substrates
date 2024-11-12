@@ -1,0 +1,23 @@
+generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
+diazepam, mod, benzodiazepines, "somnolence^^, ataxia^, anterograde amnesia^, disrupted sensory perception (ws)^, 
+dizziness^, drowsiness^, fatique^, general malaise (ws)^, epileptic attacks^, impaired motor ability^, tremor (ws)^, 
+convulsion^, dysarthria^, epileptic attacks (ws)^, headache^, impaired motor ability^, incoordination^, speech disorder^, 
+vertigo^, aggression (ws)^, anxiety (ws)^, confusion^, delirium (ws)^, irritability (ws)^, panic (ws)^, 
+paranoid psychosis (ws)^, withdrawal symptoms^, asthma^, hiccup^, rhinitis^, hypotension^, palpitations (ws)^, 
+vasodilation^, muscle spasms (ws)^, muscle weakness^, GI disorders (ws)^, "loss of appetite (ws)^" "sweating (ws)^" 
+"rash^" "double vision/diplopia (rectal)^",
+drugs.com, 
+
+hydrocortisone, mod, corticosteroids
+lansoprazole, mod, proton pump inhibitors,
+lercanidipine, mod, calcium channel blockers
+naldemedine, mod
+nelfinavir, mod
+ondansetron, mod, antiemetics,
+pantoprazole, mod, proton pump inhibitors,
+quinine, mod
+ribociclib, mod
+suvorexant, mod
+telaprevir, mod
+telithromycin, mod
+temsirolimus (torisel), mod

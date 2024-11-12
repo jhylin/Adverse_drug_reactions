@@ -1,0 +1,56 @@
+CYP3A4/5 substrates
+
+notes:
+
+* drug_name and cyp_strength_of_evidence source: 
+https://drug-interactions.medicine.iu.edu/MainTable.aspx
+Strength of evidence that the drug is metabolised by CYP3A4/5:
+Strong Evidence: the enzyme is majorly responsible for drug metabolism.
+Moderate Evidence: the enzyme plays a significant but not exclusive role in drug metabolism or 
+the supporting literature is not extensive.
+
+* drug_class data sources: 
+many national drug formularies, drug reference textbooks e.g. Martindale, 
+American Society of Health-System Pharmacists' (ASHP) DI Monographs,
+PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
+
+* adverse_effects data sources: 
+pharmaceutical manufacturers' medicines information data sheets, Drugs.com, FDA or NZ formulary 
+(as separate data checks)
+- two main occurrences in percentages: ^^ - common > 10%, ^ - less common 1% to 10%, 
+not going to include other ones with lower incidences e.g. less common 0.1% to 1%, rare less than 0.1% etc. 
+
+* exceptions for adverse_effects: 
+- nausea & vomiting applies to many drugs so won't be included 
+- similar or overlapping adverse effects will be removed to keep only one e.g. adverse skin reactions, 
+rash, urticaria - rash and urticaria will be removed as allergic skin reactions encompass both symptoms
+- some ADRs can be dose-related or formulations-related (aim is to investigate the relationships 
+between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs 
+so dose/formulations-related ADRS will not be recorded/compiled here e.g. injection site irritations)
+- ws = withdrawal symptoms
+- ADH = antidiuretic hormone
+
+**need to remove enters/new lines when data compilation finishes (so that column 4 will have all ADRs - currently
+ADRs are entered in separate lines in order to read/check them easily)**
+
+data:
+
+generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
+carbamazepine,strong,antiepileptics,"constipation^^, leucopenia^^, dizziness^^, somnolence^^, ataxia^^, elevated GGT^^, allergic_skin_reactions^^","eosinophilia^, thrombocytopenia^, neutropenia^, headache^, tremor^, elevated_ALP^, pruritus^, paresthesia^, diplopia^, blurred_vision^, hyponatremia^, fluid_retention^, oedema^, weight_gain^, reduced_plasma_osmolarity_(ADH-like_effect)^, vertigo^",drugs.com,nzf,211024
+
+*Work-in-progress below*
+
+eliglustat, strong
+esomeprazole, strong, proton pump inhibitors,
+flibanserin, strong
+gleevec (imatinib), strong, antineoplastics, 
+ibrutinib, strong
+ivacaftor, strong
+naloxegol, strong
+neratinib, strong
+omeprazole, strong, proton pump inhibitors,
+oxycodone, strong, analgesics,
+sirolimus, strong
+terfenadine*, strong, antihistamines
+
+*note: terfenadine - withdrawn from market in 1990s due to QT prolongations

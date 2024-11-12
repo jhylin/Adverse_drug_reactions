@@ -1,0 +1,52 @@
+---
+title: Brainstorming ideas for data curation on adverse drug reactions (ADRs) 
+subtitle: trying to look from a different angle 
+date: '2024-11-12'
+draft: true
+categories:
+  - Data
+jupyter: python3
+---
+
+Ideas (note: this is at a very early experimental stage)
+
+*This type of work may work better if focussing on a specific therapeutic target, and trying to learn the patterns of ADRs for the same target. However, the bigger picture here is trying to formulate a CYP450-ADRs drug profile first.*
+
+Wonder if there's a more succinct, straightforward or better way to look at ADRs?
+
+A lot of the well-known drug reference texts require subscriptions - Martindale, Micromedex, AHFS Drug Info... so...
+
+
+Possible sources of data:
+* Medicines data sheets from pharmaceutical manufacturers (based on clinical trials with postmarketing surveillance data if available)
+* A possible online drug ref is Drugs.com which uses info sources from FDA, AHFS Drug Info and others - need to cite it if used (trying to stay using open-source resources throughout my work... so won't be using independent text references directly, but some of them are used or cited by Drugs.com, and will check curated data against FDA website or NZ formulary at least if applicable)
+* Combining with Flockhart table by looking at and using CYP3A4/5 substrates
+* Drug molecular representations e.g. SMILES, SMARTS etc. from other sources e.g. PubChem or ChEMBL or others
+
+*Mermaid chart to show flow of ideas (need to transcribe from my scribbles to this doc)*
+
+
+Some background:
+We have problems with combining in vitro biological assays due to many different in vitro experiments running in different labs so very hard to view them as the same as there may be different equipments used, variations in measurements, and possible transcription errors (likely others I haven't mentioned), so a possible thought on this is that if we treat clinical trials as live, in vivo biological assays, we could assemble clinical-type of data from real use cases in clinical trials. Pharmaceutical manufacturers' medicines data sheets also include postmarketing surveillance data for  adverse drug effects but only for established drugs, which should be very similar to the documented ADRs in commonly used drug reference textbooks (that are well-known to pharmacists - the practitioners of drug knowledge in healthcare settings).
+
+
+Plans for posts:
+First post will focus on getting/compiling/curating some data from well-established and reputable drug reference texts and somehow linking it with CYP3A4/5 substrates (this may have future potentials to link back to the previous work on CYP450 and drug molecules to fill in the missing jigsaw puzzles). 
+
+While trying to think how I'm going to approach the first post, there will also be variations in "assays in humans" (as people are familiar with in vitro experimental errors or variations, it'll be the same for the in vivo ones) where one of the first aspects I can think of is pharmacogenomics - variations of drug responses due to human genome differences (*check definitions*), and also clinical trials are usually designed in very restricted, highly selective and controlled environments so they won't be very representative of the real patient populations - this needs to be taken into account when using med data from data sheets (postmarketing data on the other hand will be very valuable as more reflective of real-life uses). There are likely other factors that are not mentioned here.
+
+I think the very first post may take the longest time as I've never compiled data of this kind, but will give it a shot and see how feasible it may be (it may take several smaller posts to complete as it may be time-consuming or more difficult than expected).
+
+Follow-up post is likely trying to link the data compiled with some cheminfo work in an exploratory style (undecided on details yet, but may be interesting...? kind of like a structure-adverse effects relationship perspective, rather than structure-activity relationships which is more commonly looked at). Ideally, this needs to be accompanied by other comp chem work (not only cheminfo aspect) to see the full picture.
+
+
+What have I done so far:
+- had a look at [SIDER database](http://sideeffects.embl.de/) - only last updated in 2015 (looks very detailed and useful at first, checked on 16/10/24 - quite outdated and appears to be no longer maintained by the look of a few unanswered issues in its repo, only 1430 drugs available, imatinib had malignant neoplasm listed as the highest ADRs... would categorise it under carcinogenicity instead and it's dose-related so can be circumvented and also imatinib is for leukaemia and other bone marrow cancers... a bit misleading to list it as a "side effect" when its therapeutic indication is for malignancy...)
+
+- a brief search on PubMed re. ADRs (found 3 papers for critical care settings, primary care settings and for worldwide drug withdrawals due to ADRs - just to get ideas on the frequent types of drugs causing ADRs in real-life scenarios)
+-> key problematic therapeutic areas or drug classes for ADRs: 
+* antimicrobials (critical medical setting)
+* CVS/anticoagulants (critical & primary settings)
+* analgesics & sedatives (critical surgical setting)
+* hepatic issues
+* CNS issues
