@@ -15,33 +15,39 @@ American Society of Health-System Pharmacists' (ASHP) DI Monographs,
 PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 * adverse_effects data sources: 
-pharmaceutical manufacturers' medicines information data sheets, Drugs.com, FDA or NZ formulary 
+pharmaceutical manufacturers' medicines information data sheets, drugs.com (1st-line, using health professional info for adverse drug effects), FDA or NZ formulary (nzf) or electronic medicines compendium (emc)
 (as separate data checks)
-- two main occurrences in percentages: ^^ - common > 10%, ^ - less common 1% to 10%, 
-not going to include other ones with lower incidences e.g. less common 0.1% to 1%, rare less than 0.1% etc. 
+- two main occurrences in percentages: 
+^^ - common > 10%, 
+^ - less common 1% to 10%, 
+(not going to include other ones with lower incidences e.g. less common 0.1% to 1%, rare less than 0.1% etc.)
 
 * exceptions for adverse_effects: 
 - nausea & vomiting applies to many drugs so won't be included 
 - similar or overlapping adverse effects will be removed to keep only one e.g. adverse skin reactions, 
 rash, urticaria - rash and urticaria will be removed as allergic skin reactions encompass both symptoms
-- some ADRs can be dose-related or formulations-related (aim is to investigate the relationships 
-between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs 
-so dose/formulations-related ADRS will not be recorded/compiled here e.g. injection site irritations)
+- some ADRs can be dose-related or formulations-related e.g. injection site irritations (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded/compiled here)
+
+* note: terfenadine - withdrawn from market in 1990s due to QT prolongations
+
+* abbreviations used:
 - ws = withdrawal symptoms
 - ADH = antidiuretic hormone
+- pm = postmarketing reports
 
-**need to remove enters/new lines when data compilation finishes (so that column 4 will have all ADRs - currently
-ADRs are entered in separate lines in order to read/check them easily)**
+**need to remove enters/new lines when data compilation finishes (so that column 4 will have all ADRs - currently ADRs are entered in separate lines in order to read/check them easily)**
 
 data:
 
 generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
-carbamazepine,strong,antiepileptics,"constipation^^, leucopenia^^, dizziness^^, somnolence^^, ataxia^^, elevated GGT^^, allergic_skin_reactions^^","eosinophilia^, thrombocytopenia^, neutropenia^, headache^, tremor^, elevated_ALP^, pruritus^, paresthesia^, diplopia^, blurred_vision^, hyponatremia^, fluid_retention^, oedema^, weight_gain^, reduced_plasma_osmolarity_(ADH-like_effect)^, vertigo^",drugs.com,nzf,211024
+**carbamazepine**,strong,antiepileptics,"constipation^^, leucopenia^^, dizziness^^, somnolence^^, ataxia^^, elevated GGT^^, allergic_skin_reactions^^","eosinophilia^, thrombocytopenia^, neutropenia^, headache^, tremor^, elevated_ALP^, pruritus^, paresthesia^, diplopia^, blurred_vision^, hyponatremia^, fluid_retention^, oedema^, weight_gain^, reduced_plasma_osmolarity_(ADH-like_effect)^, vertigo^",drugs.com,nzf,211024
+**eliglustat**,strong,metabolic agents,"diarrhea^^, oropharyngeal pain^^, arthralgia^^, back_pain^^, pain_in_extremity^^, upper_abdominal_pain^^, headache^^, migraine^^, fatigue^^, rash^, flatulence^, dyspepsia^, gastroesophageal_reflux_disease^, constipation^, palpitations^, dizziness^, asthenia^, cough^",drugs.com,emc,151124
 
 *Work-in-progress below*
 
-eliglustat, strong
-esomeprazole, strong, proton pump inhibitors,
+**esomeprazole**,strong,proton pump inhibitors,"headache^^, flatulence^^, dizziness^, somnolence^, taste_disturbance/perversion^, vertigo^, abdominal_pain^, benign_fundic_gland_polyps(pm)^, constipation/constipation_aggravated^, diarrhea(c_diff-related_pm)^, dry mouth^, duodenal_ulcer_hemorrhage^, epigastric_pain/aggravated_epigastric_pain^, gastritis/aggravated_gastritis(pm)^, pancreatitis(pm), regurgitation^, tooth_disorder^, cough^, respiratory_infection^, sinusitis^, tachypnea_(children)^, accident/injury^, fever^, pruritus^, cutaneous_lupus_erythematosus(pm), systemic_lupus_erythematosus(pm), hypertension/aggravated_hypertension^, back_pain^, bone_fracture(pm), increased_serum_gastrin^, viral_infection^, ALT_increased^, irreversible_visual_impairment(pm), loss_of_vision(pm), acute_nterstitial_nephritis(pm), impaired_renal_function(pm), increased_creatinine(pm), nephrosis(pm)",drugs.com,
+
+
 flibanserin, strong
 gleevec (imatinib), strong, antineoplastics, 
 ibrutinib, strong
@@ -53,4 +59,3 @@ oxycodone, strong, analgesics,
 sirolimus, strong
 terfenadine*, strong, antihistamines
 
-*note: terfenadine - withdrawn from market in 1990s due to QT prolongations
