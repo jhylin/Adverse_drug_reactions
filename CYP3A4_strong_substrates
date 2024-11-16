@@ -34,6 +34,7 @@ rash, urticaria - rash and urticaria will be removed as allergic skin reactions 
 - ws = withdrawal symptoms
 - ADH = antidiuretic hormone
 - pm = postmarketing reports
+- CNS = central nervous system
 
 **need to remove enters/new lines when data compilation finishes (so that column 4 will have all ADRs - currently ADRs are entered in separate lines in order to read/check them easily)**
 
@@ -41,14 +42,12 @@ data:
 
 generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
 **carbamazepine**,strong,antiepileptics,"constipation^^, leucopenia^^, dizziness^^, somnolence^^, ataxia^^, elevated GGT^^, allergic_skin_reactions^^","eosinophilia^, thrombocytopenia^, neutropenia^, headache^, tremor^, elevated_ALP^, pruritus^, paresthesia^, diplopia^, blurred_vision^, hyponatremia^, fluid_retention^, oedema^, weight_gain^, reduced_plasma_osmolarity_(ADH-like_effect)^, vertigo^",drugs.com,nzf,211024
-**eliglustat**,strong,metabolic agents,"diarrhea^^, oropharyngeal pain^^, arthralgia^^, back_pain^^, pain_in_extremity^^, upper_abdominal_pain^^, headache^^, migraine^^, fatigue^^, rash^, flatulence^, dyspepsia^, gastroesophageal_reflux_disease^, constipation^, palpitations^, dizziness^, asthenia^, cough^",drugs.com,emc,151124
+**eliglustat**,strong,metabolic_agents,"diarrhea^^, oropharyngeal_pain^^, arthralgia^^, back_pain^^, pain_in_extremity^^, upper_abdominal_pain^^, headache^^, migraine^^, fatigue^^","rash^, flatulence^, dyspepsia^, gastroesophageal_reflux_disease^, constipation^, palpitations^, dizziness^, asthenia^, cough^",drugs.com,emc,151124
+**esomeprazole**,strong,proton_pump_inhibitors,"headache^^, flatulence^^","dizziness^, somnolence^, taste_disturbance/perversion^, vertigo^, abdominal_pain^, benign_fundic_gland_polyps(pm)^, constipation/constipation_aggravated^, diarrhea(c_diff-related_pm)^, dry_mouth^, duodenal_ulcer_hemorrhage^, epigastric_pain/aggravated_epigastric_pain^, gastritis/aggravated_gastritis(pm)^, pancreatitis(pm), regurgitation^, tooth_disorder^, cough^, respiratory_infection^, sinusitis^, tachypnea_(children)^, accident/injury^, fever^, pruritus^, cutaneous_lupus_erythematosus(pm), systemic_lupus_erythematosus(pm), hypertension/aggravated_hypertension^, back_pain^, bone_fracture(pm), increased_serum_gastrin^, viral_infection^, ALT_increased^, irreversible_visual_impairment(pm), loss_of_vision(pm), acute_interstitial_nephritis(pm), impaired_renal_function(pm), increased_creatinine(pm), nephrosis(pm)",drugs.com,emc,161124
+**flibanserin**,strong,CNS_agents,"dizziness^^, somnolence^^","sedation^, fatigue^, vertigo^, accidental_injury^, insomnia^, anxiety^, dry_mouth^, constipation^, metrorrhagia^, abdominal_pain^, anaphylaxis(pm), angioedema(pm), pruritus(pm), urticaria(pm)",drugs.com,Drugs@FDA,161124
 
 *Work-in-progress below*
 
-**esomeprazole**,strong,proton pump inhibitors,"headache^^, flatulence^^, dizziness^, somnolence^, taste_disturbance/perversion^, vertigo^, abdominal_pain^, benign_fundic_gland_polyps(pm)^, constipation/constipation_aggravated^, diarrhea(c_diff-related_pm)^, dry mouth^, duodenal_ulcer_hemorrhage^, epigastric_pain/aggravated_epigastric_pain^, gastritis/aggravated_gastritis(pm)^, pancreatitis(pm), regurgitation^, tooth_disorder^, cough^, respiratory_infection^, sinusitis^, tachypnea_(children)^, accident/injury^, fever^, pruritus^, cutaneous_lupus_erythematosus(pm), systemic_lupus_erythematosus(pm), hypertension/aggravated_hypertension^, back_pain^, bone_fracture(pm), increased_serum_gastrin^, viral_infection^, ALT_increased^, irreversible_visual_impairment(pm), loss_of_vision(pm), acute_nterstitial_nephritis(pm), impaired_renal_function(pm), increased_creatinine(pm), nephrosis(pm)",drugs.com,
-
-
-flibanserin, strong
 gleevec (imatinib), strong, antineoplastics, 
 ibrutinib, strong
 ivacaftor, strong
@@ -57,5 +56,4 @@ neratinib, strong
 omeprazole, strong, proton pump inhibitors,
 oxycodone, strong, analgesics,
 sirolimus, strong
-terfenadine*, strong, antihistamines
-
+terfenadine, strong, antihistamines

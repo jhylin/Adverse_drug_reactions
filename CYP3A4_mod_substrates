@@ -1,12 +1,13 @@
 generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
-diazepam, mod, benzodiazepines, "somnolence^^, ataxia^, anterograde amnesia^, disrupted sensory perception (ws)^, 
-dizziness^, drowsiness^, fatique^, general malaise (ws)^, epileptic attacks^, impaired motor ability^, tremor (ws)^, 
-convulsion^, dysarthria^, epileptic attacks (ws)^, headache^, impaired motor ability^, incoordination^, speech disorder^, 
-vertigo^, aggression (ws)^, anxiety (ws)^, confusion^, delirium (ws)^, irritability (ws)^, panic (ws)^, 
-paranoid psychosis (ws)^, withdrawal symptoms^, asthma^, hiccup^, rhinitis^, hypotension^, palpitations (ws)^, 
-vasodilation^, muscle spasms (ws)^, muscle weakness^, GI disorders (ws)^, "loss of appetite (ws)^" "sweating (ws)^" 
-"rash^" "double vision/diplopia (rectal)^",
-drugs.com, 
+**diazepam**,mod,benzodiazepines,"somnolence^^","ataxia^, anterograde_amnesia^, disrupted_sensory_perception(ws)^, 
+dizziness^, drowsiness^, fatique^, general_malaise(ws)^, epileptic_attacks^, impaired_motor_ability^, tremor(ws)^, 
+convulsion^, dysarthria^, epileptic_attacks (ws)^, headache^, impaired_motor_ability^, incoordination^, speech_disorder^, 
+vertigo^, aggression(ws)^, anxiety(ws)^, confusion^, delirium(ws)^, irritability(ws)^, panic(ws)^, 
+paranoid_psychosis (ws)^, withdrawal_symptoms^, asthma^, hiccup^, rhinitis^, hypotension^, palpitations(ws)^, 
+vasodilation^, muscle_spasms(ws)^, muscle_weakness^, GI_disorders(ws)^, loss_of_appetite(ws)^, sweating(ws)^,
+rash^, double_vision/diplopia(rectal)^",drugs.com, 
+
+*Work-in-progress below*
 
 hydrocortisone, mod, corticosteroids
 lansoprazole, mod, proton pump inhibitors,
