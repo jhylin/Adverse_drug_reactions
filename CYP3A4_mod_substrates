@@ -10,12 +10,12 @@ rash^, double_vision/diplopia(rectal)^",drugs.com,
 *Work-in-progress below*
 
 hydrocortisone, mod, corticosteroids
-lansoprazole, mod, proton pump inhibitors,
-lercanidipine, mod, calcium channel blockers
+lansoprazole, mod, proton_pump_inhibitors,
+pantoprazole, mod, proton_pump_inhibitors,
+lercanidipine, mod, calcium_channel_blockers
 naldemedine, mod
 nelfinavir, mod
 ondansetron, mod, antiemetics,
-pantoprazole, mod, proton pump inhibitors,
 quinine, mod
 ribociclib, mod
 suvorexant, mod
