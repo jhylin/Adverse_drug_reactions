@@ -1,24 +1,25 @@
+**need to remove enters/new lines when data compilation finishes (so that column 4 will have all ADRs - currently ADRs are entered in separate lines in order to read/check them easily)**
+
 generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
 **diazepam**,mod,benzodiazepines,"somnolence^^","ataxia^, anterograde_amnesia^, disrupted_sensory_perception(ws)^, 
 dizziness^, drowsiness^, fatique^, general_malaise(ws)^, epileptic_attacks^, impaired_motor_ability^, tremor(ws)^, 
 convulsion^, dysarthria^, epileptic_attacks (ws)^, headache^, impaired_motor_ability^, incoordination^, speech_disorder^, 
-vertigo^, aggression(ws)^, anxiety(ws)^, confusion^, delirium(ws)^, irritability(ws)^, panic(ws)^, 
-paranoid_psychosis (ws)^, withdrawal_symptoms^, asthma^, hiccup^, rhinitis^, hypotension^, palpitations(ws)^, 
+vertigo^, aggression(ws)^, anxiety(ws)^, confusion^, delirium(ws)^, irritability(ws)^, panic(ws)^, paranoid_psychosis (ws)^, withdrawal_symptoms^, asthma^, hiccup^, rhinitis^, hypotension^, palpitations(ws)^, 
 vasodilation^, muscle_spasms(ws)^, muscle_weakness^, GI_disorders(ws)^, loss_of_appetite(ws)^, sweating(ws)^,
 rash^, double_vision/diplopia(rectal)^",drugs.com, 
 
 *Work-in-progress below*
 
-hydrocortisone, mod, corticosteroids
-lansoprazole, mod, proton_pump_inhibitors,
-pantoprazole, mod, proton_pump_inhibitors,
-lercanidipine, mod, calcium_channel_blockers
-naldemedine, mod
-nelfinavir, mod
-ondansetron, mod, antiemetics,
-quinine, mod
-ribociclib, mod
-suvorexant, mod
-telaprevir, mod
-telithromycin, mod
-temsirolimus (torisel), mod
+hydrocortisone,mod,corticosteroids,
+lansoprazole,mod,proton_pump_inhibitors,
+pantoprazole,mod,proton_pump_inhibitors,
+lercanidipine,mod,calcium_channel_blockers,
+naldemedine,mod,peripheral_opioid_receptor_antagonists,
+nelfinavir,mod,antivirals,
+telaprevir,mod,antivirals
+ondansetron,mod,antiemetics,
+quinine,mod,antimalarials,
+ribociclib,mod,cyclin-dependent_kinase_inhibitors,
+suvorexant,mod,orexin_receptor_antagonists/hypnotics,
+telithromycin,mod,ketolides,
+temsirolimus,mod,MTOR_inhibitors,

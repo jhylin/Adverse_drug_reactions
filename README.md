@@ -6,4 +6,4 @@ Current data sources for ADRs:
 
 * 1st line - drugs.com (which cites drug information from FDA, American Hospital Formulary Service Drug Information and also pharmaceutical manufacturers' data sheets)
 
-* 2nd line - as a data check using either NZ formulary (where available) or electronic medicines compendium (UK drug reference)
+* 2nd line - as a data check using either NZ formulary (where available), electronic medicines compendium (UK drug reference) or Drugs@FDA (US drug reference)
