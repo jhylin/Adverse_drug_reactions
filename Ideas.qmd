@@ -24,9 +24,20 @@ Possible sources of data and types of data to be used:
 * Drug molecular representations for drug structures e.g. SMILES, SMARTS etc. from other sources e.g. PubChem or ChEMBL or others
 * PyTorch tensors to represent ADRs (?categorical embeddings for tabular data) - the data being collected at the moment are relatively small, so have decided to do it manually by hand (aim to retrieve ADRs with reasonable quality and usefulness)
 
-*Mermaid chart to show flow of ideas (need to transcribe from my scribbles to this doc)*
+*Mermaid chart to show flow of ideas (work-in-progress)*
 
-
+```{mermaid}
+flowchart TB
+  A(drugs) --> B(activities)
+  A --> C(adverse effects)
+  D(clinical trials) --> C(ADRs)
+  E(postmarketing surveillance) --> C(ADRs)
+  F(target) --> B(activities)
+  A <--> F(target)
+  F --> C(ADRs)
+  G(CYP3A4/5 substrates) --> C(ADRs)
+  A <--> G(CYP3A4/5 substrates)
+```
 
 
 Some background:
