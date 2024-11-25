@@ -25,7 +25,7 @@ Possible sources of data and types of data to be used:
 
 * Combining with Flockhart table by looking at and using CYP3A4/5 substrates
 
-* Drug molecular representations for drug structures e.g. SMILES, SMARTS etc. from other sources e.g. PubChem or ChEMBL or others
+* Drug molecular representations for drug structures e.g. SMILES, SMARTS, or chemical fingerprints (as vector representations) etc. from other sources e.g. PubChem or ChEMBL or others
 
 * PyTorch tensors to represent ADRs (?categorical embeddings for tabular data) - the data being collected at the moment are relatively small, so have decided to do it manually by hand (aim to retrieve ADRs with reasonable quality and usefulness)
 
