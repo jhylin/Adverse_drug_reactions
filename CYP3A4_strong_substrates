@@ -1,55 +1,3 @@
-CYP3A4/5 substrates
-
-notes (to be moved into post once data collection is finished):
-
-* drug_name and cyp_strength_of_evidence source: 
-https://drug-interactions.medicine.iu.edu/MainTable.aspx
-Strength of evidence that the drug is metabolised by CYP3A4/5:
-Strong Evidence: the enzyme is majorly responsible for drug metabolism.
-Moderate Evidence: the enzyme plays a significant but not exclusive role in drug metabolism or 
-the supporting literature is not extensive.
-
-* drug_class data sources: 
-many national drug formularies, drug reference textbooks e.g. Martindale, 
-American society of health-System pharmacists' (ASHP) drug information (DI) monographs,
-PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
-
-* adverse_effects data sources: 
-pharmaceutical manufacturers' medicines information data sheets, drugs.com (1st-line, using health professional info for adverse drug effects), NZ formulary (nzf), electronic medicines compendium (emc) or Drugs@FDA
-(as separate data checks)
-- two main occurrences in percentages: 
-^^ - common > 10%, 
-^ - less common 1% to 10%, 
-(not going to include other ones with lower incidences e.g. less common 0.1% to 1%, rare less than 0.1% etc.)
-
-* exceptions for adverse_effects: 
-- nausea & vomiting applies to many drugs so won't be included 
-- similar or overlapping adverse effects will be removed to keep only one adverse effect for the same drug e.g. adverse skin reactions, rash, urticaria - rash and urticaria will be removed as allergic skin reactions encompass both symptoms
-- some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded/compiled here)
-- some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
-
-* note: terfenadine - withdrawn from market in 1990s due to QT prolongations
-
-* abbreviations used:
-- ws = withdrawal symptoms
-- ADH = antidiuretic hormone
-- pm = postmarketing reports
-- CNS = central nervous system
-- CFTR = cystic fibrosis transmembrane regulator 
-- c_diff = Clostridioides/Clostridium difficile
-- ZE = Zollinger-Ellison
-- MTOR = mammalian target of rapamycin (protein kinase)
-- AST = Aspartate transaminase/aminotransferase
-- ALT = alanine transaminase/aminotransferase
-- ALP = alkaline phosphatase
-- GGT = gamma-glutamyltransferase
-- RTI = respiratory tract infection
-- UTI = urinary tract infection
-- LDH = lactate dehydrogenase
-
-
-data:
-
 generic_drug_name,cyp_strength_of_evidence,drug_class,common_adverse_effects^^,less_common_adverse_effects^,first_ref,second_ref,date_checked
 carbamazepine,strong,antiepileptics,"constipation^^, leucopenia^^, dizziness^^, somnolence^^, ataxia^^, elevated GGT^^, allergic_skin_reactions^^","eosinophilia^, thrombocytopenia^, neutropenia^, headache^, tremor^, elevated_ALP^, pruritus^, paresthesia^, diplopia^, blurred_vision^, hyponatremia^, fluid_retention^, oedema^, weight_gain^, reduced_plasma_osmolarity_(ADH_like_effect)^, vertigo^",drugs.com,nzf,211024
 eliglustat,strong,metabolic_agents,"diarrhea^^, oropharyngeal_pain^^, arthralgia^^, back_pain^^, pain_in_extremity^^, upper_abdominal_pain^^, headache^^, migraine^^, fatigue^^","rash^, flatulence^, dyspepsia^, gastroesophageal_reflux_disease^, constipation^, palpitations^, dizziness^, asthenia^, cough^",drugs.com,emc,151124
@@ -58,7 +6,7 @@ imatinib,strong,tyrosine_kinase_inhibitor,"rash^^, diarrhea^^, abdominal_pain^^,
 ibrutinib,strong,tyrosine_kinase_inhibitor,"hypertension^^, atrial_fibrillation^^, sinus_tachycardia^^,  rash^^, skin_infection^^, pruritus^^, diarrhea^^, stomatitis^^, abdominal_pain^^, constipation^^, dyspepsia^^, gastroesophageal_reflux_disease^^, UTI^^, decreased_platelets^^, neutropenia^^, decreased_neutrophils^^, decreased_hemoglobin^^, thrombocytopenia^^, hemorrhage^^, anemia^^, lymphocytosis^^, increased_bilirubin^^, increased_AST^^, increased_ALT^^, hepatic_failure(pm), hepatic_cirrhosis(pm), hepatitis_B_reactivation(pm), hepatotoxicity(pm), hypogammaglobulinemia^^, hyperuricemia^^, decreased_appetite^^, hypokalemia^^, musculoskeletal_pain^^, arthralgia^^, muscle_spasms^^, osteonecrosis^^, headache^^, dizziness^^, peripheral_neuropathy(pm)^^, dry_eye^^, blurred_vision^^, increased_lacrimation^^, reduced_visual_acuity^^, conjunctivitis^^, eye_hemorrhage(pm), second_malignancies^^, fatigue^^, pyrexia^^, peripheral_edema^^, pain^^, infections^^, fall^^, asthenia^^, chills^^, sepsis^^, decreased_weight^^, insomnia^^, increased_blood_creatinine^^, upper_RTI^^, cough^^, pneumonia^^, dyspnea^^, sinusitis^^, oropharyngeal_pain^^, bronchitis^^, nasopharyngitis^^, influenza^^, viral_upper_RTI^^","atrial_flutter^, cardiac_failure(pm)^, ventricular_tachyarrhythmias(pm)^, deaths_due_to_cardiac_causes^, erythema(pm)^, urticaria(pm)^, angioedema(pm), Stevens_Johnson_syndrome(pm), onychoclasis(pm), panniculitis(pm), neutrophilic_dermatoses(pm), major_hemorrhage^, febrile_neutropenia^, leukocytosis^,  anaphylactic_shock(pm), tumor_lysis_syndrome(pm)^, hyponatremia^, ischemic_cerebrovascular_events(pm)^, non_melanoma_skin_cancer^, non_skin_carcinomas^, basal_and_squamous_cell_carcinomas^, epistaxis^, interstitial_lung_disease(pm)",drugs.com,nzf,191124
 neratinib,strong,tyrosine_kinase_inhibitor,"diarrhea^^, abdominal_pain^^, stomatitis^^, dyspepsia^^, fatigue^^, rash^^, decreased_appetite^^, muscle_spasms^^","abdominal_distention^, dry_mouth^, nail_disorder^, skin_fissures^, decreased_weight^, dehydration^, UTI^, increased_ALT^, increased_AST^, epistaxis^",drugs.com,nzf,201124
 esomeprazole,strong,proton_pump_inhibitors,"headache^^, flatulence^^","dizziness^, somnolence^, taste_disturbance/perversion^, vertigo^, abdominal_pain^, benign_fundic_gland_polyps(pm)^, constipation/constipation_aggravated^, diarrhea(c_diff_related_pm)^, dry_mouth^, duodenal_ulcer_hemorrhage^, epigastric_pain/aggravated_epigastric_pain^, gastritis/aggravated_gastritis(pm)^, pancreatitis(pm), regurgitation^, tooth_disorder^, cough^, respiratory_infection^, sinusitis^, tachypnea_(children)^, accident/injury^, fever^, pruritus^, cutaneous_lupus_erythematosus(pm), systemic_lupus_erythematosus(pm), hypertension/aggravated_hypertension^, back_pain^, bone_fracture(pm), increased_serum_gastrin^, viral_infection^, ALT_increased^, irreversible_visual_impairment(pm), loss_of_vision(pm), acute_interstitial_nephritis(pm), impaired_renal_function(pm), increased_creatinine(pm), nephrosis(pm)",drugs.com,emc,161124
-omeprazole,strong,proton_pump_inhibitors,"fever^^, otitis_media^^, respiratory_system_reactions^^, taste_disturbance^^, diarrhea^^", "accidental_injury^, asthenia^, pain(pm), fatigue(pm), tinnitus(pm), cough^, pharyngitis/pharyngeal_pain^, rhinitis^, upper_respiratory_infection^, epistaxis(pm), dizziness^, drowsiness^, headache^, somnolence^, tremor(pm), abdominal_pain^, acid_regurgitation^, benign_fundic_gland_polyps^, constipation^, flatulence^, tongue_discoloration^, abdominal_swelling(pm), c_diff_associated_diarrhea(pm), esophageal_candidiasis(pm), fecal_discoloration(pm), fundic_gland_polyps(pm), irritable_colon(pm), mucosal_atrophy_of_the_tongue(pm), pancreatitis(pm), rash^, cutaneous_lupus_erythematosus(pm), dry_skin(pm), hyperhidrosis(pm), petechia(pm), skin_inflammation(pm), severe_generalized_skin_reactions(pm), systemic_lupus_erythematosus(pm), back_pain^, bone_fracture(pm), leg_pain(pm), muscle_cramps(pm), insomnia^, anxiety(pm), apathy(pm), dream_abnormalities(pm), nervousness(pm), psychiatric_and_sleep_disturbances(pm), flu_syndrome^, cholestatic_disease(pm), fatal_hepatic_failure(pm), hepatocellular_disease(pm), jaundice(pm), liver_disease(pm), liver_necrosis(pm), mixed_hepatitis(pm), bradycardia(pm), angina(pm), hypertension(pm), palpitations(pm), tachycardia(pm), anemia(pm), fatal_agranulocytosis(pm), hemolytic_anemia(pm), leukocytosis(pm), neutropenia(pm), purpura(pm), anaphylaxis(pm), anorexia(pm), cyanocobalamin_deficiency(pm), hypoglycemia(pm), elevated_serum_creatinine(pm), glycosuria(pm), anterior_ischemic_optic_neuropathy(pm), double_vision(pm), dry_eye_syndrome(pm), ocular_irritation(pm), optic_atrophy(pm), optic_neuritis(pm), hematuria(pm), microscopic_pyuria(pm), proteinuria(pm), testicular_pain(pm), urinary_frequency(pm), UTI(pm), gastroduodenal_carcinoids(ZE_syndrome,pm)",drugs.com,nzf,181124
+omeprazole,strong,proton_pump_inhibitors,"fever^^, otitis_media^^, respiratory_system_reactions^^, taste_disturbance^^, diarrhea^^","accidental_injury^, asthenia^, pain(pm), fatigue(pm), tinnitus(pm), cough^, pharyngitis/pharyngeal_pain^, rhinitis^, upper_respiratory_infection^, epistaxis(pm), dizziness^, drowsiness^, headache^, somnolence^, tremor(pm), abdominal_pain^, acid_regurgitation^, benign_fundic_gland_polyps^, constipation^, flatulence^, tongue_discoloration^, abdominal_swelling(pm), c_diff_associated_diarrhea(pm), esophageal_candidiasis(pm), fecal_discoloration(pm), fundic_gland_polyps(pm), irritable_colon(pm), mucosal_atrophy_of_the_tongue(pm), pancreatitis(pm), rash^, cutaneous_lupus_erythematosus(pm), dry_skin(pm), hyperhidrosis(pm), petechia(pm), skin_inflammation(pm), severe_generalized_skin_reactions(pm), systemic_lupus_erythematosus(pm), back_pain^, bone_fracture(pm), leg_pain(pm), muscle_cramps(pm), insomnia^, anxiety(pm), apathy(pm), dream_abnormalities(pm), nervousness(pm), psychiatric_and_sleep_disturbances(pm), flu_syndrome^, cholestatic_disease(pm), fatal_hepatic_failure(pm), hepatocellular_disease(pm), jaundice(pm), liver_disease(pm), liver_necrosis(pm), mixed_hepatitis(pm), bradycardia(pm), angina(pm), hypertension(pm), palpitations(pm), tachycardia(pm), anemia(pm), fatal_agranulocytosis(pm), hemolytic_anemia(pm), leukocytosis(pm), neutropenia(pm), purpura(pm), anaphylaxis(pm), anorexia(pm), cyanocobalamin_deficiency(pm), hypoglycemia(pm), elevated_serum_creatinine(pm), glycosuria(pm), anterior_ischemic_optic_neuropathy(pm), double_vision(pm), dry_eye_syndrome(pm), ocular_irritation(pm), optic_atrophy(pm), optic_neuritis(pm), hematuria(pm), microscopic_pyuria(pm), proteinuria(pm), testicular_pain(pm), urinary_frequency(pm), UTI(pm), gastroduodenal_carcinoids(ZE_syndrome,pm)",drugs.com,nzf,181124
 ivacaftor,strong,CFTR_potentiator,"rash^^, oropharyngeal_pain^^, abdominal_pain^^, diarrhea^^, transaminase_elevations^^, headache^^, pyrexia^^, upper_RTI^^, nasal_congestion^^, nasopharyngitis^^, cystic_fibrosis_lung^^, cough^^, abnormal_breathing_sounds^^","acne^, increased_hepatic_enzymes^, increased_blood_glucose^, arthralgia^, musculoskeletal_chest_pain^, myalgia^, dizziness^, sinus_headache^, bacteria_in_sputum^, ear_pain^, tinnitus^, tympanic_membrane_hyperemia^, ear_congestion^, rhinitis^, pharyngeal_erythema^, pleuritic_pain^, sinus_congestion^, wheezing^, breast_mass^, non_congenital_lens_opacities/cataracts(pm)",drugs.com,nzf,201124
 naloxegol,strong,peripheral_opioid_receptor_antagonists,"abdominal pain^^","possible_opioid_withdrawal_syndrome^, diarrhea^, flatulence^, hyperhidrosis^, headache^, nasopharyngitis^",drugs.com,emc,211124
 oxycodone,strong,opioid_analgesics,"headache^^, constipation^^, pyrexia^^","dizziness^, serotonin_syndrome(pm), hyperalgesia(pm), allodynia(pm), pruritus^, hyperhidrosis^, rash^, dysuria^, urinary_retention^, anaphylaxis(pm), decreased_appetite^, hypoglycemia(pm), adrenal_insufficiency(pm), androgen_deficiency(pm)",drugs.com,nzf,211124
