@@ -1,7 +1,7 @@
 ---
 title: Adverse drug reaction (ADR) data
 subtitle: to be determined
-date: '2024-11-27'
+date: '2024-11-29'
 draft: true
 categories:
   - Data
@@ -28,8 +28,14 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 * adverse_effects data sources: 
 
-pharmaceutical manufacturers' medicines information data sheets, drugs.com (1st-line, using health professional info for adverse drug effects), NZ formulary (nzf), electronic medicines compendium (emc) or Drugs@FDA
-(as separate data checks)
+1st-line: [Drugs.com](https://www.drugs.com/sfx/) 
+- using the health professional version for ADRs and it usually contains ADR references from pharmaceutical manufacturers' medicines information data sheets, ASHP DI monographs or journal paper references
+
+2nd-line as separate data checks: 
+- [NZ formulary (nzf)](https://nzf.org.nz/nzf_1) - likely only available to NZ residents only; other national formularies should contain very similar drug information
+- [electronic medicines compendium (emc)](https://www.medicines.org.uk/emc) - UK-based drug reference
+- [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm) - US-based drug reference
+
 - two main occurrences in percentages: 
 ^^ - common > 10%, 
 ^ - less common 1% to 10%, 
@@ -42,8 +48,8 @@ pharmaceutical manufacturers' medicines information data sheets, drugs.com (1st-
 - ADR mentioned in common ADR category and repeated in the less common one will have the ADR recorded in the higher incidence rate (at > 10%) only
 - some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded/compiled here)
 - some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
-
-* note: terfenadine - withdrawn from market in 1990s due to QT prolongations
+- specifically for hydrocortisone (a moderate CYP3A4 substrate), there are no reported ADR frequencies at all for its ADRs as the they are entirely dependent on the dosage and duration of use (ADRs tend to be unnoticeable at appropriate low doses for short durations)
+- terfenadine is actually withdrawn from the market in 1990s due to QT prolongations
 
 * abbreviations used:
 
@@ -62,4 +68,5 @@ pharmaceutical manufacturers' medicines information data sheets, drugs.com (1st-
 - RTI = respiratory tract infection
 - UTI = urinary tract infection
 - LDH = lactate dehydrogenase
+- dd = dose and duration-dependent
 
