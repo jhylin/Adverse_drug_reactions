@@ -29,7 +29,7 @@ Possible sources of data and types of data to be used:
 
 * PyTorch tensors to represent ADRs (?categorical embeddings for tabular data) - the data being collected at the moment are relatively small, so have decided to do it manually by hand (aim to retrieve ADRs with reasonable quality and usefulness)
 
-*Mermaid chart to show flow of ideas (work-in-progress) - dotted lines denote indirectly related or possibly leading to*
+Below is a flow chart showing interactions between drugs and ADRs, with dotted lines representing possible or indirect relationships.
 
 ```{mermaid}
 flowchart LR

@@ -2,8 +2,11 @@ test.ipynb
 test
 Ideas.html
 Ideas_files
+0_Ideas.html
+0_Ideas_files
 1_ADR_data.html
 1_ADR_data_files
+mol_prep.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
