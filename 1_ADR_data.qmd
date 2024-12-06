@@ -80,4 +80,5 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - UTI = urinary tract infection
 - LDH = lactate dehydrogenase
 - dd = dose and duration-dependent
+- pm_HIV_pit = postmarketing reports for HIV protease inhibitor therapy
 

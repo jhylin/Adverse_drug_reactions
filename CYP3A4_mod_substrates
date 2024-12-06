@@ -18,11 +18,15 @@ increased_liver_enzymes^, hepatocellular_damage(pm), rash^, chest_pain^, arthral
 anorexia^, influenza_like_symptoms^, candidal_infection^, anaphylaxis(pm)",drugs.com,nzf,031224
 **lercanidipine**,mod,calcium_channel_blockers,"hypotension(pm), gingival_hypertrophy(pm), urinary_frequency(pm), 
 chest_pain(pm), increased_liver_enzymes(pm)",drugs.com,drugs.com_uk_di,031224
+**naldemedine**,mod,peripheral_opioid_receptor_antagonists,"diarrhea^^, abdominal_pain^^","gastroenteritis^, bronchospasm(pm), rash(pm)",drugs.com,Drugs@FDA,061224
+**nelfinavir**,mod,antivirals,"diarrhea^^","flatulence^, decreased_lymphocytes^, decreased_neutrophils^, 
+decreased_hemoglobin^, elevated_AST^, elevated_ALT^,
+jaundice(pm), bilirubinemia(pm), elevated_creatine_kinase^, rash^, QTc_prolongation(pm), torsades_de_pointes(pm), 
+metabolic_acidosis(pm), new_onset_diabetes_mellitus(pm_HIV_pit), exacerbation_of_pre_existing_diabetes_mellitus(pm_HIV_pit), 
+hyperglycemia(pm_HIV_pit), ketoacidosis(pm_HIV_pit), hypersensitivity_reactions(pm)",drugs.com,Drugs@FDA,061224
 
 *Work-in-progress below*
 
-naldemedine,mod,peripheral_opioid_receptor_antagonists,
-nelfinavir,mod,antivirals,
 telaprevir,mod,antivirals
 ondansetron,mod,antiemetics,
 quinine,mod,antimalarials,
