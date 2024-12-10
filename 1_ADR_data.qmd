@@ -53,14 +53,16 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 ###### Exceptions for adverse_effects: 
 
-- nausea & vomiting applies to many drugs so won't be included 
+- nausea & vomiting applies to many drugs so won't be included (almost every drug will have these ADRs, they can be alleviated with electrolytes replacements and anti-nausea meds or other non-med options; rash on the other hand can sometimes be serious and life-threatening e.g. Stevens-Johnson syndrome)
 - similar or overlapping adverse effects will be removed to keep only one adverse effect for the same drug e.g. adverse skin reactions, rash, urticaria - rash and urticaria will be removed as allergic skin reactions encompass both symptoms
+- for ADR terms with similar meanings, e.g. pyrexia/fever - fever is used instead (only one will be used)
 - ADR mentioned in common ADR category and repeated in the less common one will have the ADR recorded in the higher incidence rate (at > 10%) only
 - some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded/compiled here)
 - some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
 - specifically for hydrocortisone (a moderate CYP3A4 substrate), there are no reported ADR frequencies at all for its ADRs as the they are entirely dependent on the dosage and duration of use (ADRs tend to be unnoticeable at appropriate low doses for short durations)
 - terfenadine (a strong CYP3A4 substrate) is actually withdrawn from the market in 1990s due to QT prolongations
 - lercanidipine (a moderate CYP3A4 substrate) has nil reported ADRs of more than 1% but has a few postmarketing reports recorded
+- telaprevir (a moderate CYP3A4 substrate) is usually administered within a combination therapy (e.g. along with peginterferon alfa and ribavirin)
 
 ###### Abbreviations used:
 
@@ -81,4 +83,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - LDH = lactate dehydrogenase
 - dd = dose and duration-dependent
 - pm_HIV_pit = postmarketing reports for HIV protease inhibitor therapy
-
+- pm_hep_cyto = postmarketing reports in cancer patients where drug was taken with hepatotoxic/cytotoxic chemotherapy and antibiotics
