@@ -29,8 +29,8 @@ def chembl_drugs(*drug: str, file_name: Optional[str] = None):
     """
     ).strip().strip('\'').replace('\'(', '(')
 
-    # default query uses the latest ChEMBL version
-    df = chembl_downloader.query(sql)
+    # default query uses the latest ChEMBL version (this script uses version 34)
+    df = chembl_downloader.query(sql, version="34")
 
     if file_name == None:
         return df
@@ -38,3 +38,6 @@ def chembl_drugs(*drug: str, file_name: Optional[str] = None):
         # save df as .tsv files if a file name is added
         df.to_csv(f"{file_name}.tsv", sep='\t', index=False)
         return df
+    
+
+

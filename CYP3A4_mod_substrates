@@ -53,6 +53,9 @@ on-treatment_deaths^, oropharyngeal_pain^, COVID-19^, pneumonia^, interstitial_l
 
 *Work-in-progress below*
 
-suvorexant,mod,orexin_receptor_antagonists/hypnotics,
+**suvorexant,n/a,mod,orexin_receptor_antagonists/hypnotics,""
+
+
+
 telithromycin,mod,ketolides,
 temsirolimus,mod,MTOR_inhibitors,
