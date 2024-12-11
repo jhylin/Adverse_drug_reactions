@@ -29,7 +29,7 @@ Many national drug formularies, drug reference textbooks e.g. Martindale,
 American society of health-System pharmacists' (ASHP) drug information (DI) monographs,
 PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
-###### adverse_effects data sources: 
+###### ADRs data sources: 
 
 * 1st-line: [Drugs.com](https://www.drugs.com/sfx/) - using the health professional version for ADRs and it usually contains ADR references from pharmaceutical manufacturers' medicines information data sheets, ASHP DI monographs or journal paper references
 
@@ -51,7 +51,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
   (not going to include other ones with lower incidences e.g. less common 0.1% to 1%, rare less than 0.1% etc.)
 
-###### Exceptions for adverse_effects: 
+###### Exceptions for ADRs: 
 
 - nausea & vomiting applies to many drugs so won't be included (almost every drug will have these ADRs, they can be alleviated with electrolytes replacements and anti-nausea meds or other non-med options; rash on the other hand can sometimes be serious and life-threatening e.g. Stevens-Johnson syndrome)
 - similar or overlapping adverse effects will be removed to keep only one adverse effect for the same drug e.g. adverse skin reactions, rash, urticaria - rash and urticaria will be removed as allergic skin reactions encompass both symptoms
@@ -63,6 +63,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - terfenadine (a strong CYP3A4 substrate) is actually withdrawn from the market in 1990s due to QT prolongations
 - lercanidipine (a moderate CYP3A4 substrate) has nil reported ADRs of more than 1% but has a few postmarketing reports recorded
 - telaprevir (a moderate CYP3A4 substrate) is usually administered within a combination therapy (e.g. along with peginterferon alfa and ribavirin)
+- quinine (a moderate CYP3A4 substrate) has all of its ADRs reported without frequencies. The most common ADRs are presented as a cluster of symptoms (known as cinchonism) and can occur during overdoses (usually very toxic) and also normal doses. These symptoms include "...tinnitus, hearing impairment, headache, nausea, vomiting, abdominal pain, diarrhoea, visual disturbances (including blindness), arrhythmias (which can have a very rapid onset), convulsions (which can be intractable), and rashes." (as quoted from NZ formulary v150 - 01 Dec 2024)
+- ribociclib (a moderate CYP3A4 substrate) has a listed ADR of on-treatment deaths, which were found to be associated with patients also taking letrozole or fulvestrant at the same time and/or in patients with underlying malignancy
 
 ###### Abbreviations used:
 
