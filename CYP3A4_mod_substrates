@@ -10,7 +10,7 @@ rash^, double_vision/diplopia(rectal)^",drugs.com,nzf,291124
 **lansoprazole,n/a,mod,proton_pump_inhibitors,"abdominal_pain^, benign_fundic_gland_polyps^, constipation^, diarrhea^, dry_mouth^, flatulence^, stomach_ache^, itching^, pruritus^, rash^, urticaria^, fatal_toxic_epidermal_necrolysis(pm), dizziness^, headache^, taste_disturbance^, speech_disorder(pm), increased_liver_enzyme_levels^, hepatotoxicity(pm), fatigue^, dry_throat^, myositis(pm), aplastic_anemia(pm), hemolytic_anemia(pm), thrombotic_thrombocytopenic_purpura(pm),
 anaphylactoid_reactions(pm)",drugs.com,nzf,291124
 **pantoprazole,n/a,mod,proton_pump_inhibitors,"headache^^, taste_disturbance^^, nasopharyngitis^^, 
-pharyngolaryngeal_pain^^, diarrhea^^","dizziness^, metallic/bitter_taste^, somnolence^, ageusia(pm), dysgeusia(pm), cough^, nasal_congestion^, 
+pharyngolaryngeal_pain^^, diarrhea^^","dizziness^, metallic/bitter_taste^, somnolence^, ageusia(pm), taste_disturbance(pm), cough^, nasal_congestion^, 
 pharyngitis^, abdominal_pain^, benign_fundic_gland_polyps^, buccal_inflammation^, 
 constipation^, dry_mouth^, dyspepsia^, fecal_discoloration^, flatulence^, heartburn^, oral_thrush^, 
 pruritus^, tongue_discoloration^, tongue_pain^, upper_abdominal_pain^, tiredness^, depression^, insomnia(pm),
@@ -27,7 +27,7 @@ hyperglycemia(pm_HIV_pit), ketoacidosis(pm_HIV_pit), hypersensitivity_reactions(
 **telaprevir,*,mod,antivirals,"rash^^, pruritus^^, anemia^^, decreased_mean_platelet_counts^^,
 decreased_hemoglobin_levels^^, decreased_lymphocyte_counts^^, decreased_absolute_neutrophil_counts^^, 
 elevated_uric_acid_levels^^, diarrhea^^, hemorrhoids^^, anorectal_discomfort^^, fatigue^^, elevated_bilirubin^^,
-dysgeusia^^","severe_rash^, toxic_epidermal_necrolysis(pm), erythema_multiforme(pm), decreased_total_white_cell_counts^, 
+taste_disturbance^^","severe_rash^, toxic_epidermal_necrolysis(pm), erythema_multiforme(pm), decreased_total_white_cell_counts^, 
 anal_pruritus^, pre_renal_azotemia(pm), uric_acid_nephropathy(pm)",drugs.com,Drugs@FDA,101224
 **ondansetron,n/a,mod,antiemetics,"headache^^, drowsiness/sedation^^, wound_problem^^, malaise/fatigue^^, diarrhea^^, 
 constipation^^, eye_disorder^^","dizziness^, paresthesia^, shivers^, fever^, cold_sensation^, xerostomia^, 
@@ -48,14 +48,37 @@ infections^^, fatigue^^, decreased_phosphorus^^, fever^^, peripheral_edema^^, as
 hypokalemia^^, decreased_albumin^^, insomnia^^, increased_creatinine^^, cough^^, dyspnea^^","QT_prolongation^, dry_skin^, vitiligo^, erythema^, Stevens_Johnson_syndrome(pm), toxic_epidermal_necrolysis(pm), 
 drug_induced_hypersensitivity_syndrome/drug_reaction_with_eosinophilia_and_systemic_symptoms(pm), 
 febrile_neutropenia^, drug-induced_liver_injury^, increased_blood_bilirubin^, hepatotoxicity^, 
-hypocalcemia^, hypomagnesemia^, hypophosphatemia^, dysgeusia^, vertigo^, syncope^ dry_eye^, 
+hypocalcemia^, hypomagnesemia^, hypophosphatemia^, taste_disturbance^, vertigo^, syncope^ dry_eye^, 
 on-treatment_deaths^, oropharyngeal_pain^, COVID-19^, pneumonia^, interstitial_lung disease/pneumonitis^(pm)",drugs.com,nzf,111224
+**suvorexant,n/a,mod,orexin_receptor_antagonists/hypnotics,n/a,"diarrhea^, dry_mouth^, headache^, somnolence^, dizziness^, abnormal_dreams^, cough^, upper_RTI^, palpitations(pm), tachycardia(pm), psychomotor_hyperactivity(pm), anxiety(pm), pruritus(pm)",drugs.com,Drugs@FDA,121224
+**telithromycin,n/a,mod,ketolides,"diarrhea^^","increased_liver_enzymes^, hepatic_dysfunction(pm), fulminant_hepatitis(pm), hepatic_necrosis(pm), 
+hepatic_failure(pm), severe_hepatitis(pm), gastrointestinal_pain^, flatulence^, pancreatitis(pm),
+headache^, dizziness^, taste_disturbance, loss_of_consciousness(pm), exacerbation_of_myasthenia_gravis(pm), 
+tremors(pm), convulsions(pm), smell_perversion(pm), ageusia(pm), anosmia(pm), hearing_loss(pm), dyspnea(pm), 
+vaginal_candidiasis^, chromaturia(pm), QT_prolongation(pm), ventricular_arrhythmias(pm), ischemic_cardiac_events(pm), 
+angioneurotic_edema(pm), confusion(pm), visual_hallucinations(pm), arthralgia(pm), myalgia(pm), 
+severe_allergic_reactions(pm), anaphylactic_reactions(pm), hypersensitivity(pm), face_edema(pm)",drugs.com,Drugs@FDA,121224
 
 *Work-in-progress below*
 
-**suvorexant,n/a,mod,orexin_receptor_antagonists/hypnotics,""
+**temsirolimus,n/a,mod,MTOR_inhibitors,"increased_AST^^, bacterial_and_viral_infections^^, dyspnea^^, 
+cough^^, epistaxis^^, pharyngitis^^, pneumonia^^, rhinitis^^, increased_creatinine^^, decreased_hemoglobin^^, 
+decreased_lymphocytes^^, anemia^^, decreased_platelets^^, decreased_leukocytes^^, thrombocytopenia^^, 
+decreased_neutrophils^^, neutropenia^^, chest_pain^^, rash^^, 
+pruritus^^, nail_disorder^^, dry_skin^^, acne^^, asthenia^^, fatigue^^, edema^^, pyrexia^^, pain^^, 
+hyperglycemia^^, mucositis^^, diarrhea^^, abdominal_pain^^, constipation^^, unspecified_urogenital_adverse_reaction^^, 
+UTI^^, increased_total_cholesterol^^, increased_triglycerides^^, increased_ALP^^, hypophosphatemia^^, 
+hypocalcemia^^, decreased_appetite^^, anorexia^^, hyperlipidemia^^, hypokalemia^^, 
+weight_loss^^, hypercholesterolemia^^, hypertriglyceridemia^^, increased_LDH^^, back_pain^^, 
+arthralgia^^, muscle_cramp^^, taste_disturbance^^, headache^^, insomnia^^",
 
-
-
-telithromycin,mod,ketolides,
-temsirolimus,mod,MTOR_inhibitors,
+"increased_total_bilirubin^, increased_ALT^, sepsis^, candidiasis^, fungal_infection^, flu_syndrome^, 
+hypersensitivity_reactions^, upper_RTI^, pleural_effusion^, sinusitis^, 
+interstitial_lung_disease/pneumonitis^, pneumocystis_jiroveci_pneumonia(pm), renal_failure^, leukopenia^, 
+lymphopenia^, hypertension^, venous_thromboembolism^, thrombophlebitis^, pericardial_effusion^, folliculitis^, 
+ecchymosis^, petechiae^, Stevens_Johnson_syndrome(pm), wound_infection/post_operative_wound_infection^, 
+impaired_wound_healing^, angioneurotic_edema_type_reactions(pm), extravasations(pm), diabetes_mellitus^, 
+bowel_perforation^, gastrointestinal_hemorrhage^, rectal_hemorrhage^, gastritis^, dysphagia^, 
+abdominal_distension^, oral_pain^, gingivitis^, oral_thrush^, hemorrhoidal_hemorrhage^, 
+dehydration^, myalgia^, rhabdomyolysis(pm), dizziness^, paresthesia^, somnolence^, convulsion^, 
+complex_regional_pain_syndrome/reflex_sympathetic_dystrophy(pm), conjunctivitis^, depression^, anxiety^",drugs.com,
