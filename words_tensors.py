@@ -6,7 +6,7 @@ from collections import Counter
 
 torch.manual_seed(1)
 
-def adr_tensors(adr: str):
+def words_tensors(adr: str):
     
     words = adr.split(', ')
     vocab = Counter(words)
@@ -14,7 +14,7 @@ def adr_tensors(adr: str):
     word2idx = {word: ind for ind, word in enumerate(vocab)}
     encoded_adr = [word2idx[word] for word in words]
     # ?may need to make embedding_dim as an optional parameter
-    embedding_dim = 5
+    embedding_dim = 2
     emb = nn.Embedding(vocab_size, embedding_dim)
     word_vectors = torch.LongTensor(encoded_adr)
     tensors = emb(word_vectors)
