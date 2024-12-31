@@ -66,6 +66,21 @@ I think the very first post may take the longest time as I've never compiled dat
 
 Follow-up post is likely trying to link the data compiled with some cheminfo work in an exploratory style (undecided on details yet, but may be interesting...? kind of like a structure-adverse effects relationship perspective, rather than structure-activity relationships which is more commonly looked at). Ideally, this needs to be accompanied by other comp chem work (not only cheminfo aspect) to see the full picture.
 
+*Overall scheme*
+
+* Structure-adverse drug reaction relationships: 
+**ADRs <-> (dense vectors of real numbers) <-> 2D drug structures**
+
+* Structure-activity relationships: 
+**drug activities <-> 2d drug structures**
+
+1. First post is to build a basic DNN regression model initially to try and predict therapeutic drug classes of drugs via using CYP strength, molecule fingerprints and ADRs to infer possible drugs vs. ADRs relationships (hmm this might be a very naive model...)
+
+2. 2D drug structures part (much further down the line as separate posts; this may evolve into multiple posts in other relevant aspects...)
+- graph neural networks (GNN - other variations also available): molecules as undirected graphs where the connections between nodes (atoms) and edges (bonds) don't matter (i.e. don't need to be in particular orders or sequences) 
+OR 
+- RNN that uses SMILES (NLP technique) -> tokenize SMILES strings -> converts into a dictionary mapping tokens to indices in the vocabulary -> converts the vocabulary (SMILES strings) into one-hot encodings
+
 
 What have I done so far:
 - had a look at [SIDER database](http://sideeffects.embl.de/) - only last updated in 2015 (looks very detailed and useful at first, checked on 16/10/24 - quite outdated and appears to be no longer maintained by the look of a few unanswered issues in its repo, only 1430 drugs available, imatinib had malignant neoplasm listed as the highest ADRs... would categorise it under carcinogenicity instead and it's dose-related so can be circumvented and also imatinib is for leukaemia and other bone marrow cancers... a bit misleading to list it as a "side effect" when its therapeutic indication is for malignancy...)
