@@ -570,18 +570,18 @@ print(f"Test accuracy: {accuracy:.4f}")
 
 A few things to consider in the end:
 
-- Haven't done feature standardisation for X_train which is to centre X_train mean and divide by its standard deviation, code may be like this, X_train_normalised = (X_train - np.mean(X_train))/np.std(X_train) (if used on training data, need to apply this to testing data too)
+- I haven't done feature standardisation for X_train which is to centre X_train mean and divide by its standard deviation, code may be like this, X_train_normalised = (X_train - np.mean(X_train))/np.std(X_train) (if used on training data, need to apply this to testing data too)
 
 - Training features are certainly too small, however, the main goal of this very first post is to get an overall idea of how to construct a baseline deep neural network (DNN) regression model. There are lots of other things that can be done to the ADRs data e.g. adding more drug molecular features and properties. I have essentially only used the initial molecular fingerprints generated when doing the data split to add a bit of molecular aspect in the training dataset.
 
-- I realise that I haven't taken into account the frequencies of words (e.g. same drug classes and same ADR terms across different drugs) in the training and testing data, however, the aim of this first piece of work is also not a semantic analysis in natural language processing so this might not be needed...
+- I haven't taken into account the frequencies of words (e.g. same drug classes and same ADR terms across different drugs) in the training and testing data, however, the aim of this first piece of work is also not a semantic analysis in natural language processing so this might not be needed...
 
 - There may be other PyTorch functions that I do not yet know about that will deal with small datasets e.g. perhaps [torch.sparse](https://pytorch.org/docs/stable/sparse.html) may be useful?... so this piece is certainly not the only way to do it, but one of the many ways to work with small data
 
 <br>
 
 ##### Acknowledgement
-I'm very thankful for the existence of these references or websites below which have helped me understand (or scratched a small surface of) deep learning (and also solved the coding issues mentioned in this post):
+I'm very thankful for the existence of these references or websites below which have helped me understand (or scratch a small surface of) deep learning and also solved the coding issues mentioned in this post:
 
 - [PyTorch forums](https://discuss.pytorch.org/)
 
