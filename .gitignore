@@ -8,6 +8,8 @@ Ideas_files
 1_ADR_data_files
 mol_prep.py
 adr_regressor.pt
+2_ADR_regressor_files
+2_ADR_regressor.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
