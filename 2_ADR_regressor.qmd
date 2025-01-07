@@ -24,6 +24,7 @@ from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 import useful_rdkit_utils as uru
 import sys
+from matplotlib import pyplot as plt
 print(f"Pandas version used: {pd.__version__}")
 print(f"PyTorch version used: {torch.__version__}")
 print(f"NumPy version used: {np.__version__}")
@@ -407,7 +408,7 @@ y_train.shape
 ```
 
 ```{python}
-# Create a PyTorch dataset
+# Create a PyTorch dataset on training data set
 train_data = TensorDataset(X_train[None], y_train[None])
 # Sets a seed number to generate random numbers
 torch.manual_seed(1)
@@ -415,6 +416,14 @@ batch_size = 1
 
 # Create a dataset loader
 train_dl = DataLoader(train_data, batch_size, shuffle = True)
+```
+
+```{python}
+# Create another PyTorch dataset on testing data set
+test_data = TensorDataset(X_test[None], y_test[None])
+torch.manual_seed(1)
+batch_size = 1
+test_dl = DataLoader(test_data, batch_size, shuffle=True)
 ```
 
 <br>
@@ -482,6 +491,8 @@ This part is mainly about defining the loss function when training the model wit
 
 References for: [nn.MSELoss()](https://pytorch.org/docs/stable/generated/torch.nn.MSELoss.html#torch.nn.MSELoss) - measures mean squared error between X and y, and [nn.functional.pad()](https://pytorch.org/docs/stable/generated/torch.nn.functional.pad.html#torch.nn.functional.pad) - pads tensor (increase tensor size) 
 
+Obtaining training loss via model training:
+
 ```{python}
 #| code-fold: true
 # Set up loss function
@@ -494,8 +505,11 @@ num_epochs = 200
 # Set the log output to show training loss - for every 20 epochs
 log_epochs = 20
 torch.manual_seed(1)
+# Create empty lists to save training loss (for training and testing/validation sets)
+train_epoch_loss = []
+test_epoch_loss = []
 
-#  Predict via training X_batch & obtain loss via loss function from X_batch & y_batch
+#  Predict via training X_batch & obtain train loss via loss function from X_batch & y_batch
 for epoch in range(num_epochs):
     train_loss = 0
     for X_batch, y_batch in train_dl:
@@ -515,13 +529,81 @@ for epoch in range(num_epochs):
     
     if epoch % log_epochs == 0:
         print(f"Epoch {epoch} Loss {train_loss/len(train_dl):.4f}")
+
+    train_epoch_loss.append(train_loss)
 ```
+
+Obtaining test or validation loss:
+
+```{python}
+#| code-fold: true
+# Predict via testing X_batch & obtain test loss 
+for epoch in range(num_epochs):
+    test_loss = 0
+    for X_batch, y_batch in test_dl:
+        # Make predictions
+        predict_test = model(X_batch)[:, 0]
+        # Make input tensors the same size as y_batch tensors
+        predict_pad_test = F.pad(predict_test[None], pad=(1, 0, 0, 0))
+        # Calculate training loss
+        loss = loss_f(predict_pad_test, y_batch)
+        # Calculate gradients (backpropagations)
+        loss.backward(retain_graph=True)
+        # Update parameters using gradients
+        optim.step()
+        # Reset gradients back to zero
+        optim.zero_grad()
+        test_loss += loss.item()
+    
+    if epoch % log_epochs == 0:
+        print(f"Epoch {epoch} Loss {test_loss/len(test_dl):.4f}")
+
+    test_epoch_loss.append(test_loss)
+```
+
+Showing train and test losses over training epochs in a plot:
+
+```{python}
+# Plots
+plt.plot(train_epoch_loss, label="train_loss")
+plt.plot(test_epoch_loss, label="test_loss")
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.legend()
+plt.show
+```
+
+At the moment, when this notebook is re-run on a refreshed kernel, this leads to a different train and test split each time, and also leading to a different train and test (validation) loss each time. There may be two types of scenarios shown in the plot above where:
+
+- test loss is higher than train loss (overfitting) - showing the model may be way too simplified and is likely under-trained
+- train loss is higher than test loss (underfitting) - showing that the model may not have been trained well, and is unable to learn the features in the training data and apply them to the test data
+
+When there are actually more training data available with also other hyperparameters fine tuned, it may be possible to see another scenario where both test loss and train loss are very similar in trend, meaning the model is being trained well and able to generalise the training to the unseen data. 
+
+To mitigate overfitting: 
+
+- firstly there should be more training data than what I've had here
+
+- use L1 or L2 regularisation to minimise model complexity by adding penalities to large weights
+
+- use early stopping during model training to stop training the model when test loss is becoming higher than the train loss
+
+- use [torch.nn.Dropout()](https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html) to randomly drop out some of the neurons to ensure the exisiting neurons will learn features without being too reliant on other neighbouring neurons in the network
+
+- *I'll try the early stopping or drop out method in future posts since current post is relatively long already...*
+
+To overcome underfitting:
+
+- increase training epochs
+- minimise regularisation
+- consider building a more complex or deeper neural network model
+
 
 <br>
 
 ##### Evaluate model
 
-I'm keeping this post simple so I've only used mean squared error (MSE) and mean absolute error (MAE) to evaluate the model which has made a prediction on the test set. The smaller the MSE, the less error the model has when making predictions. However this is not the only metric that will determine if a model is optimal for predictions, as I've also noticed that every time there's a different training and testing data split, the MAE and MSE values will vary too, so it appears that some splits will generate smaller MSE and other splits will lead to larger MSE.
+I'm keeping this post simple so I've only used mean squared error (MSE) and mean absolute error (MAE) to evaluate the model which has made a prediction on the test set. The smaller the MSE, the less error the model has when making predictions. However this is not the only metric that will determine if a model is optimal for predictions, as I've also noticed that every time there's a different train and test split, the MAE and MSE values will vary too, so it appears that some splits will generate smaller MSE and other splits will lead to larger MSE.
 
 ```{python}
 #| code-fold: true
@@ -580,13 +662,13 @@ A few things to consider in the end:
 
 <br>
 
-##### Acknowledgement
-I'm very thankful for the existence of these references or websites below which have helped me understand (or scratch a small surface of) deep learning and also solved the coding issues mentioned in this post:
+##### Acknowledgements
+I'm very thankful for the existence of these references or websites below which have helped me understand (or scratch a small surface of) deep learning and also solve the coding issues mentioned in this post:
 
 - [PyTorch forums](https://discuss.pytorch.org/)
 
 - [Stack Overflow](https://stackoverflow.com/)
 
-- Machine learning with PyTorch and Scikit-Learn book by S. Raschka, Y. Liu and V. Mirjalili
+- Raschka, Sebastian, Yuxi (Hayden) Liu, and Vahid Mirjalili. 2022. Machine Learning with PyTorch and Scikit-Learn. Birmingham, UK: Packt Publishing. 
 
 
