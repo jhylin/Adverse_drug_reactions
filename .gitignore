@@ -10,6 +10,8 @@ mol_prep.py
 adr_regressor.pt
 2_ADR_regressor_files
 2_ADR_regressor.html
+.DS_Store
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
