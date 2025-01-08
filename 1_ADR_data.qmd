@@ -1,20 +1,20 @@
 ---
-title: Notes for adverse drug reactions (ADRs) data
-subtitle: Strong and moderate-strengths CYP3A4 substrates
-date: '2024-12-26'
+title: Notes on adverse drug reactions (ADRs) data
+subtitle: For strong and moderate-strengths CYP3A4 substrates
+date: '2025-1-8'
 author: Jennifer HY Lin
-draft: true
+draft: false
 categories:
   - Data
   - Notes
 jupyter: python3
 ---
 
-Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the accompanying notebook.
+Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html).
 
 <br>
 
-##### **drug_name and cyp_strength_of_evidence source**: 
+##### **drug_name and cyp_strength_of_evidence source** 
 
 This is all based on the Flockhart table of drug interactions: [https://drug-interactions.medicine.iu.edu/MainTable.aspx](https://drug-interactions.medicine.iu.edu/MainTable.aspx)
 
@@ -26,18 +26,18 @@ the supporting literature is not extensive.
 
 <br>
 
-##### **drug_class data sources**: 
+##### **drug_class data sources**
 
 This information can be found in many national drug formularies, drug reference textbooks e.g. Martindale, 
 American society of health-System pharmacists' (ASHP) drug information (DI) monographs,
-PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com. For the particular small dataset collected and used in the notebook, the following reference sources for ADRs also contain information on therapeutic drug classes too.
+PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com. For the particular small dataset collected and used in the notebook, the following reference sources for ADRs also contain information on therapeutic drug classes.
 
 <br>
 
-##### **ADRs data sources**: 
+##### **ADRs data sources**
 
 * 1st-line: [Drugs.com](https://www.drugs.com/sfx/) 
-  - using the health professional version for ADRs and it usually contains ADR references from pharmaceutical manufacturers' medicines information data sheets, ASHP DI monographs or journal paper references
+  - using the health professional version for ADRs which usually contains ADR references from pharmaceutical manufacturers' medicines information data sheets, ASHP DI monographs or journal paper references
 
 * 2nd-line as separate data checks: 
 
@@ -49,7 +49,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
   
   - [drugs.com_uk_di](https://www.drugs.com/uk/) - UK drug information section in Drugs.com (equivalent to pharmaceutical manufacturers' medicines information data sheets)
 
-- two main types of occurrences/frequencies: 
+- two main types of occurrences/frequencies used: 
 
   ^^ - common > 10%, 
 
@@ -59,7 +59,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 <br>
 
-##### **Exceptions or notes for ADRs**: 
+##### **Exceptions or notes for ADRs**
 
 - nausea and vomiting applies to many drugs so won't be included (almost every drug will have these ADRs, they can be alleviated with electrolytes replacements and anti-nausea meds or other non-med options; rash on the other hand can sometimes be serious and life-threatening e.g. Stevens-Johnson syndrome)
 
@@ -75,7 +75,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 ###### **Notes for specific drugs**
 
-- hydrocortisone (a moderate CYP3A4 substrate), there are no reported ADR frequencies at all for its ADRs as they are entirely dependent on the dosage and duration of use (ADRs tend to be unnoticeable at appropriate low doses for short durations)
+- hydrocortisone (a moderate CYP3A4 substrate) has no reported ADR frequencies at all for its ADRs as they are entirely dependent on the dosage and duration of use (ADRs tend to be unnoticeable at appropriate low doses for short durations)
 
 - terfenadine (a strong CYP3A4 substrate) is actually withdrawn from the market in 1990s due to QT prolongations
 
@@ -89,7 +89,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 <br>
 
-##### **Abbreviations used**:
+##### **Abbreviations used**
 
 - ws = withdrawal symptoms
 - ADH = antidiuretic hormone
