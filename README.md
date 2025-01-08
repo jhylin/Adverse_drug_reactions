@@ -4,13 +4,13 @@ This work can be read in conjunction with the previous "[cytochrome P450 and sma
 
 ADRs data collection for CYP3A4 substrates has been completed for the current post. Potentially, more data can be collected on other different CYP substrates in the future.
 
-#### **Drafts of documents**:
+#### **Documents**:
 
-0_Ideas.qmd - the very early brainstorming of ideas for this project with some background information
+0_Ideas.qmd (draft version) - the very early brainstorming of ideas for this project with some background information
 
-1_ADR_data.qmd - all notes on ADRs and also a list of reference sources for the ADRs data
+1_ADR_data.qmd - all [notes](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/1_ADR_data.html) on ADRs and also a list of reference sources for the ADRs data
 
-2_ADR_regressor.ipynb (.qmd version with same file name) - a notebook about building a simple deep neural network (DNN) model to predict therapeutic drug classes for CYP3A4 substrates (which are also drugs)
+2_ADR_regressor.ipynb (.qmd version with same file name) - a notebook ([post link](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html)) about building a simple deep neural network (DNN) model to predict therapeutic drug classes for CYP3A4 substrates (which are also drugs)
 
 #### **Other files:**
 
