@@ -8,6 +8,8 @@ categories:
 jupyter: python3
 ---
 
+*This is an evolving document and is currently in draft mode only.*
+
 Ideas (note: this is at a very early experimental stage)
 
 **This type of work may work better if focussing on a specific therapeutic target, and trying to learn the patterns of ADRs for the same target (this may develop into other new side projects). However, the bigger picture here is trying to formulate a CYP450-ADRs drug profile first.**
