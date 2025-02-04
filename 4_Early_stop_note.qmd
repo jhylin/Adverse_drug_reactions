@@ -1,0 +1,28 @@
+---
+title: "About using early stopping in deep learning neural networks"
+draft: true
+categories: 
+    - Notes
+    - Deep learning
+jupyter: python3
+format: html
+---
+
+The reason behind using early stopping is to minimise overfitting the model during training, and it appears that there are three main approaches used :
+
+*note: there could be more ways so this note is more like an slow-evolving document over time*
+
+1. Drop out layer
+
+2. Checkpoints with early stopping
+- save weights or parameters of the model
+- reload the model
+
+3. Early stopping added to training loop during model training
+
+
+
+
+Other possible/relevant/interesting readings:
+
+* Unsure how useful this may be, but I happen to come across a [preprint paper](https://arxiv.org/pdf/2501.19195) while working on this note and it talks about how early stopping on validation loss is likely going to lead to problems with calibration and refinement errors (components of cross-entropy), and what they're using to overcome this (its [GitHub repo is here](https://github.com/dholzmueller/probmetrics))
