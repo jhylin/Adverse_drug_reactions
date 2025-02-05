@@ -1,5 +1,5 @@
 ---
-title: "About using early stopping in deep learning neural networks"
+title: "About using early stopping in deep neural networks"
 draft: true
 categories: 
     - Notes
@@ -8,21 +8,43 @@ jupyter: python3
 format: html
 ---
 
-The reason behind using early stopping is to minimise overfitting the model during training, and it appears that there are three main approaches used :
+##### *Why use early stopping in neural networks?*
 
-*note: there could be more ways so this note is more like an slow-evolving document over time*
+*note: there could be more ways to handle model overfitting, so this note is more like a slow-evolving document over time, and it mainly describes approaches applicable to neural networks (NN) built by using PyTorch but I think similar concepts may also apply to a certain degree towards other deep learning libraries/frameworks such as TensorFlow or Keras*
+
+The reason behind using early stopping is to minimise overfitting the model during training, and it appears that there are three main approaches used:
 
 1. Drop out layer
 
+- adding a drop out layer is likely better for a larger NN, and is probably not great for the tiny two-layer NN that has been used in this *post*
+- so may just refer to useful code examples (or save for future longer post that uses larger-sized data?)
+- there are 2 types: nn.Dropout() and F.dropout()
+
+
 2. Checkpoints with early stopping
-- save weights or parameters of the model
-- reload the model
+- based on the concept that PyTorch can retrieve and restore weights or parameters of NN
+- first to save weights or parameters of the model
 
-3. Early stopping added to training loop during model training
+```{{python}}
+torch.save(model.state_dict(), model_filename_or_path)
+```
+- then reload the model
+
+```{{python}}
+model.load_state_dict(torch.load(model_filename_or_path)) 
+```
+- need to set up an early stop threshold and use accuracy (e.g. accuracy = y_predict = model (X_test))
+- one feature is that you can set n_epochs with a very large number as the training loop can be terminated with a code break when there's a threshold set up
+- a code example: https://machinelearningmastery.com/managing-a-pytorch-training-process-with-checkpoints-and-early-stopping/
+
+
+3. Early stopping in training loop during model training
+
+- will be tested in the DNN in ADRs ipynb first
 
 
 
 
-Other possible/relevant/interesting readings:
+##### *Other related readings that might be of interest*
 
 * Unsure how useful this may be, but I happen to come across a [preprint paper](https://arxiv.org/pdf/2501.19195) while working on this note and it talks about how early stopping on validation loss is likely going to lead to problems with calibration and refinement errors (components of cross-entropy), and what they're using to overcome this (its [GitHub repo is here](https://github.com/dholzmueller/probmetrics))
