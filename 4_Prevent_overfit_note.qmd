@@ -20,11 +20,13 @@ It appears there are three main approaches used to prevent model overfitting:
 
 - adding a drop out layer is likely better and more useful for a larger NN, and is probably not great for the tiny two-layer NN that has been used in this [post](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html)
 
-- there are 2 types: [nn.Dropout()](https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html) with an [example](https://machinelearningmastery.com/using-dropout-regularization-in-pytorch-models/) and [F.dropout()](https://pytorch.org/docs/stable/generated/torch.nn.functional.dropout.html) (note: F = functional)
+- there are 2 types: [`nn.Dropout()`](https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html) with an [example](https://machinelearningmastery.com/using-dropout-regularization-in-pytorch-models/) and [`F.dropout()`](https://pytorch.org/docs/stable/generated/torch.nn.functional.dropout.html) (note: F = functional)
 
 - drop out is most effective if used during model training phase
 
-- an [explanation](https://stackoverflow.com/a/53452827/19218378) about differences between these 2 types of drop out, but essentially they're the same but useful to use F.dropout() (a functional interface) when there are no parameters (e.g. weights and biases) required and will need to specify if in training or evaluation mode, and use nn.Dropout() (a PyTorch module) when parameters are needed with no need to specify the training or evaluation mode since nn.Dropout() will take care of this automatically
+- an [explanation](https://stackoverflow.com/a/53452827/19218378) about differences between these 2 types of drop out, but essentially they're the same but useful to use `F.dropout()` (a functional interface) when there are no parameters (e.g. weights and biases) required and will need to specify if in training or evaluation mode, and use `nn.Dropout()` (a PyTorch module) when parameters are needed with no need to specify the training or evaluation mode since nn.Dropout() will take care of this automatically
+
+<br>
 
 2. **Checkpoints with early stopping**
 
@@ -43,6 +45,7 @@ model.load_state_dict(torch.load(model_filename_or_path))
 - one feature is that you can set n_epochs with a very large number as the training loop can be terminated with a code break when there's a threshold set up
 - a code example: https://machinelearningmastery.com/managing-a-pytorch-training-process-with-checkpoints-and-early-stopping/
 
+<br>
 
 3. **Early stopping in training loop during model training**
 
@@ -117,6 +120,7 @@ Some comments:
 
 
 Version 2:
+
 
 
 ##### **Other related readings that might be of interest**
