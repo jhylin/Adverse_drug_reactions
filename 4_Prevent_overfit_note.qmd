@@ -121,7 +121,67 @@ Some comments:
 
 Version 2:
 
+The code below may need more tweaking.
 
+```{{python}}
+## Version 2 early stopping
+# This one focusses more on the test loss trend (rather than the gap between train loss and test loss)
+class Early_stopping:
+
+    ## earlier version:
+    def __init__(self, epochs_to_wait = 5, delta = 0):
+        self.epochs_to_wait = epochs_to_wait
+        self.delta = delta
+        self.min_test_loss = np.inf
+        self.counter = 0
+    
+    def early_stop(self, test_loss):
+        if test_loss < self.min_test_loss: 
+            self.min_test_loss = test_loss
+            self.counter = 0
+        elif test_loss > (self.min_test_loss + self.delta):
+            self.counter += 1
+            if self.counter >= self.epochs_to_wait:
+                return True
+        return False
+
+
+    ## alternative version: 
+    # def __init__(self, epochs_to_wait = 1, delta = 0):
+    #     self.epochs_to_wait = epochs_to_wait
+    #     self.delta = delta
+    #     self.min_test_loss = 0
+    #     self.counter = 0
+    #     self.early_stop = False
+
+    # def __call__(self, test_loss):
+    #     if self.min_test_loss == None:
+    #         self.min_test_loss = test_loss
+    #     elif test_loss < self.min_test_loss:
+    #         self.min_test_loss = test_loss
+    #         self.counter = 0    # reset counter to zero if test loss improves
+    #     elif test_loss > (self.min_test_loss + self.delta):
+    #         self.counter += 1
+    #         #print(f"Early stopping counter {self.counter} of {self.epochs_to_wait}")
+    #         if self.counter >= self.epochs_to_wait:
+    #             #print("Early stopping")
+    #             self.early_stop = True
+
+early_stopper = Early_stopping()
+
+for i in range(len(test_epoch_loss)):
+    #early_stopper(test_epoch_loss[i])
+    print(f"train loss: {train_epoch_loss[i]} test loss: {test_epoch_loss[i]}")
+    if early_stopper.early_stop:
+        print(f"early stop at epoch: {i}")
+        break
+```
+
+The code output for one of the runs (note: epoch 0 is first epoch):
+train loss: 0.4035276174545288 test loss: 0.919343888759613
+early stop at epoch: 0
+
+<br>
 
 ##### **Other related readings that might be of interest**
 
