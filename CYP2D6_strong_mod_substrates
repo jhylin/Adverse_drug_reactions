@@ -1,12 +1,13 @@
 CYP2D6 strong substrates
 
-generic_drug_name,notes,cyp_strength_of_evidence,drug_class,adverse_drug_reactions,first_ref,second_ref,date_checked
-carvedilol,n/a,strong,beta_blockers,"chest_pain^^, hypotension^^, cardiac_failure^^, fatigue^^, asthenia^^, upper_RTI^^, bradycardia(dose_dependent)^, edema^, hypervolemia^, orthostatic_hypotension^, hypertension^, syncope^, disturbances_of_peripheral_circulation^, diarrhea^, dyspepsia^, abdominal_pain^, melena^, periodontitis^, UTI^, micturition_disorders^, hematuria^, urinary_incontinence_in_women(pm), weight_increase^, hypercholesterolemia^, impaired_blood_glucose_control(pre_existing_diabetes)^, gout^, BUN_increased^, dehydration^, hypervolemia^, anemia^, purpura^, prothrombin_decrease^, pain_in_extremities^, back_pain^, arthralgia^, myalgia^, dizziness(dose_dependent)^, headache^, hyperesthesia^, vertigo^, visual_impairment^, abnormal_vision(dose_dependent)^, blurred_vision^, lacrimation_decreased^, eye_irritation^, pain^, malaise^, fever^, depression^, somnolence^, renal_failure_and_renal_function_abnormalities_(diffuse_vascular_disease_and/or_renal_insufficiency)^, albuminuria^, bronchitis^, pneumonia^, dyspnea^, pulmonary_edema^, asthma^, sinusitis^, pharyngitis^, rhinitis^, cough^, rales^",drugs.com,nzf,130225
+generic_drug_name,notes,cyp_type_and_cyp_strength_of_evidence,drug_class,adverse_drug_reactions,first_ref,second_ref,date_checked
+*carvedilol*,n/a,2D6_strong,beta_blockers,"chest_pain^^, hypotension^^, cardiac_failure^^, fatigue^^, asthenia^^, upper_RTI^^, bradycardia(dose_dependent)^, edema^, hypervolemia^, orthostatic_hypotension^, hypertension^, syncope^, disturbances_of_peripheral_circulation^, diarrhea^, dyspepsia^, abdominal_pain^, melena^, periodontitis^, UTI^, micturition_disorders^, hematuria^, urinary_incontinence_in_women(pm), weight_increase^, hypercholesterolemia^, impaired_blood_glucose_control(pre_existing_diabetes)^, gout^, BUN_increased^, dehydration^, hypervolemia^, anemia^, purpura^, prothrombin_decrease^, pain_in_extremities^, back_pain^, arthralgia^, myalgia^, dizziness(dose_dependent)^, headache^, hyperesthesia^, vertigo^, visual_impairment^, abnormal_vision(dose_dependent)^, blurred_vision^, lacrimation_decreased^, eye_irritation^, pain^, malaise^, fever^, depression^, somnolence^, renal_failure_and_renal_function_abnormalities_(diffuse_vascular_disease_and/or_renal_insufficiency)^, albuminuria^, bronchitis^, pneumonia^, dyspnea^, pulmonary_edema^, asthma^, sinusitis^, pharyngitis^, rhinitis^, cough^, rales^",drugs.com,nzf,130225
+*chlorpheniramine*,n/a,2D6_strong,antihistamines,"sedation^^, disturbance_in_attention^, abnormal_coordination^, dizziness^, headache^, blurred_vision^, dry_mouth^, fatigue^",drugs.com,nzf,140225
+*doxepin*,n/a,2D6_strong,tricyclic_antidepressants,"sedation^, hypoesthesia(pm), taste_disturbance(pm), dry_mouth^, contipstion^, hypertension^, arrhythmia(pm), conduction_disorder(pm),  gastroenteritis^, tongue_edema(pm), upper_abdominal_pain(pm), upper_RTI^, malaise(pm)",drugs.com,emc,140225
 
 
-chlorpheniramine
-doxepin
-eliglustat (note: also a strong CYP3A4 substrate)
+eliglustat (note: also a strong CYP3A4 substrate),n/a,3A4_strong_2D6_strong,
+
 nortriptyline
 ondansetron (note: also a moderate CYP3A4 substrate)
 oxycodone (note: also a strong CYP3A4 substrate)
