@@ -11,7 +11,9 @@ categories:
 jupyter: python3
 ---
 
-**Update on 15th Feb 25**: adding ADRs of strong and moderate CYP2D6 substrates slowly from February 2025. Also, a small discovery re. CYP data used in many ADMET prediction apps - they all seem to be using *in vitro*-based data (although I haven't checked what PubChem uses as a few cites using CYP data from it), so I think if the Flockhart table can be utilised at the same time (*in-vivo* use in humans), this may make research in ADMET more well-covered and may improve data quality even more.
+**Update on 15th Feb 2025**: adding ADRs of strong and moderate CYP2D6 substrates slowly from February 2025. 
+
+**Additional note re. CYP data on 15th Feb 2025**: **TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses**. A small discovery re. CYP data used in many ADMET prediction apps - most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
 
 Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html).
 
