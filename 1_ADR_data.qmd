@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths CYP3A4 substrates
 date: '2025-1-8'
-date-modified: '2025-2-13'
+date-modified: '2025-2-15'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -10,6 +10,8 @@ categories:
   - Notes
 jupyter: python3
 ---
+
+**Update on 15th Feb 25**: adding ADRs of strong and moderate CYP2D6 substrates slowly from February 2025. Also, a small discovery re. CYP data used in many ADMET prediction apps - they all seem to be using *in vitro*-based data (although I haven't checked what PubChem uses as a few cites using CYP data from it), so I think if the Flockhart table can be utilised at the same time (*in-vivo* use in humans), this may make research in ADMET more well-covered and may improve data quality even more.
 
 Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html).
 
