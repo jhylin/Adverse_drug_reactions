@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths CYP3A4 substrates
 date: '2025-1-8'
-date-modified: '2025-2-15'
+date-modified: '2025-2-17'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -21,13 +21,14 @@ Here are the notes regarding the strong and moderate CYP3A4 substrates used in t
 
 ##### **drug_name and cyp_strength_of_evidence source** 
 
+*note: "cyp_strength_of_evidence source" column may be renamed as "cyp_type_and_cyp_strength_of_evidence" when other CYP isoform substrates are added*
+
 This is all based on the Flockhart table of drug interactions: [https://drug-interactions.medicine.iu.edu/MainTable.aspx](https://drug-interactions.medicine.iu.edu/MainTable.aspx)
 
 Strength of evidence that the drug is metabolised by CYP3A4/5 (as quoted from above web link):
 
-- Strong Evidence: the enzyme is majorly responsible for drug metabolism.
-- Moderate Evidence: the enzyme plays a significant but not exclusive role in drug metabolism or 
-the supporting literature is not extensive.
+- Strong Evidence (may be denoted with s_ followed by CYP name e.g. s_3A4): the enzyme is majorly responsible for drug metabolism.
+- Moderate Evidence (may be denoted with m_ followed by CYP name e.g. m_3A4): the enzyme plays a significant but not exclusive role in drug metabolism or the supporting literature is not extensive.
 
 <br>
 
@@ -91,6 +92,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - quinine (a moderate CYP3A4 substrate) has all of its ADRs reported without frequencies. The most common ADRs are presented as a cluster of symptoms (known as cinchonism) and can occur during overdoses (usually very toxic) and also normal doses. These symptoms include "...tinnitus, hearing impairment, headache, nausea, vomiting, abdominal pain, diarrhoea, visual disturbances (including blindness), arrhythmias (which can have a very rapid onset), convulsions (which can be intractable), and rashes." (as quoted from NZ formulary v150 - 01 Dec 2024)
 
 - ribociclib (a moderate CYP3A4 substrate) has a listed ADR of on-treatment deaths, which were found to be associated with patients also taking letrozole or fulvestrant at the same time and/or in patients with underlying malignancy
+
+- nortriptyline (a strong CYP2D6 substrate) has no frequencies recorded for all of its ADRs - the recorded ADRs in files will be mainly based on nzf which has stated these ADRs as common ones with varying risk and extent, a good rule of thumb is to be aware of the well-known tricyclic antidepressant-related ADRs e.g. antimuscarinic effects (dry mouth, blurred vision, constipation, urinary retention)
 
 <br>
 
