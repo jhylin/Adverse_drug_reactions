@@ -6,12 +6,13 @@ generic_drug_name,notes,cyp_strength_of_evidence,drug_class,adverse_drug_reactio
 **doxepin**,n/a,strong,tricyclic_antidepressants,"sedation^, hypoesthesia(pm), taste_disturbance(pm), dry_mouth^, contipstion^, hypertension^, arrhythmia(pm), conduction_disorder(pm),  gastroenteritis^, tongue_edema(pm), upper_abdominal_pain(pm), upper_RTI^, malaise(pm)",drugs.com,emc,140225
 **eliglustat**,n/a,strong,metabolic_agents,"diarrhea^^, oropharyngeal_pain^^, arthralgia^^, back_pain^^, pain_in_extremity^^, upper_abdominal_pain^^, headache^^, migraine^^, fatigue^^, rash^, flatulence^, dyspepsia^, gastroesophageal_reflux_disease^, constipation^, palpitations^, dizziness^, asthenia^, cough^",drugs.com,emc,151124
 **nortriptyline**,*,strong,tricyclic_antidepressants,"dry_mouth, blurred_vision, constipation, urinary_retention, anxiety, dizziness, agitation, confusion, sleep_disturbances, irritability, paraesthesia, drowsiness, changes_in_blood_glucose, increased_appetite, weight_gain, anorexia, weight_loss, hyponatraemia, taste disturbance, tinnitus, urticaria, pruritus, alopecia, galactorrhoea, gynaecomastia, Brugada_syndrome(pm), angle_closure_glaucoma(pm)",nzf,drugs.com,170225
+**ondansetron**,n/a,strong,antiemetics,"headache^^, drowsiness/sedation^^, wound_problem^^, malaise/fatigue^^, diarrhea^^, constipation^^, eye_disorder^^, dizziness^, paresthesia^, shivers^, fever^, cold_sensation^, xerostomia^, localized_anal/rectal_burning_sensation^, visual_disturbance/transient_visual_disturbances^, sensation_of_warmth/flushing^, bradycardia^, hypotension^, arrhythmias^, cardiopulmonary_arrest(pm), shock(pm), hypoxia^, lower_respiratory_tract_disease^, expectoration^, cough^, shortness_of_breath(pm), laryngeal_edema(pm), stridor(pm), laryngospasm(pm), anxiety/agitation^, disturbance_in_behavior^, sleep_disturbance^, gynecological_disorder^, urinary_retention^, UTI^, rash^, pruritus^, asymptomatic_increases_in_AST/ALT^, liver_failure_and_death(pm_hep_cyto), angioedema(pm)",drugs.com,nzf,101224
+**oxycodone**,n/a,strong,opioid_analgesics,"headache^^, constipation^^, fever^^, dizziness^, serotonin_syndrome(pm), hyperalgesia(pm), allodynia(pm), pruritus^, hyperhidrosis^, rash^, dysuria^, urinary_retention^, anaphylaxis(pm), decreased_appetite^, hypoglycemia(pm), adrenal_insufficiency(pm), androgen_deficiency(pm)",drugs.com,nzf,211124
+**perhexiline**,*,strong,antianginal,"dizziness^^, headache^^, ataxia^^, weight_loss^^, hepatoxicity^, peripheral_neuropathy^, weakness^, tremors^, fainting^, hypoglycaemia^, hyperlipidaemia^, QT_prolongation^", nzf,data_sheet,190225
 
-
-ondansetron (note: also a moderate CYP3A4 substrate)
-oxycodone (note: also a strong CYP3A4 substrate)
-perhexiline
 tetrabenzine
+
+
 tramadol
 venlafaxine (note: also a moderate CYP3A4 substrate)
 

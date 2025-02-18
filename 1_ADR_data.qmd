@@ -55,6 +55,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
   
   - [drugs.com_uk_di](https://www.drugs.com/uk/) - UK drug information section in Drugs.com (equivalent to pharmaceutical manufacturers' medicines information data sheets)
 
+  - pharmaceutical manufacturers' medicines information data sheets (referenced as "data_sheet") as stated for each drug with notes
+
 - two main types of occurrences/frequencies used: 
 
   ^^ - common > 10%, 
@@ -94,6 +96,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - ribociclib (a moderate CYP3A4 substrate) has a listed ADR of on-treatment deaths, which were found to be associated with patients also taking letrozole or fulvestrant at the same time and/or in patients with underlying malignancy
 
 - nortriptyline (a strong CYP2D6 substrate) has no frequencies recorded for all of its ADRs - the recorded ADRs in files will be mainly based on nzf which has stated these ADRs as common ones with varying risk and extent, a good rule of thumb is to be aware of the well-known tricyclic antidepressant-related ADRs e.g. antimuscarinic effects (dry mouth, blurred vision, constipation, urinary retention)
+
+- perhexiline (a strong CYP2D6 substrate) has no records of medicines information in Drugs@FDA or Drugs.com so the main source of drug information is nzf and its pharmaceutical manufacturer's [medicines data sheet](https://www.medsafe.govt.nz/profs/datasheet/p/pexsigtab.pdf). The ADRs may be present for the first two to four weeks of treatment only
 
 <br>
 
