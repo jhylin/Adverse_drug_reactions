@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths CYP3A4 substrates
 date: '2025-1-8'
-date-modified: '2025-2-17'
+date-modified: '2025-2-21'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -125,3 +125,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - NMS = neuroleptic malignant syndrome
 - ECG = electrocardiogram
 - CPK = creatine phosphokinase
+- INR = international normalised ratio
