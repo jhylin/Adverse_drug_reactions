@@ -29,3 +29,5 @@ A few different .tsv/.csv files of CYP3A4 substrates data or their SMILES:
 - CYP3A4_strong_substrates.csv - contains only strong CYP3A4 substrates, drug classes along with their ADRs and reference sources
 - All_cyp3a4_smiles.tsv - contains SMILES of all the CYP3A4 substrates
 - strong_cyp3a4_smiles.tsv - contains SMILES for strong CYP3A4 substrates only
+
+*Please note that all of the CYP3A4 and 2D6 substrates curated in the datasets are based on "[The Flockhart Cytochrome P450 Drug-Drug Interaction Table](https://drug-interactions.medicine.iu.edu/MainTable.aspx)" which is continuously being updated over time (at least twice yearly as quoted from source), so the files stored here may not reflect the most up-to-date version - refer to the table directly if needing latest information*
