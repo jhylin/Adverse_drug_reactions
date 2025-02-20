@@ -46,7 +46,10 @@ tetrabenzine,n/a,s_2D6,movement_disorder_agent,"any_extrapyramidal_event^^, seda
 tramadol,n/a,s_2D6,opioid_analgesics,"nervousness^^, anxiety^^, agitation^^, tremor^^, spasticity^^, euphoria^^, emotional_lability^^, hallucinations^^, constipation^^, dyspepsia^^, dizziness^^, sedation^^, headache^^, pruritus^^, flushing^^, asthenia^^, anxiety^, euphoria^, nervousness^, sleep_disorder^, insomnia^, depression^, agitation^, apathy^, dry_mouth^, diarrhea^, abdominal_pain^, flatulence^, sore_throat^, gastroenteritis^, confusion^, coordination_disturbance^, tremor^, paresthesia^, hypoesthesia^, seizures(pm), serotonin_syndrome(pm), sweating^, dermatitis^, menopausal_symptoms^, urinary_frequency^, urinary_retention^, UTI^, vasodilation^, postural_hypotension^, chest_pain^, QT_prolongation(pm), malaise^, weakness^, pain^, influenza_like_illness^, rigors^, lethargy^, fever^, anorexia^, decreased_weight^, hyperglycemia^, hyponatremia(pm), adrenal_insufficiency(pm), androgen_deficiency(pm), miosis^, visual_disturbance^, blurred_vision^, hypertonia^, arthralgia^, back_pain^, limb_pain^, neck_pain^, muscle_cramps^, respiratory_depression(dose-dependent)^, joint_stiffness^, muscle_twitching^, myalgia^, aggravated_osteoarthritis^",drugs.com,nzf,200225
 
 
-venlafaxine (note: also a moderate CYP3A4 substrate),
+venlafaxine (note: also a moderate CYP3A4 substrate - likely recent new addition in Flockhart table as a moderate CYP3A4 substrate)
+
+
+zolpidem (likely recent new addition in Flockhart table as a moderate CYP3A4 substrate),
 
 ---
 
