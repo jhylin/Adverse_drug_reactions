@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths CYP3A4 substrates
 date: '2025-1-8'
-date-modified: '2025-2-21'
+date-modified: '2025-2-24'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -80,6 +80,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded here)
 
 - some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
+
+- one other thing I'd like to mention is that all the ADRs recorded in this repository are not merely a copy-and-paste action from the drug reference sources, they also include or are integrated with the ones I've encountered from my previous pharmacist work experience (in the hope to better reflect bedside or clinical ADRs, and this is also why the data collection part is taking time...)
 
 ###### **Notes for specific drugs**
 
