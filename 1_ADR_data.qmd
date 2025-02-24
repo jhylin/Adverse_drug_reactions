@@ -83,6 +83,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - one other thing I'd like to mention is that all the ADRs recorded in this repository are not merely a copy-and-paste action from the drug reference sources, they also include or are integrated with the ones I've encountered from my previous pharmacist work experience (in the hope to better reflect bedside or clinical ADRs, and this is also why the data collection part is taking time...)
 
+- serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
+
 ###### **Notes for specific drugs**
 
 - hydrocortisone (a moderate CYP3A4 substrate) has no reported ADR frequencies at all for its ADRs as they are entirely dependent on the dosage and duration of use (ADRs tend to be unnoticeable at appropriate low doses for short durations)
@@ -100,6 +102,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - nortriptyline (a strong CYP2D6 substrate) has no frequencies recorded for all of its ADRs - the recorded ADRs in files will be mainly based on nzf which has stated these ADRs as common ones with varying risk and extent, a good rule of thumb is to be aware of the well-known tricyclic antidepressant-related ADRs e.g. antimuscarinic effects (dry mouth, blurred vision, constipation, urinary retention)
 
 - perhexiline (a strong CYP2D6 substrate) has no records of medicines information in Drugs@FDA or Drugs.com so the main source of drug information is nzf and its pharmaceutical manufacturer's [medicines data sheet](https://www.medsafe.govt.nz/profs/datasheet/p/pexsigtab.pdf). The ADRs may be present for the first two to four weeks of treatment only
+
+- escitalopram (a moderate CYP2D6 substrate) is also known to induce selective serotonin reuptake inhibitor-related hyponatraemia (through inappropriate antidiuretic hormone secretion) when certain risk factors are also present at the same time e.g. diuretic use, female gender, low body weight, geriatric populations along with low baseline sodium level
 
 <br>
 
@@ -128,3 +132,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - ECG = electrocardiogram
 - CPK = creatine phosphokinase
 - INR = international normalised ratio
+- LFT = liver funtion tests

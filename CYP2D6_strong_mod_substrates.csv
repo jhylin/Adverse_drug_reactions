@@ -13,10 +13,32 @@ tetrabenzine,n/a,strong,movement_disorder_agent,"any_extrapyramidal_event^^, sed
 tramadol,n/a,strong,opioid_analgesics,"nervousness^^, anxiety^^, agitation^^, tremor^^, spasticity^^, euphoria^^, emotional_lability^^, hallucinations^^, constipation^^, dyspepsia^^, dizziness^^, sedation^^, headache^^, pruritus^^, flushing^^, asthenia^^, anxiety^, euphoria^, nervousness^, sleep_disorder^, insomnia^, depression^, agitation^, apathy^, dry_mouth^, diarrhea^, abdominal_pain^, flatulence^, sore_throat^, gastroenteritis^, confusion^, coordination_disturbance^, tremor^, paresthesia^, hypoesthesia^, seizures(pm), serotonin_syndrome(pm), sweating^, dermatitis^, menopausal_symptoms^, urinary_frequency^, urinary_retention^, UTI^, vasodilation^, postural_hypotension^, chest_pain^, QT_prolongation(pm), malaise^, weakness^, pain^, influenza_like_illness^, rigors^, lethargy^, fever^, anorexia^, decreased_weight^, hyperglycemia^, hyponatremia(pm), adrenal_insufficiency(pm), androgen_deficiency(pm), miosis^, visual_disturbance^, blurred_vision^, hypertonia^, arthralgia^, back_pain^, limb_pain^, neck_pain^, muscle_cramps^, respiratory_depression(dose-dependent)^, joint_stiffness^, muscle_twitching^, myalgia^, aggravated_osteoarthritis^",drugs.com,nzf,200225
 venlafaxine,n/a,strong,serotonin_norepinephrine_reuptake_inhibitors,"dry_mouth^^, constipation^^, headache^^, sedation^^, dizziness^^, tremor^^, insomnia^^, nervousness^^, anxiety^^, sweating^^, night_sweats^^, anorexia^^, asthenia^^, abnormal_ejaculation^^, abdominal_pain^, diarrhea^, dyspepsia^, flatulence^, akathisia^, amnesia^, dysgeusia^, hypertonia^, hypesthesia^, increased_muscle_tone^, migraine^, paresthesia^, taste_disturbance^, vertigo^, abnormal_coordination(pm), impaired_balance(pm), involuntary_movements(pm), NMS_like_reactions(pm), shock_like_electrical_sensations(pm), abnormal_dreams^, abnormal_thinking^, agitation^, confusion^, depression^, libido_decreased^, catatonia(pm), confusional_state(pm), panic(pm), paranoia(pm), psychotic_disorder(pm), ecchymosis^, hyperhidrosis^, pruritus^, rash^, hypercholesterolemia^, appetite_disturbance^, weight_changes^, LDH_increased(pm), accidental_injury^, chills^, fatigue^, fever^, tinnitus^, trauma^, congenital_anomalies(pm), albuminuria^, enlarged_prostate^, erectile_dysfunction^, metrorrhagia^, pollakiuria^, prostatic_disorder^, prostatitis^, urinary_frequency^, urinary_retention^, vaginitis^, proteinuria(pm), chest_pain^, edema^, hot_flushes^, hypertension(dose-dependent)^, palpitation^, postural_hypotension^, tachycardia^, vasodilation^, atrial_fibrillation(pm), deep_vein_thrombophlebitis(pm), ECG_abnormalities(pm), stress_cardiomyopathy(pm), supraventricular_tachycardia(pm), Takotsubo_cardiomyopathy(pm), ventricular_extrasystole(pm), bronchitis^, cough_increased^, dyspnea^, pharyngitis^, sinusitis^, visual_disturbance^, mydriasis^, neck_pain^, trismus^, twitching^, bone_fracture(pm), CPK_increased(pm), flu_syndrome^, infection^, INR_increased(pm), prolonged_partial_thromboplastin_time(pm), prothrombin_time_increased(pm), fatty_liver(pm), GGT_elevation(pm), hepatic_reactions(pm), liver_damage(pm), liver_failure(pm), liver_necrosis(pm), renal_failure(pm)",drugs.com,nzf,210225
 
+*work-in-progress below*
 
 CYP2D6 moderate substrates
 
-escitalopram
+escitalopram,*,mod,selective_serotonin_reuptake_inhibitors,
+"insomnia^^, headache^^, sedation^^, diarrhea^^, ejaculation_disorder^^, 
+
+abnormal_dreams^, agitation^, anxiety^, nervousness^, restlessness^, acute_psychosis(pm), 
+completed_suicide(pm), delirium(pm), delusion(pm), disorientation(pm), non_accidental_overdose(pm), 
+mood_swings(pm), nightmare(pm), psychotic_disorder(pm), withdrawal_syndrome(pm), dizziness^, lethargy^, 
+paresthesia^, tremor^, dysarthria(pm), NMS(pm), nystagmus(pm), parkinsonism(pm), restless_legs(pm), 
+tardive_dyskinesia(pm), palpitation^, abnormal_bleeding(pm), atrial_fibrillation(pm), cardiac_failure(pm), 
+deep_vein_thrombosis(pm), hypertensive_crisis(pm), phlebitis(pm), postural_hypotension(pm), thrombosis(pm), 
+ventricular_arrhythmia(pm), ventricular_tachycardia(pm), abdominal_pain^, constipation^, dry_mouth^, dyspepsia^, 
+flatulence^, indigestion^, dysphagia(pm), pancreatitis(pm), stomatitis(pm), appetite_disturbance^, 
+weight_increased^, hypoglycemia(pm), hypokalemia(pm), fatigue^, fever^, spontaneous_abortion(pm), 
+decreased_libido^, menstrual_disorder^, vaginal_bleeding^, increased_sweating^, epidermal_necrolysis(pm), 
+erythema_multiforme(pm), Stevens_Johnson_syndrome(pm), toxic_epidermal_necrolysis(pm), hyperprolactinemia(pm), 
+agranulocytosis(pm), aplastic_anemia(pm), decreased_prothrombin(pm), hemolytic_anemia(pm), 
+idiopathic_thrombocytopenia_purpura(pm), increased_INR(pm), abnormal_LFT(pm), fulminant_hepatitis(pm), 
+hepatic_failure(pm), hepatic_necrosis(pm), hepatitis(pm), increased_bilirubin(pm), 
+hypersensitivity(pm), photosensitivity_reaction(pm), influenza_like_symptoms^, arthralgia^, back_pain^, 
+myalgia^, neck/shoulder_pain^, rhabdomyolysis(pm), angle_closure_glaucoma(pm), diplopia(pm), acute_renal_failure(pm), 
+pharyngitis^, rhinitis^, sinusitis^, upper_RTI^, pulmonary_embolism(pm), pulmonary_hypertension_of_the_newborn(pm)"
+
+
 lidocaine
 metoclopramide
 mexiletine
