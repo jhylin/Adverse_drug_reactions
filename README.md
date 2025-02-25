@@ -2,7 +2,9 @@
 
 This work can be read in conjunction with the previous "[cytochrome P450 and small drug molecules](https://jhylin.github.io/Data_in_life_blog/posts/20_Cyp3a4_2d6_inh/1_CYP450_drugs.html)" post as it is a continuation of this project.
 
-ADRs data collection for CYP3A4 substrates has been completed for the current post. Potentially, more data can be collected on other different CYP substrates in the future - for February 2025, ADRs for CYP2D6 substrate are being collected.
+Ongoing ADRs data collection for other cytochrome P450 (CYP) substrates:
+- ADRs for CYP2D6 substrate have been collected in February 2025
+- three new CYP3A4 substrates/drugs to be added
 
 #### **Documents**:
 
@@ -23,12 +25,16 @@ A few different Python scripts are used in the 2_ADR_regressor.ipynb notebook:
 - words_tensors.py - for converting ADRs into PyTorch tensors
 - Tensors_for_adrs_interactive.py - showing step-by-step outputs how the words_tensors.py is constructed (to be used in VS Code where each line of code can be run like a Jupyter cell)
 
-A few different .tsv/.csv files of CYP3A4 substrates data or their SMILES:
+A few different .tsv/.csv files of CYP3A4 substrates data or their SMILES (note: file names may change over time due to ongoing data collections):
 - All_CYP3A4_substrates - contains all CYP3A4 substrates (drug names), drug classes along with their ADRs and reference sources
 - CYP3A4_mod_substrates.csv - contains only moderate CYP3A4 substrates, drug classes along with their ADRs and reference sources
 - CYP3A4_strong_substrates.csv - contains only strong CYP3A4 substrates, drug classes along with their ADRs and reference sources
-- All_cyp3a4_smiles.tsv - contains SMILES of all the CYP3A4 substrates
+- all_cyp3a4_smiles.tsv - contains SMILES of all the CYP3A4 substrates
 - strong_cyp3a4_smiles.tsv - contains SMILES for strong CYP3A4 substrates only
+- all_cyp2d6_substrates.csv - contains all strong and moderate CYP2D6 substrates, drug classes along with their ADRs and reference sources
+- cyp_substrates_adrs.csv - *work-in-progress* - eventually (hopefully) it'll contain (all) CYP substrates with information such as drug classes, ADRs and references sources
+
+Strengths of evidence for CYP3A4 and 2D6 substrates are only last checked on 24th Feb 2025.
 
 *Please note that all of the CYP3A4 and 2D6 substrates curated in the datasets are based on "[The Flockhart Cytochrome P450 Drug-Drug Interaction Table](https://drug-interactions.medicine.iu.edu/MainTable.aspx)" which is continuously being updated over time (at least twice yearly as quoted from source), so the files stored here may not reflect the most up-to-date version - refer to the table directly if needing latest information*
 
