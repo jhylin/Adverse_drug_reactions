@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths CYP3A4 substrates
 date: '2025-1-8'
-date-modified: '2025-2-24'
+date-modified: '2025-2-26'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -84,6 +84,10 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - one other thing I'd like to mention is that all the ADRs recorded in this repository are not merely a copy-and-paste action from the drug reference sources, they also include or are integrated with the ones I've encountered from my previous pharmacist work experience (in the hope to better reflect bedside or clinical ADRs, and this is also why the data collection part is taking time...)
 
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
+
+- ADRs can be adjusted according to project needs (e.g. some can be omitted e.g. gastrointestinal tract-related ADRs such as flatulence or abdominal discomforts may be removed, especially if the project is investigating more life-threatening ADRs initally)
+
+<br>
 
 ###### **Notes for specific drugs**
 
