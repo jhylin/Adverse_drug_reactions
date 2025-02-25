@@ -105,6 +105,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - escitalopram (a moderate CYP2D6 substrate) is also known to induce selective serotonin reuptake inhibitor-related hyponatraemia (through inappropriate antidiuretic hormone secretion) when certain risk factors are also present at the same time e.g. diuretic use, female gender, low body weight, geriatric populations along with low baseline sodium level
 
+- lidocaine (a moderate CYP2D6 substrate) doesn't have ADR frequencies recorded - ADRs for amide local anaesthetics apply instead (mainly central nervous and cardiovascular system-related) and toxicity is commonly dose-dependent (e.g. increased risk due to high plasma concentration); hypersensitivity reactions may sometimes be due to preservatives used (e.g. parabens)
+
 <br>
 
 ##### **Abbreviations used**
