@@ -4,6 +4,7 @@ with plan to slowly add other CYP isoform substrates' ADRs over time*
 CYP3A4 & 2D6 substrates
 
 generic_drug_name,notes,cyp_type_and_cyp_strength_of_evidence,drug_class,adverse_drug_reactions,first_ref,second_ref,date_checked
+bosentan,n/a,s_3A4,agents_for_pulmonary_hypertension,"abnormal_LFT^^, headache^^, RTI^^, hemoglobin_decreased^^, sperm_count_decreased^^, edema^^, hepatic_cirrhosis(pm), liver_failure(pm), jaundice(pm), syncope^, sinusitis^, nasal_congestion^, sinus_congestion^, rhinitis^, oropharyngeal_pain^, epistaxis^, nasopharyngitis^, idiopathic_pulmonary_fibrosis^, anemia^, hematocrit_decreased^, thrombocytopenia(pm), neutropenia(pm), leukopenia(pm), flushing^, hypotension^, palpitation^, orthostatic_hypotension^, unstable_angina^, hot_flush^, gastroesophageal_reflux_disease^, diarrhea^, pruritus^, erythema^, angioedema(pm), DRESS(pm), rash(pm), dermatitis(pm), arthralgia^, joint_swelling^, blurred_vision^, chest_pain^, peripheral_edema^, influenza_like_illness^, vertigo^, fever^, chest_pain^, hypersensitivity_reaction^, anaphylaxis(pm)",drugs.com,nzf,270225
 carbamazepine,n/a,s_3A4,antiepileptics,"constipation^^, leucopenia^^, dizziness^^, sedation^^, ataxia^^, elevated_GGT^^, allergic_skin_reactions^^, eosinophilia^, thrombocytopenia^, neutropenia^, headache^, tremor^, elevated_ALP^, pruritus^, paresthesia^, diplopia^, blurred_vision^, hyponatremia^, fluid_retention^, oedema^, weight_gain^, reduced_plasma_osmolarity_(ADH_like_effect)^, vertigo^",drugs.com,nzf,211024
 eliglustat,n/a,s_3A4_s_2D6,metabolic_agents,"diarrhea^^, oropharyngeal_pain^^, arthralgia^^, back_pain^^, pain_in_extremity^^, upper_abdominal_pain^^, headache^^, migraine^^, fatigue^^, rash^, flatulence^, dyspepsia^, gastroesophageal_reflux_disease^, constipation^, palpitations^, dizziness^, asthenia^, cough^",drugs.com,emc,151124
 flibanserin,n/a,s_3A4,CNS_agents,"dizziness^^, sedation^^, fatigue^, vertigo^, accidental_injury^, insomnia^, anxiety^, dry_mouth^, constipation^, metrorrhagia^, abdominal_pain^, anaphylaxis(pm), angioedema(pm), pruritus(pm), urticaria(pm)",drugs.com,Drugs@FDA,161124
@@ -49,8 +50,6 @@ mexiletine,n/a,m_2D6,antiarrhythmics,"anorexia^^, constipation^^, dyspepsia^^, d
 *work-in-progress below*
 
 *new additions for CYP3A4 substrates below*
-
-bosentan,n/a,s_3A4,
 
 trazodone,n/a,s_3A4,
 

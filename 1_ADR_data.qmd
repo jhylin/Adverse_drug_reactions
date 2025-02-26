@@ -139,3 +139,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - CPK = creatine phosphokinase
 - INR = international normalised ratio
 - LFT = liver funtion tests
+- DRESS = drug reaction with eosinophilia and systemic symptoms
