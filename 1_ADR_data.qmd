@@ -140,3 +140,5 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - INR = international normalised ratio
 - LFT = liver funtion tests
 - DRESS = drug reaction with eosinophilia and systemic symptoms
+- WBC = white blood cells
+- RBC = red blood cells

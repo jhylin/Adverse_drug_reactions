@@ -5,6 +5,7 @@ This work can be read in conjunction with the previous "[cytochrome P450 and sma
 Ongoing ADRs data collection for other cytochrome P450 (CYP) substrates:
 - ADRs for CYP2D6 substrate have been collected in February 2025
 - three new CYP3A4 substrates/drugs to be added
+- CYP2C19 substrates next
 
 #### **Documents**:
 
