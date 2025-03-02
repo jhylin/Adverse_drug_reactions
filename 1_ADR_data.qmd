@@ -87,6 +87,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - ADRs can be adjusted according to project needs (e.g. some can be omitted e.g. gastrointestinal tract-related ADRs such as flatulence or abdominal discomforts may be removed, especially if the project is investigating more life-threatening ADRs initally)
 
+- Several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (may need to omit/remove duplicates)
+
 <br>
 
 ###### **Notes for specific drugs**
