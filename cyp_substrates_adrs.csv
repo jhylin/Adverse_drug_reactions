@@ -50,12 +50,13 @@ mexiletine,n/a,m_2D6,antiarrhythmics,"anorexia^^, constipation^^, dyspepsia^^, d
 carisoprodol,n/a,s_2C19,skeletal_muscle_relaxants,"drowsiness^^, dizziness^, headache^, ataxia(pm), tremor(pm), seizures(pm), tachycardia(pm), postural_hypotension(pm), syncope(pm), facial_flushing(pm), agitation(pm), irritability(pm), depressive_reactions(pm), insomnia(pm), vertigo(pm), dependence(pm), withdrawal(pm), epigastric_discomfort(pm), leukopenia(pm), pancytopenia(pm)",drugs.com,Drugs@FDA,030325
 citalopram,n/a,s_2C19,selective_serotonin_reuptake_inhibitors,"headache^^, sedation^^, dizziness^^, dry_mouth^^, insomnia^^, asthenia^^, increased_sweating^^, amnesia^, extrapyramidal_disorder^, migraine^, paresthesia^, tremor^, choreoathetosis(pm), myoclonus(pm), NMS(pm), nystagmus(pm), abdominal_pain^, constipation^, diarrhea^, dyspepsia^, flatulence^, increased_saliva^, taste_disturbance^, pancreatitis(pm), abnormal_dreams^, aggravated_depression^, agitation^, anxiety^, apathy^, confusion^, depression^, impaired_concentration^, nervousness^, suicide_attempt^, sleep_disorder^, delirium(pm), withdrawal_syndrome(pm), fever^, tinnitus^, spontaneous_abortion(pm), rash^, pruritus^, epidermal_necrolysis(pm), erythema_multiforme(pm), amenorrhea^, decreased_libido^, dysmenorrhea^, ejaculation_disorders^, menstrual_disorders^, polyuria^, micturition_disorders^, coughing^, pharyngitis^, rhinitis^, sinusitis^, upper_RTI^, chest_pain^, hypotension^, palpitations^, postural_hypotension^, tachycardia^, thrombosis(pm), arthralgia^, back_pain^, myalgia^, rhabdomyolysis(pm), anorexia^, weight_disturbance^, appetite_disturbance^, abnormal_ocular_accommodation^, angle-closure glaucoma(pm), increased_ALP^, cholestatic_hepatitis(pm), hepatic_necrosis(pm), influenza_like_symptoms^, decreased_prothrombin(pm), hemolytic_anemia(pm), prolactinemia(pm), acute_renal_failure(pm), allergic_reaction(pm)",drugs.com,nzf,030325
 cyclophosphamide,*,m_2C19,alkylating_agents,"myelosuppression^^, alopecia^^, cystitis^^, microhematuria^^, fever^^, febrile_neutropenia^, mucosal_inflammation^, impairment_of_spermatogenesis^, chills^, malaise^, abnormal_hepatic_function^",drugs.com,nzf,040325
+doxepin,n/a,m_2C19,tricyclic_antidepressants,"sedation^, hypoesthesia(pm), dysgeusia(pm), dry_mouth^, constipation^, hypertension^, arrhythmia(pm), conduction_disorder(pm), gastroenteritis^, tongue_edema(pm), upper_abdominal_pain(pm), upper_RTI^, malaise(pm)",drugs.com,emc,040325
+
 
 CYP2C19 substrates
 
 *work-in-progress*
 
-doxepin,n/a,m_2C19,
 esomeprazole,n/a,s_2C19,
 labetalol,n/a,m_2C19,
 mavacamten,n/a,s_2C19,
