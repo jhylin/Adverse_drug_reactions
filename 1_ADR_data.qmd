@@ -113,6 +113,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - lidocaine (a moderate CYP2D6 substrate) doesn't have ADR frequencies recorded - ADRs for amide local anaesthetics apply instead (mainly central nervous and cardiovascular system-related) and toxicity is commonly dose-dependent (e.g. increased risk due to high plasma concentration); hypersensitivity reactions may sometimes be due to preservatives used (e.g. parabens)
 
+- cyclophosphamide (a moderate 2C19 substrate) is a cytotoxic drug in the class of aklyating agents. One of its notable ADRs is urothelial toxicity (presented as haemorrhagic cystitis) caused by acrolein (its urinary metabolite via hepatic metabolism). Ways to alleviate this is to increase fluid intake for at least 24 to 48 hours after intravenous injection or use mesna. High dose of cyclophosphamide may also cause cardiotoxicity.
+
 <br>
 
 ##### **Abbreviations used**
