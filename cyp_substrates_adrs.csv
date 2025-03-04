@@ -52,11 +52,16 @@ citalopram,n/a,s_2C19,selective_serotonin_reuptake_inhibitors,"headache^^, sedat
 cyclophosphamide,*,m_2C19,alkylating_agents,"myelosuppression^^, alopecia^^, cystitis^^, microhematuria^^, fever^^, febrile_neutropenia^, mucosal_inflammation^, impairment_of_spermatogenesis^, chills^, malaise^, abnormal_hepatic_function^",drugs.com,nzf,040325
 doxepin,n/a,m_2C19,tricyclic_antidepressants,"sedation^, hypoesthesia(pm), dysgeusia(pm), dry_mouth^, constipation^, hypertension^, arrhythmia(pm), conduction_disorder(pm), gastroenteritis^, tongue_edema(pm), upper_abdominal_pain(pm), upper_RTI^, malaise(pm)",drugs.com,emc,040325
 esomeprazole,n/a,s_2C19,proton_pump_inhibitors,"headache^^, flatulence^^, dizziness^, sedation^, taste_disturbance^, vertigo^, abdominal_pain^, benign_fundic_gland_polyps^, constipation^, diarrhea^, dry_mouth^, duodenal_ulcer_hemorrhage^, epigastric pain^, gastritis^, regurgitation^, tooth_disorder^, c_diff_associated_diarrhea(pm), fundic_gland_polyps(pm), hemorrhagic_necrotic_gastritis(pm), pancreatitis(pm), cough^, RTI^, sinusitis^, tachypnea^, fever^, pruritus^, cutaneous_lupus_erythematosus(pm), systemic_lupus_erythematosus(pm), hypertension^, back_pain^, bone_fracture(pm), increased_serum_gastrin^, viral_infection^, ALT_increased^, irreversible_visual_impairment(pm), loss_of_vision(pm), acute_interstitial_nephritis(pm), impaired_renal_function(pm), increased_creatinine(pm), nephrosis(pm)",drugs.com,Drugs@FDA,040325
+labetalol,n/a,m_2C19,beta_blockers,"dizziness^^, edema^, postural_hypotension^, dyspepsia^, transient_elevations_of_LFT^, headache^, taste_disturbance^, vertigo^, paresthesia^, scalp_tingling^, vision_abnormality^, IFIS_during_cataract_surgery(pm), nasal_congestion^, dyspnea^, fatigue^",drugs.com,nzf,050325
 
 CYP2C19 substrates
 
 *work-in-progress*
 
-labetalol,n/a,m_2C19,
 mavacamten,n/a,s_2C19,
+"
+
+"
+
+
 r-mephobarbital,n/a,s_2C19,

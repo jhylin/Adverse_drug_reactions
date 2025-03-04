@@ -146,3 +146,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - DRESS = drug reaction with eosinophilia and systemic symptoms
 - WBC = white blood cells
 - RBC = red blood cells
+- IFIS = intraoperative floppy iris syndrome
