@@ -113,7 +113,9 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - lidocaine (a moderate CYP2D6 substrate) doesn't have ADR frequencies recorded - ADRs for amide local anaesthetics apply instead (mainly central nervous and cardiovascular system-related) and toxicity is commonly dose-dependent (e.g. increased risk due to high plasma concentration); hypersensitivity reactions may sometimes be due to preservatives used (e.g. parabens)
 
-- cyclophosphamide (a moderate 2C19 substrate) is a cytotoxic drug in the class of aklyating agents. One of its notable ADRs is urothelial toxicity (presented as haemorrhagic cystitis) caused by acrolein (its urinary metabolite via hepatic metabolism). Ways to alleviate this is to increase fluid intake for at least 24 to 48 hours after intravenous injection or use mesna. High dose of cyclophosphamide may also cause cardiotoxicity.
+- cyclophosphamide (a moderate CYP2C19 substrate) is a cytotoxic drug in the class of aklyating agents. One of its notable ADRs is urothelial toxicity (presented as haemorrhagic cystitis) caused by acrolein (its urinary metabolite via hepatic metabolism). Ways to alleviate this is to increase fluid intake for at least 24 to 48 hours after intravenous injection or use mesna. High dose of cyclophosphamide may also cause cardiotoxicity.
+
+- r-mephobarbital (a strong CYP2C19 substrate), manufactured previously as mephobarbital (also known as methylphenobarbital), is currently not commonly prescribed (discontinued from 2011-12). One of the likely reasons could be due to its metabolism by CYP enzymes to phenobarbital, which is also available as an antiepileptic drug. Other possible reasons are its higher risk from overdose and drug dependency, so often barbiturate-based drug is replaced with other antiepileptics or non-antiepileptics instead depending on indications. Its ADR is based on this medicines data sheet [link](https://www.drugs.com/pro/mebaral.html#s-34071-1) from its last pharmaceutical manufacturer (Lundbeck Inc.)
 
 <br>
 

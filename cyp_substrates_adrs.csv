@@ -54,10 +54,4 @@ doxepin,n/a,m_2C19,tricyclic_antidepressants,"sedation^, hypoesthesia(pm), dysge
 esomeprazole,n/a,s_2C19,proton_pump_inhibitors,"headache^^, flatulence^^, dizziness^, sedation^, taste_disturbance^, vertigo^, abdominal_pain^, benign_fundic_gland_polyps^, constipation^, diarrhea^, dry_mouth^, duodenal_ulcer_hemorrhage^, epigastric pain^, gastritis^, regurgitation^, tooth_disorder^, c_diff_associated_diarrhea(pm), fundic_gland_polyps(pm), hemorrhagic_necrotic_gastritis(pm), pancreatitis(pm), cough^, RTI^, sinusitis^, tachypnea^, fever^, pruritus^, cutaneous_lupus_erythematosus(pm), systemic_lupus_erythematosus(pm), hypertension^, back_pain^, bone_fracture(pm), increased_serum_gastrin^, viral_infection^, ALT_increased^, irreversible_visual_impairment(pm), loss_of_vision(pm), acute_interstitial_nephritis(pm), impaired_renal_function(pm), increased_creatinine(pm), nephrosis(pm)",drugs.com,Drugs@FDA,040325
 labetalol,n/a,m_2C19,beta_blockers,"dizziness^^, edema^, postural_hypotension^, dyspepsia^, transient_elevations_of_LFT^, headache^, taste_disturbance^, vertigo^, paresthesia^, scalp_tingling^, vision_abnormality^, IFIS_during_cataract_surgery(pm), nasal_congestion^, dyspnea^, fatigue^",drugs.com,nzf,050325
 mavacamten,n/a,s_2C19,cardiovascular_agents,"dizziness^^, headache^^, nasopharyngitis^^, dyspnea^^, reduced_LVEF^, atrial_fibrillation^, palpitations^, angina_pectoris^, heart_failure^, systolic_dysfunction^, diarrhea^, gastroesophageal_reflux_disease^, back_pain^, arthralgia^, syncope^, fatigue^, upper_RTI^, cough^",drugs.com,Drugs@FDA,050325
-
-
-CYP2C19 substrates
-
-*work-in-progress*
-
-r-mephobarbital,n/a,s_2C19,
+r-mephobarbital,*,s_2C19,antiepileptics,"sedation^",drugs.com,data_sheet,050325
