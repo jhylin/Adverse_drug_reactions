@@ -150,3 +150,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - RBC = red blood cells
 - IFIS = intraoperative floppy iris syndrome
 - LVEF = left ventricular ejection fraction
+- AGEP = acute generalized exanthematous pustulosis

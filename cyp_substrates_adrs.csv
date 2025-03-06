@@ -54,11 +54,12 @@ esomeprazole,n/a,s_2C19,proton_pump_inhibitors,"headache^^, flatulence^^, dizzin
 labetalol,n/a,m_2C19,beta_blockers,"dizziness^^, edema^, postural_hypotension^, dyspepsia^, transient_elevations_of_LFT^, headache^, taste_disturbance^, vertigo^, paresthesia^, scalp_tingling^, vision_abnormality^, IFIS_during_cataract_surgery(pm), nasal_congestion^, dyspnea^, fatigue^",drugs.com,nzf,050325
 mavacamten,n/a,s_2C19,cardiovascular_agents,"dizziness^^, headache^^, nasopharyngitis^^, dyspnea^^, reduced_LVEF^, atrial_fibrillation^, palpitations^, angina_pectoris^, heart_failure^, systolic_dysfunction^, diarrhea^, gastroesophageal_reflux_disease^, back_pain^, arthralgia^, syncope^, fatigue^, upper_RTI^, cough^",drugs.com,Drugs@FDA,050325
 r-mephobarbital,*,s_2C19,antiepileptics,"sedation^",drugs.com,data_sheet,050325
+celecoxib,n/a,m_2C9,COX-2_inhibitors,"abdominal_pain^, diarrhea^, dyspepsia^, flatulence^, peripheral_edema^, vasculitis(pm), dizziness^, headache^, cerebral_hemorrhage(pm), ageusia(pm), anosmia(pm), rash^, erythema_multiforme(pm), dermatitis_exfoliative(pm), Stevens_Johnson_syndrome(pm), toxic_epidermal_necrolysis(pm), DRESS(pm), AGEP(pm), dermatitis_bullous(pm), agranulocytosis(pm), aplastic_anemia(pm), pancytopenia(pm), leukopenia(pm), borderline_AST_or_ALT_elevations^, hepatitis(pm), acute_liver_failure(pm), jaundice(pm), hepatic_necrosis(pm), cholestasis(pm), cholestatic_hepatitis(pm), liver_transplant(pm), hepatic_enzymes_increased(pm), pharyngitis^, rhinitis^, sinusitis^, upper_RTI^, pneumonitis(pm), tubulointerstitial_nephritis(pm), nephrotic_syndrome(pm), glomerulonephritis_minimal_lesion(pm), insomnia^, hallucination(pm), conjunctivitis(pm), sepsis(pm), anaphylactic_shock(pm), anaphylactic_reaction(pm), angioedema(pm), hypoglycemia(pm), hyponatremia(pm), impaired_female_fertility(pm), UTI^",drugs.com,nzf,060325
 
+*work-in-progress*
 
 CYP2C9 substrates
 
-celecoxib,n/a,m_2C9,
 flurbiprofen,n/a,m_2C9,
 glimepiride,n/a,m_2C9,
 glyburide/glibenclamide,n/a,m_2C9,
