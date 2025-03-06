@@ -81,6 +81,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
 
+- postmarketing reports are limited to the experiences of certain unknown population sizes using the specific medicines, therefore it is not possible to directly extrapolate the frequencies of these reports
+
 - one other thing I'd like to mention is that all the ADRs recorded in this repository are not merely a copy-and-paste action from the drug reference sources, they also include or are integrated with the ones I've encountered from my previous pharmacist work experience (in the hope to better reflect bedside or clinical ADRs, and this is also why the data collection part is taking time...)
 
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
@@ -117,6 +119,10 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - r-mephobarbital (a strong CYP2C19 substrate), manufactured previously as mephobarbital (also known as methylphenobarbital), is currently not commonly prescribed (discontinued from 2011-12). One of the likely reasons could be due to its metabolism by CYP enzymes to phenobarbital, which is also available as an antiepileptic drug. Other possible reasons are its higher risk from overdose and drug dependency, so often barbiturate-based drug is replaced with other antiepileptics or non-antiepileptics instead depending on indications. Its ADR is based on this medicines data sheet [link](https://www.drugs.com/pro/mephobarbital.html) from its last pharmaceutical manufacturer (Lundbeck Inc.)
 
+- flurbiproen (a moderate CYP2C9 substrate) is one of the non-steroidal anti-inflammatory drugs which are well-known to be associated with cardiovascular, gastrointestinal (cyclo-oxygenase-2 selective inhibitors may have lower risk) and renal-related risks, therefore most of the ADRs recorded, including postmarketing reports, will focus on these physiological influences mainly
+
+- glimepiride (a moderate CYP2C9 substrate) is one of the sulfonylureas used for blood glucose control in type-2 diabetics. One of its postmarketing reports of "disulfiram-like reaction" is about the unpleasant effects (e.g. facial flushing, headache, palpitations, tachycardia) experienced after alcohol consumption (note: disulfiram is another drug often used for treating alcohol dependence)
+
 <br>
 
 ##### **Abbreviations used**
@@ -151,3 +157,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - IFIS = intraoperative floppy iris syndrome
 - LVEF = left ventricular ejection fraction
 - AGEP = acute generalized exanthematous pustulosis
+- COX-2 = cyclo-oxygenase-2
+- NSAIDs = non-steroidal anti-inflammatory drugs
+- SIADH = syndrome of inappropriate antidiuretic hormone secretion
+- G6PD = glucose-6-phosphate dehydrogenase
