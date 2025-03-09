@@ -1,7 +1,6 @@
-*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4 & CYP2D6 substrates, 
+*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6 and 2C19 substrates, 
 with plan to slowly add other CYP isoform substrates' ADRs over time*
 
-CYP3A4 & 2D6 substrates
 
 generic_drug_name,notes,cyp_type_and_cyp_strength_of_evidence,drug_class,adverse_drug_reactions,first_ref,second_ref,date_checked
 bosentan,n/a,s_3A4,agents_for_pulmonary_hypertension,"abnormal_LFT^^, headache^^, RTI^^, hemoglobin_decreased^^, sperm_count_decreased^^, edema^^, hepatic_cirrhosis(pm), liver_failure(pm), jaundice(pm), syncope^, sinusitis^, nasal_congestion^, sinus_congestion^, rhinitis^, oropharyngeal_pain^, epistaxis^, nasopharyngitis^, idiopathic_pulmonary_fibrosis^, anemia^, hematocrit_decreased^, thrombocytopenia(pm), neutropenia(pm), leukopenia(pm), flushing^, hypotension^, palpitation^, orthostatic_hypotension^, unstable_angina^, hot_flush^, gastroesophageal_reflux_disease^, diarrhea^, pruritus^, erythema^, angioedema(pm), DRESS(pm), rash(pm), dermatitis(pm), arthralgia^, joint_swelling^, blurred_vision^, chest_pain^, peripheral_edema^, influenza_like_illness^, vertigo^, fever^, chest_pain^, hypersensitivity_reaction^, anaphylaxis(pm)",drugs.com,nzf,270225
@@ -57,11 +56,11 @@ r-mephobarbital,*,s_2C19,antiepileptics,"sedation^",drugs.com,data_sheet,050325
 celecoxib,n/a,m_2C9,COX-2_inhibitors,"abdominal_pain^, diarrhea^, dyspepsia^, flatulence^, peripheral_edema^, vasculitis(pm), dizziness^, headache^, cerebral_hemorrhage(pm), ageusia(pm), anosmia(pm), rash^, erythema_multiforme(pm), dermatitis_exfoliative(pm), Stevens_Johnson_syndrome(pm), toxic_epidermal_necrolysis(pm), DRESS(pm), AGEP(pm), dermatitis_bullous(pm), agranulocytosis(pm), aplastic_anemia(pm), pancytopenia(pm), leukopenia(pm), borderline_AST_or_ALT_elevations^, hepatitis(pm), acute_liver_failure(pm), jaundice(pm), hepatic_necrosis(pm), cholestasis(pm), cholestatic_hepatitis(pm), liver_transplant(pm), increased_hepatic_enzymes(pm), pharyngitis^, rhinitis^, sinusitis^, upper_RTI^, pneumonitis(pm), tubulointerstitial_nephritis(pm), nephrotic_syndrome(pm), glomerulonephritis_minimal_lesion(pm), insomnia^, hallucination(pm), conjunctivitis(pm), sepsis(pm), anaphylactic_shock(pm), anaphylactic_reaction(pm), angioedema(pm), hypoglycemia(pm), hyponatremia(pm), impaired_female_fertility(pm), UTI^",drugs.com,nzf,060325
 flurbiprofen,*,m_2C9,NSAIDs,"abdominal_pain^, constipation^, diarrhea^, dyspepsia^, flatulence^, GI_bleeding^, headache^, reflexes_increased^, tremor^, amnesia^, sedation^, edema^, malaise^, tinnitus^, rhinitis^, increased_hepatic_enzymes^, rash^, vision_changes^, nervousness^, anxiety^, insomnia^, depression^, UTI^, weight_changes^, angina_pectoris(pm), arrhythmias(pm), pulmonary_infarct(pm), pulmonary_embolism(pm), jaundice(pm), colitis(pm), small_intestine_inflammation(pm), exacerbation_of_inflammatory_bowel_disease(pm), cholecystitis(pm), interstitial_nephritis(pm)",drugs.com,Drugs@FDA,070325
 glimepiride,*,m_2C9,sulfonylureas,"hypoglycemia^^, hyponatremia(pm), SIADH(pm), hemolytic_anemia(without_G6PD_deficiency,pm), thrombocytopenia_purpura(pm), anaphylaxis(pm), angioedema(pm), Stevens_Johnson_syndrome(pm), dyspnea(pm), headache^, dizziness^, elevated_ALT^, hepatitis(pm), hepatic_porphyria_reactions(pm), disulfiram_like_reactions(pm), influenza_syndrome^, malaise^",drugs.com,Drugs@FDA,070325
+glyburide,*,m_2C9,sulfonylureas,"hypoglycemia(neonates)^^, transitory_diarrhea(neonates)^^, abdominal_pain(neonates)^^, dyspepsia(neonates)^^, transient_increased_transaminases(neonates)^^, epigastric_fullness^, abdominal_pain^, anorexia^, dyspepsia^, diarrhea^, allergic_skin_reactions^, hemolytic_anemia(pm)",drugs.com,nzf,090325
 
 *work-in-progress*
 
 CYP2C9 substrates
 
-glyburide/glibenclamide,n/a,m_2C9,
 meloxicam,n/a,s_2C9,
 siponimod,n/a,m_2C9,

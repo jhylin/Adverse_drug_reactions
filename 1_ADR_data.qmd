@@ -123,6 +123,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - glimepiride (a moderate CYP2C9 substrate) is one of the sulfonylureas used for blood glucose control in type-2 diabetics. One of its postmarketing reports of "disulfiram-like reaction" is about the unpleasant effects (e.g. facial flushing, headache, palpitations, tachycardia) experienced after alcohol consumption (note: disulfiram is another drug often used for treating alcohol dependence)
 
+- glyburide (a moderate CYP2C9 substrate) is also known as glibenclamide in some of the countries around the world
+
 <br>
 
 ##### **Abbreviations used**
