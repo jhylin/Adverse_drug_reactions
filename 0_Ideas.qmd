@@ -2,11 +2,14 @@
 title: Brainstorming ideas for data curation on adverse drug reactions (ADRs) 
 subtitle: trying to look from a different angle 
 date: '2024-11-12'
+date-modified: '2025-3-10'
 draft: true
 categories:
   - Data
 jupyter: python3
 ---
+
+*Random idea added on 10th Mar 2025*: It may be possible to extend investigations to drugs in the same drug class and look at what CYP enzymes (if any in common) are involved in their metabolisms and what common ADRs they all share -> try to link them back to drug structures -> may be able to set up ADRs profiles for each CYP enzyme that can be drug class-specific (and/or may be able to draw out drug-ADR lineages e.g. parent compound metabolised to a child compound where both may be biologically active with similar or different ADRs)
 
 *This is an evolving document and is currently in draft mode only.*
 
