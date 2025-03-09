@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths CYP3A4 substrates
 date: '2025-1-8'
-date-modified: '2025-3-4'
+date-modified: '2025-3-10'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -10,8 +10,6 @@ categories:
   - Notes
 jupyter: python3
 ---
-
-**Update on 15th Feb 2025**: adding ADRs of strong and moderate CYP2D6 substrates slowly from February 2025. 
 
 **Additional note re. CYP data on 15th Feb 2025**: **TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses**. A small discovery re. CYP data used in many ADMET prediction apps - most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
 
@@ -73,7 +71,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - similar or overlapping adverse effects will be removed to keep only one adverse effect for the same drug e.g. adverse skin reactions, rash, urticaria - rash and urticaria will be removed as allergic skin reactions encompass both symptoms
 
-- for ADR terms with similar meanings, e.g. pyrexia/fever - fever is used instead (only one will be used)
+- for ADR terms with similar meanings, e.g. pyrexia/fever - fever is used instead (only one will be used); attempts have been made to use just one ADR term to represent various other similar-meaning ADRs to minimise duplications
 
 - ADR mentioned in common ADR category and repeated in the less common one will have the ADR recorded in the higher incidence rate (at > 10%) only
 
@@ -89,7 +87,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - ADRs can be adjusted according to project needs (e.g. some can be omitted e.g. gastrointestinal tract-related ADRs such as flatulence or abdominal discomforts may be removed, especially if the project is investigating more life-threatening ADRs initally)
 
-- Several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (may need to omit/remove duplicates)
+- Several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; **to be checked in the end**)
 
 <br>
 
@@ -165,3 +163,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - NSAIDs = non-steroidal anti-inflammatory drugs
 - SIADH = syndrome of inappropriate antidiuretic hormone secretion
 - G6PD = glucose-6-phosphate dehydrogenase
+- AV = atrioventricular
