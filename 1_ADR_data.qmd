@@ -127,6 +127,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - phenytoin (a moderate CYP2C9 substrate) may cause severe cutaneous adverse reactions (SCAR), e.g. drug reaction with eosinophilia and systemic symptoms, Stevens-Johnson syndrome, toxic epidermal necrolysis, erythema multiforme, and acute generalised exanthematous pustulosis, which may require closer monitoring and drug discontinuation if required. Its occurrence is more likely in a genetic population with a particular human leukocyte antigen (HLA) allele present e.g. HLA-B^*15:02
 
+- warfarin (a moderate CYP2C9 substrate) doesn't have any ADR frequencies recorded as it's a well-known vitamin K antagonist, often used as an oral anticoagulant, with a prominent ADR of causing fatal or non-fatal organ or tissue haemorrhage. The best strategy to prevent any haemorrhagic events is to monitor via international normalised ratio (INR) testing
+
 <br>
 
 ##### **Abbreviations used**
