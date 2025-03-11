@@ -1,8 +1,8 @@
 ---
 title: Notes on adverse drug reactions (ADRs) data
-subtitle: For strong and moderate-strengths CYP3A4 substrates
+subtitle: For strong and moderate-strengths cytochrome P450 (CYP) enzyme substrates
 date: '2025-1-8'
-date-modified: '2025-3-10'
+date-modified: '2025-3-11'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -13,7 +13,7 @@ jupyter: python3
 
 **Additional note re. CYP data on 15th Feb 2025**: **TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses**. A small discovery re. CYP data used in many ADMET prediction apps - most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
 
-Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html).
+Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html), and over time, this note will also include drug information for other CYP enzyme substrates.
 
 <br>
 
@@ -23,7 +23,7 @@ Here are the notes regarding the strong and moderate CYP3A4 substrates used in t
 
 This is all based on the Flockhart table of drug interactions: [https://drug-interactions.medicine.iu.edu/MainTable.aspx](https://drug-interactions.medicine.iu.edu/MainTable.aspx)
 
-Strength of evidence that the drug is metabolised by CYP3A4/5 (as quoted from above web link):
+Strength of evidence that the drug is metabolised by a certain CYP enzyme (as quoted from above web link):
 
 - Strong Evidence (may be denoted with s_ followed by CYP name e.g. s_3A4): the enzyme is majorly responsible for drug metabolism.
 - Moderate Evidence (may be denoted with m_ followed by CYP name e.g. m_3A4): the enzyme plays a significant but not exclusive role in drug metabolism or the supporting literature is not extensive.
