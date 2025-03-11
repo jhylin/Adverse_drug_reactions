@@ -167,3 +167,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - G6PD = glucose-6-phosphate dehydrogenase
 - AV = atrioventricular
 - SCAR = severe cutaneous adverse reactions
+- GI = gastrointestinal
