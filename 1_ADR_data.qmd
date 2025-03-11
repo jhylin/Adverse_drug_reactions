@@ -125,6 +125,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - glyburide (a moderate CYP2C9 substrate) is also known as glibenclamide in some of the countries around the world
 
+- phenytoin (a moderate CYP2C9 substrate) may cause severe cutaneous adverse reactions (SCAR), e.g. drug reaction with eosinophilia and systemic symptoms, Stevens-Johnson syndrome, toxic epidermal necrolysis, erythema multiforme, and acute generalised exanthematous pustulosis, which may require closer monitoring and drug discontinuation if required. Its occurrence is more likely in a genetic population with a particular human leukocyte antigen (HLA) allele present e.g. HLA-B^*15:02
+
 <br>
 
 ##### **Abbreviations used**
@@ -164,3 +166,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - SIADH = syndrome of inappropriate antidiuretic hormone secretion
 - G6PD = glucose-6-phosphate dehydrogenase
 - AV = atrioventricular
+- SCAR = severe cutaneous adverse reactions

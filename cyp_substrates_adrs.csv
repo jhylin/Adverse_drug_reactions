@@ -59,21 +59,11 @@ glimepiride,*,m_2C9,sulfonylureas,"hypoglycemia^^, hyponatremia(pm), SIADH(pm), 
 glyburide,*,m_2C9,sulfonylureas,"hypoglycemia(neonates)^^, transitory_diarrhea(neonates)^^, abdominal_pain(neonates)^^, dyspepsia(neonates)^^, transient_increased_transaminases(neonates)^^, epigastric_fullness^, abdominal_pain^, anorexia^, dyspepsia^, diarrhea^, allergic_skin_reactions^, hemolytic_anemia(pm)",drugs.com,nzf,090325
 meloxicam,n/a,s_2C9,NSAIDs,"dyspepsia^^, abdominal_pain^^, constipation^^, flatulence^^, diarrhea^^, abdominal_discomfort^, gastroesophageal_reflux_disease^, upper_abdominal_pain^, hypertension^, dizziness^, headache^, carpel_tunnel_syndrome^, pharyngitis^, upper_RTI^, coughing^, nasopharyngitis^, bronchitis^, sinusitis^, laryngitis^, pleuritic_pain^, dyspnea^, rhinitis^, edema^, fall^, influenza_like_symptoms^, peripheral_edema^, fatigue^, ear_disorder^, vertigo^, meningitis(pm), anemia^, rash^, pruritus^, hyperhidrosis^, purpura^, erythema_multiforme(pm), hypersensitivity_reactions^, anaphylactoid_reactions(pm), female_infertility(pm), arthralgia^, joint_swelling^, back_pain^, osteoarthritis^, pain_in_extremity^, arthritis^, bursitis^, muscle_spasms^, myalgia^, rheumatoid_arthritis^, UTI^, hematuria^, insomnia^, dehydration^, appetite_increased^",drugs.com,nzf,090325
 siponimod,n/a,m_2C9,selective_immunosuppressants,"infections^^, transaminase_elevations^^, bronchitis^^, sinusitis^^, upper_RTI^^, falls^^, headache^^, hypertension^^, fungal_skin_infection^^, lymphopenia^, pain_in_extremity^, macular_edema^, peripheral_edema^,  pulmonary_embolism^, pulmonary_function_test_decreased^, malaise^, dizziness^, seizure^, tremor^, first_and_second_degree_AV_block^, bradycardia^, ischemic_stroke^, myocardial_infarction^, diarrhea^, progressive_multifocal_leukoencephalopathy(pm)",drugs.com,Drugs@FDA,100325
+phenytoin,*,m_2C9,antiepileptics,"SCAR^^, pruritus^^, nystagmus^^, dizziness^^, sedation^^, ataxia^^, hypotension^, vasodilation^, tachycardia^, sweating^, dry_mouth^, constipation^, anaphylactoid_reactions(pm), back_pain^, chills^, muscle_weakness^,  incoordination^, paresthesia^, extrapyramidal_symptoms^, tremor^, vertigo^, brain_edema^, tinnitus^, taste_disturbance^, loss_of_taste^, reflex_disturbance^, migraine^, slurred_speech^, dysarthria^, intracranial_hypertension^, hyperesthesia^, hyporeflexia^, diplopia^, amblyopia^, blurred_vision^, visual_impairment^, malaise^, deafness^, fever^, facial_edema^, hyperacusis^, parosmia^, ear_pain^, pelvic_pain^, pneumonia^, respiratory_arrest(pm), agitation^, nervousness^, depression^",drugs.com,nzf,110325
 
 *work-in-progress*
 
 CYP2C9 substrates
-
-phenytoin,n/a,m_2C9,antiepileptics,
-"rash^^, pruritus^^, nystagmus^^, dizziness^^, sedation^^, ataxia^^, 
-
-hypotension^, vasodilation^, tachycardia^, sweating^, skin_discoloration^, contact_dermatitis^, 
-dry_mouth^, constipation^, anaphylactoid_reactions(pm), back_pain^, chills^, muscle_weakness^,  
-incoordination^, paresthesia^, extrapyramidal_symptoms^, tremor^, vertigo^, brain_edema^, tinnitus^, 
-taste_disturbance^, loss_of_taste^, reflex_disturbance^, migraine^, slurred_speech^, dysarthria^, 
-intracranial_hypertension^, hyperesthesia^, hyporeflexia^, diplopia^, amblyopia^, blurred_vision^, 
-visual_impairment^, malaise^, deafness^, fever^, facial_edema^, hyperacusis^, parosmia^, ear_pain^, pelvic_pain^, 
-pneumonia^, respiratory_arrest(pm), agitation^, nervousness^, depression^",drugs.com,nzf,110325
 
 piroxicam,n/a,s_2C9,
 ruxolitinib,n/a,m_2C9,
