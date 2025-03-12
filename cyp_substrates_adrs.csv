@@ -63,18 +63,11 @@ phenytoin,*,m_2C9,antiepileptics,"SCAR^^, pruritus^^, nystagmus^^, dizziness^^, 
 piroxicam,n/a,s_2C9,NSAIDs,"elevated_ALT_or_AST^^, congestive_heart_failure(pm), hypertension(pm), tachycardia(pm), syncope(pm), arrhythmia(pm), exacerbation_of_angina(pm), hypotension(pm), myocardial_infarction(pm), vasculitis(pm), pruritus^, rash^, alopecia(pm), bruising(pm), desquamation(pm), erythema(pm), photosensitivity(pm), angioedema(pm), toxic_epidermal_necrolysis(pm), erythema_multiforme(pm), exfoliative_dermatitis(pm), onycholysis(pm), Stevens_Johnson_syndrome(pm), urticaria(pm), vesiculobullous_reaction(pm), fixed_drug_eruption(pm), abdominal_pain^, constipation^, diarrhea^, epigastric_distress^, peptic_ulcer^, stomatitis^, indigestion^, dyspepsia(pm), GI_bleeding(pm), GI_perforation(pm), GI_ulceration(pm), dry_mouth(pm), esophagitis(pm), gastritis(pm), glossitis(pm), hematemesis(pm), melena(pm), rectal_bleeding(pm), pancreatitis(pm), fatal_GI_events(pm), cystitis(pm), dysuria(pm), hematuria(pm), oliguria(pm), polyuria(pm), proteinuria(pm), decreased_female_fertility(pm), anemia^, eosinophilia^, leukopenia^, thrombocytopenia^, decreased_hemoglobin^, decreased_hematocrit^, increased_bleeding_time(pm), eosinophilia(pm), leukopenia(pm), thrombocytopenia(pm), agranulocytosis(pm), hemolytic_anemia(pm), aplastic_anemia(pm), lymphadenopathy(pm), pancytopenia(pm), hepatitis(pm), jaundice(pm), liver_failure(pm), anaphylactic_reactions(pm), serum_sickness(pm), positive_antinuclear_antibodies(pm), anorexia^, hyperglycemia^, appetite_disturbance(pm), fluid_retention(pm), hypoglycemia(pm), hyperkalemia(pm), dizziness^, headache^, sedation^, vertigo^, tinnitus^, paresthesia(pm), tremors(pm), akathisia(pm), convulsions(pm), coma(pm), meningitis(pm), aseptic_meningitis(pm), conjunctivitis(pm), edema^, increased_weight^, fever(pm), infection(pm), sepsis(pm), influenza_like_syndrome(pm), pain(pm), weight_changes(pm), malaise(pm), hearing_impairment(pm), anxiety(pm), confusion(pm), depression(pm), dream_abnormalities(pm), insomnia(pm), nervousness(pm), hallucinations(pm), mood alterations(pm), abnormal_renal_function(pm), interstitial_nephritis(pm), nephrotic_syndrome(pm), renal_failure(pm), glomerulonephritis(pm), epistaxis(pm), asthma(pm), dyspnea(pm), respiratory_depression(pm), pneumonia(pm)",drugs.com,Drugs@FDA,110325
 ruxolitinib,n/a,m_2C9,tyrosine_kinase_inhibitor,"UTI^^, anemia^^, thrombocytopenia^^, neutropenia^^, hypercholesterolemia^^, weight_gain^^, dizziness^^, headache^^, bruising^^, bleeding^^, ALT_increased^^, AST_increased^^, GI_bleeding^, tuberculosis^, intracranial_bleeding^, herpes_zoster^",drugs.com,nzf,120325
 s-warfarin,*,m_2C9,anticoagulants,"hemorrhage^^",drugs.com,nzf,120325
-
+alosetron,n/a,s_1A2,serotonin_receptor_antagonists,"constipation^^, abdominal_distention^, abdominal_pain^, diarrhea^, GI_pain^, hemorrhoid_hemorrhage^, hemorrhoids^, gastroesophageal_reflux^, regurgitation^, viral_gastroenteritis^, impaction(pm), perforation(pm), small_bowel_mesenteric_ischemia(pm), ulceration(pm), cough^, nasopharyngitis^, sinusitis^, upper_RTI^, UTI^, ALT_increased, headache(pm), rash(pm)",drugs.com,Drugs@FDA,130325
 
 *work-in-progress*
 
 CYP1A2 substrates
-
-alosetron,n/a,s_1A2,serotonin_receptor_antagonists,
-"constipation^^, abdominal_distention^, abdominal_pain^, diarrhea^, GI_pain^, hemorrhoid_hemorrhage^, 
-hemorrhoids^, gastroesophageal_reflux^, regurgitation^, viral_gastroenteritis^, impaction(pm), perforation(pm), 
-small_bowel_mesenteric_ischemia(pm), ulceration(pm), cough^, nasopharyngitis^, sinusitis^, 
-upper_RTI^, UTI^, ALT_increased, headache(pm), rash(pm)",drugs.com,Drugs@FDA,130325
-
 
 caffeine,n/a,s_1A2 
 clozapine,n/a,s_1A2 
