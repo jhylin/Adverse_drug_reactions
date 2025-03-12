@@ -85,9 +85,9 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
 
-- ADRs can be adjusted according to project needs (e.g. some can be omitted e.g. gastrointestinal tract-related ADRs such as flatulence or abdominal discomforts may be removed, especially if the project is investigating more life-threatening ADRs initally)
+- all ADRs of flatulence (and abdominal discomforts if there are already abdominal pains present) are removed as the current focus will be more on ADRs that'll affect qualities of lives and also the more debilitating types that may lead to life-threatening scenarios
 
-- Several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; **to be checked in the end**)
+- several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; **to be checked in the end**)
 
 <br>
 
