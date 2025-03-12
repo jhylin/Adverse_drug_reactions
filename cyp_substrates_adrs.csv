@@ -1,4 +1,4 @@
-*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6 and 2C19 substrates, 
+*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6, 2C19 and 2C9 substrates, 
 with plan to slowly add other CYP isoform substrates' ADRs over time*
 
 
@@ -64,12 +64,12 @@ piroxicam,n/a,s_2C9,NSAIDs,"elevated_ALT_or_AST^^, congestive_heart_failure(pm),
 ruxolitinib,n/a,m_2C9,tyrosine_kinase_inhibitor,"UTI^^, anemia^^, thrombocytopenia^^, neutropenia^^, hypercholesterolemia^^, weight_gain^^, dizziness^^, headache^^, bruising^^, bleeding^^, ALT_increased^^, AST_increased^^, GI_bleeding^, tuberculosis^, intracranial_bleeding^, herpes_zoster^",drugs.com,nzf,120325
 s-warfarin,*,m_2C9,anticoagulants,"hemorrhage^^",drugs.com,nzf,120325
 alosetron,n/a,s_1A2,serotonin_receptor_antagonists,"constipation^^, abdominal_distention^, abdominal_pain^, diarrhea^, GI_pain^, hemorrhoid_hemorrhage^, hemorrhoids^, gastroesophageal_reflux^, regurgitation^, viral_gastroenteritis^, impaction(pm), perforation(pm), small_bowel_mesenteric_ischemia(pm), ulceration(pm), cough^, nasopharyngitis^, sinusitis^, upper_RTI^, UTI^, ALT_increased, headache(pm), rash(pm)",drugs.com,Drugs@FDA,130325
+caffeine,*,s_1A2,CNS_stimulants,"constipation^^, necrotizing_enterocolitis^, gastritis^, GI_hemorrhage^, gastroesophageal_reflux^, hemorrhage^, tachycardia^, rash^, disseminated_intravascular_coagulation^, anemia^, acidosis^, hyperglycemia^, cerebral_hemorrhage^, dyspnea^, lung_edema^, kidney_failure^",drugs.com,Drugs@FDA,130325
 
 *work-in-progress*
 
 CYP1A2 substrates
 
-caffeine,n/a,s_1A2 
 clozapine,n/a,s_1A2 
 duloxetine,n/a,s_1A2 
 fluvoxamine,n/a,m_1A2

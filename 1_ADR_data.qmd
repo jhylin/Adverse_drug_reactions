@@ -129,6 +129,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - warfarin (a moderate CYP2C9 substrate) doesn't have any ADR frequencies recorded as it's a well-known vitamin K antagonist, often used as an oral anticoagulant, with a prominent ADR of causing fatal or non-fatal organ or tissue haemorrhage. The best strategy to prevent any haemorrhagic events is to monitor via international normalised ratio (INR) testing
 
+- caffeine (a strong CYP1A2 substrate) is normally quite well tolerated orally; the ADRs recorded in the dataset here is mostly based on caffeine citrate 20mg/mL injection, which is often used in premature infants and may not be applicable to other populations
+
 <br>
 
 ##### **Abbreviations used**
