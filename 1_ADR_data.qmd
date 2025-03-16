@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate-strengths cytochrome P450 (CYP) enzyme substrates
 date: '2025-1-8'
-date-modified: '2025-3-11'
+date-modified: '2025-3-17'
 author: Jennifer HY Lin
 draft: false
 categories:
@@ -42,6 +42,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 * 1st-line: [Drugs.com](https://www.drugs.com/sfx/) 
   - using the health professional version for ADRs which usually contains ADR references from pharmaceutical manufacturers' medicines information data sheets, ASHP DI monographs or journal paper references
 
+  - reason for choosing this web data source is that it is open to public (without login registrations or paywalls) and contains the last updated date along with all references used for the ADRs information on each drug
+
 * 2nd-line as separate data checks: 
 
   - [NZ formulary (nzf)](https://nzf.org.nz/nzf_1) - mainly adapted from the British national formulary (BNF) with drug information tailored to NZ populations, and likely only available to NZ residents only due to licensing restrictions, other national formularies should contain very similar drug information
@@ -53,6 +55,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
   - [drugs.com_uk_di](https://www.drugs.com/uk/) - UK drug information section in Drugs.com (equivalent to pharmaceutical manufacturers' medicines information data sheets)
 
   - pharmaceutical manufacturers' medicines information data sheets (referenced as "data_sheet") as stated for each drug with notes
+
+  - reason to include a 2nd-line ADRs source is to ensure that all ADRs recorded in this dataset is clinically relevant in real-life cases (although mainly in clinical trials; but this is where postmarketing reports come into place, and also I'm using my previous on-site clinical work experience when curating the dataset). It also acts as an information accuracy check from a different, independent, trustworthy drug information source that is often referred to and used by healthcare professionals around the globe
 
 - two main types of occurrences/frequencies used: 
 
@@ -88,7 +92,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - all ADRs of flatulence (and abdominal discomforts if there are already abdominal pains present) are removed as the current focus will be more on ADRs that'll affect qualities of lives and also the more debilitating types that may lead to life-threatening scenarios
 
-- several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; **to be checked in the end**)
+- several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; *currently keeping two terms: malaise, fatigue* **to be checked in the end**)
 
 <br>
 
