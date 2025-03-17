@@ -73,7 +73,15 @@ fluvoxamine,n/a,m_1A2,selective_serotonin_reuptake_inhibitors,"diarrhea^^, dry_m
 
 CYP1A2 substrates
 
-haloperidol,n/a,m_1A2
+haloperidol,n/a,m_1A2,antipsychotics,
+"extrapyramidal_symptoms^^, hyperkinesia^^, headache^^, insomnia^^, agitation^^, 
+
+tardive_dyskinesia^, dystonia^, dyskinesia^, akathisia^, bradykinesia^, hypertonia^, sedation^, masked_facies^, 
+tremor^, dizziness^, parkinsonism^, opisthotonos(pm), depression^, psychotic_disorder^, constipation^, dry_mouth^, 
+hypersalivation^, urinary_retention^, sexual_dysfunction^, orthostatic_hypotension^, hypotension^, 
+ventricular_arrhythmia(pm), cardiac_arrest(pm), hypertension(pm), 
+"
+
 melatonin,n/a,s_1A2 
 mexiletine,n/a,m_1A2
 olanzapine,n/a,m_1A2

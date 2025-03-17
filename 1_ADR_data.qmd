@@ -94,6 +94,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
 
+- **antipsychotics drugs ADRs** have some commonalities (?to mention/at least check for each)
+
 - several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; *currently keeping two terms: malaise, fatigue* **to be checked in the end**)
 
 <br>
