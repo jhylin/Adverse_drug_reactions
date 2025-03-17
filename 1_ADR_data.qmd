@@ -56,7 +56,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
   - pharmaceutical manufacturers' medicines information data sheets (referenced as "data_sheet") as stated for each drug with notes
 
-  - reason to include a 2nd-line ADRs source is to ensure that all ADRs recorded in this dataset is clinically relevant in real-life cases (although mainly in clinical trials; but this is where postmarketing reports come into place, and also I'm using my previous on-site clinical work experience when curating the dataset). It also acts as an information accuracy check from a different, independent, trustworthy drug information source that is often referred to and used by healthcare professionals around the globe
+  - reason to include a 2nd-line ADRs source is to ensure that all ADRs recorded in this dataset is clinically relevant in real-life cases (although mainly in clinical trials; but this is where postmarketing reports come into place, and also I'm attempting to use my previous on-site clinical work experience when curating the dataset). It also acts as an information accuracy check from a different, independent, trustworthy drug information source that is often referred to and used by healthcare professionals around the globe
 
 - two main types of occurrences/frequencies used: 
 
@@ -69,6 +69,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 <br>
 
 ##### **Exceptions or notes for ADRs**
+
+- all minor ADRs are removed as the current focus will be more on ADRs that'll affect qualities of lives or are potentially more life-threatening (e.g. flatulence and abdominal discomforts are removed if there are already abdominal pains present)
 
 - nausea and vomiting applies to many drugs so won't be included (almost every drug will have these ADRs, they can be alleviated with electrolytes replacements and anti-nausea meds or other non-med options; rash on the other hand can sometimes be serious and life-threatening e.g. Stevens-Johnson syndrome)
 
@@ -84,13 +86,13 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
 
-- postmarketing reports are limited to the experiences of certain unknown population sizes using the specific medicines, therefore it is not possible to directly extrapolate the frequencies of these reports
+- postmarketing reports are limited to the experiences of certain unknown population sizes using the specific medicines, therefore it is not possible to directly extrapolate the frequencies of these reports, and also not possible to confirm a direct causal relationship between the drug and its postmarketing reports (a potential downside of the ADRs data, but with more reporting in place, there's a larger possibility to observe common ADRs traits or trends during data analysis which may help future research into their possible causes or mechanisms)
+
+- not all postmarketing reports are included for each drug in the dataset, but only ones that are relevant clinically or mentioned in the 1st-line or in both 1st-line and 2nd-line data sources (the postmarketing ADRs dataset can be expanded further in the future if needed e.g. for investigations on postmarketing ADRs reports only)
 
 - one other thing I'd like to mention is that all the ADRs recorded in this repository are not merely a copy-and-paste action from the drug reference sources, they also include or are integrated with the ones I've encountered from my previous pharmacist work experience (in the hope to better reflect bedside or clinical ADRs, and this is also why the data collection part is taking time...)
 
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
-
-- all ADRs of flatulence (and abdominal discomforts if there are already abdominal pains present) are removed as the current focus will be more on ADRs that'll affect qualities of lives and also the more debilitating types that may lead to life-threatening scenarios
 
 - several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; *currently keeping two terms: malaise, fatigue* **to be checked in the end**)
 
