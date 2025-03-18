@@ -48,8 +48,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
   - [NZ formulary (nzf)](https://nzf.org.nz/nzf_1) - mainly adapted from the British national formulary (BNF) with drug information tailored to NZ populations, and likely only available to NZ residents only due to licensing restrictions, other national formularies should contain very similar drug information
 
-  - [electronic medicines compendium (emc)](https://www.medicines.org.uk/emc) - UK-based drug reference; equivalents of UK/Europe-based pharmaceutical manufacturers' medicines data sheets
-
+  - [electronic medicines compendium (emc)](https://www.medicines.org.uk/emc) - UK-based drug reference; equivalents of UK/Europe-based pharmaceutical manufacturers' medicines data sheets (note: there may be limited numbers of free access each month, and may require sign ups to access drug information)
+ 
   - [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm) - US-based drug reference from the Food and Drug Administration (FDA) in the US
   
   - [drugs.com_uk_di](https://www.drugs.com/uk/) - UK drug information section in Drugs.com (equivalent to pharmaceutical manufacturers' medicines information data sheets)
@@ -78,11 +78,15 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - for ADR terms with similar meanings, e.g. pyrexia/fever - fever is used instead (only one will be used); attempts have been made to use just one ADR term to represent various other similar-meaning ADRs to minimise duplications
 
+---
+
 - ADR mentioned in common ADR category and repeated in the less common one will have the ADR recorded in the higher incidence rate (at > 10%) only
 
 - some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded here)
 
 - Some of the ADRs recorded for some of the drugs may apply to younger or pediatrics populations - this may need to be taken care of when using these data to build machine learning models, specific drug notes with astericks in the dataset should be in place as reminders, otherwise most of the ADRs in the datset should be mainly applicable to adult populations
+
+---
 
 - some postmarketing adverse effects are for different age populations e.g. paediatric patients of up to 12 years of age or elderly people - for now all of them are labelled as "(pm)" to denote postmarketing reports and are not differentiated in age groups
 
@@ -90,11 +94,17 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - not all postmarketing reports are included for each drug in the dataset, but only ones that are relevant clinically or mentioned in the 1st-line or in both 1st-line and 2nd-line data sources (the postmarketing ADRs dataset can be expanded further in the future if needed e.g. for investigations on postmarketing ADRs reports only)
 
+---
+
 - one other thing I'd like to mention is that all the ADRs recorded in this repository are not merely a copy-and-paste action from the drug reference sources, they also include or are integrated with the ones I've encountered from my previous pharmacist work experience (in the hope to better reflect bedside or clinical ADRs, and this is also why the data collection part is taking time...)
+
+---
 
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
 
 - typical ADRs of antipsychotics drugs can include extrapyramidal symptoms (parkinsonian symptoms e.g. tremors, dystonias or dyskinesia (abnormal muscular spasms), akathisia (restlessness) and tardive dyskinesia (most significant antipsychotic ADR causing abnormal involuntary movements of face, jaw and tongue; common in first generation antipsychotics)), constipation, sexual dysfunction, cardiovascular adverse effects, hyperglycaemia, problem with body temperature regulations and neuroleptic malignant syndrome (usually rare but potentially can be fatal)
+
+---
 
 - several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; *currently keeping two terms: malaise, fatigue* **to be checked in the end**)
 
@@ -141,6 +151,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - caffeine (a strong CYP1A2 substrate) is normally quite well tolerated orally; the ADRs recorded in the dataset here is mostly based on caffeine citrate 20mg/mL injection, which is often used in premature infants and may not be applicable to other populations
 
 - clozpine (a strong CYP1A2 substrate) is one of the second generation or atypical antipsychotics with many ADRs requiring close monitoring e.g. frequencies of bowel motions (contipation is one of the common ADRs that is potentially fatal), white cell counts and cardiac toxicity-related symptoms and/or cardiovascular-related lab marker changes; people with pre-existing diabetes or liver diseases are also prone to ADRs related to these diseases while on clozapine
+
+- melatonin (a strong CYP1A2 substrate) has no ADRs with frequencies above 10% as it's normally quite well tolerated at appropriate dose for short-term use (e.g. 3 months)
 
 <br>
 
