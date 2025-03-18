@@ -79,8 +79,9 @@ haloperidol,n/a,m_1A2,antipsychotics,
 tardive_dyskinesia^, dystonia^, dyskinesia^, akathisia^, bradykinesia^, hypertonia^, sedation^, masked_facies^, 
 tremor^, dizziness^, parkinsonism^, opisthotonos(pm), depression^, psychotic_disorder^, constipation^, dry_mouth^, 
 hypersalivation^, urinary_retention^, sexual_dysfunction^, orthostatic_hypotension^, hypotension^, 
-ventricular_arrhythmia(pm), cardiac_arrest(pm), hypertension(pm), 
-"
+ventricular_arrhythmia(pm), cardiac_arrest(pm), hypertension(pm), weight_disturbance^, hyperammonemia(pm), 
+oculogyric_crisis(pm), visual_disturbance(pm), rash(pm), muscle_rigidity^, rhabdomyolysis(pm), hyperthermia^, 
+increased_hepatic_enzymes^",drugs.com,
 
 melatonin,n/a,s_1A2 
 mexiletine,n/a,m_1A2
