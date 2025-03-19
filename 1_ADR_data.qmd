@@ -82,7 +82,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - ADR mentioned in common ADR category and repeated in the less common one will have the ADR recorded in the higher incidence rate (at > 10%) only
 
-- some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded here)
+- some ADRs can be dose-related or formulations-related e.g. injection site irritations or allergic reactions caused by excipients/fillers (aim is to investigate the relationships between ADRs and drugs via computational tools e.g. any patterns between ADRs & drugs so dose/formulations-related ADRS will not be recorded here); all ADRs recorded in the dataset are currently not formulation-specific (e.g. not differentiated between oral, suspensions/liquids, subcutaneous, intravenous or intramuscular injections or topical formulations - they're all grouped together for now) 
 
 - Some of the ADRs recorded for some of the drugs may apply to younger or pediatrics populations - this may need to be taken care of when using these data to build machine learning models, specific drug notes with astericks in the dataset should be in place as reminders, otherwise most of the ADRs in the datset should be mainly applicable to adult populations
 
