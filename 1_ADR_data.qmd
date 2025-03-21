@@ -154,6 +154,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - melatonin (a strong CYP1A2 substrate) has no ADRs with frequencies above 10% as it's normally quite well tolerated at appropriate dose for short-term use (e.g. 3 months)
 
+- pomalidomide (a moderate CYP1A2 substrate) is an immunomodulating drug that has antineoplastic property to treat relapsed multiple myeloma and is structurally related to thalidomide
+
 <br>
 
 ##### **Abbreviations used**
