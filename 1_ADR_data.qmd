@@ -70,7 +70,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 ##### **Exceptions or notes for ADRs**
 
-- all minor ADRs are removed as the current focus will be more on ADRs that'll affect qualities of lives or are potentially more life-threatening (e.g. chills, flatulence and abdominal discomforts are removed if there are already abdominal pains present)
+- all minor ADRs are removed as the current focus will be more on ADRs that'll affect qualities of lives or are potentially more life-threatening (e.g. dry skin, acne, chills, flatulence and abdominal discomforts are removed if there are already abdominal pains present)
 
 - nausea and vomiting applies to many drugs so won't be included (almost every drug will have these ADRs, they can be alleviated with electrolytes replacements and anti-nausea meds or other non-med options; rash on the other hand can sometimes be serious and life-threatening e.g. Stevens-Johnson syndrome)
 
