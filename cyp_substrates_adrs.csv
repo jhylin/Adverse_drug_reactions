@@ -80,6 +80,10 @@ tacrine,*,s_1A2,cholinesterase_inhibitors,"increased_LFT^^, diarrhea^^, dyspepsi
 
 CYP1A2 substrates
 
-tasimelteon,n/a,s_1A2 
+tasimelteon,n/a,s_1A2,
+"
+
+"
+
 theophylline,n/a,m_1A2
 tizanidine,n/a,s_1A2 
