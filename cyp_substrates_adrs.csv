@@ -75,15 +75,11 @@ olanzapine,n/a,m_1A2,antipsychotics,"drowsiness^^, akathisia^^, tremor^^, parkin
 pirfenidone,n/a,s_1A2,antifibrotics,"photosensitivity_reaction^^, rash^^, diarrhea^^, abdominal_pain^^, dyspepsia^^, gastroesophageal_reflux_disease^^, headache^^, dizziness^^, fatigue^^, anorexia^^, decreased_weight^^, arthralgia^^, insomnia^^, Upper_RTI^^, sinusitis^^, increased_ALT^, increased_AST^, increased_GGT^, increased_bilirubin(pm), angioedema(pm), pruritus^, erythema^, gastritis^, constipation^, drowsiness^, taste_disturbance^, non_cardiac_chest_pain^, decreased_appetite^, hot_flush^, UTI^, agranulocytosis(pm), myalgia^, cough^",drugs.com,nzf,220325
 pomalidomide,*,m_1A2,immunomodulating_agents,"neutropenia^^, anemia^^, thrombocytopenia^^, leukopenia^^, lymphopenia^^, dizziness^^, peripheral_neuropathy^^, headache^^, tremor^^, confusional_state^^, dyspnea^^, upper_RTI^^, pneumonia^^, cough^^, epistaxis^^, oropharyngeal_pain^^, rash^^, hyperhidrosis^^, pruritus^^, constipation^^, diarrhea^^, UTI^^, decreased_appetite^^, hypercalcemia^^, hyperglycemia^^, weight_loss^^, hyponatremia^^, hypokalemia^^, hypocalcemia^^, weight_gain^^, back_pain^^, musculoskeletal_chest_pain^^, muscle_spasms^^, bone_pain^^, arthralgia^^, muscular_weakness^^, musculoskeletal_pain^^, insomnia^^, anxiety^^, increased_creatinine^^, renal_failure^^, fatigue^^, fever^^, peripheral_edema^^, infection^^, deep_vein_thrombosis^, pulmonary_embolism^, myocardial_infarction^, stroke^, cardiac_failure^, febrile_neutropenia^, neutropenic_sepsis^, pancytopenia^, increased_ALT^, hepatic_failure(pm), allergic_reactions(pm), depressed_level_of_consciousness^, vertigo^, tumor_lysis_syndrome(pm), interstitial_lung_disease^, bronchopneumonia^, bronchitis^, nasopharyngitis^, urinary_retention^, pelvic_pain^, dehydration^, hyperkalemia^, pain_in_extremities^, sepsis^",drugs.com,nzf,240325
 tacrine,*,s_1A2,cholinesterase_inhibitors,"increased_LFT^^, diarrhea^^, dyspepsia^^, anorexia^^, restlessness^^, tremors^^, myalgia^^, arthralgia^^, hyperhidrosis, rash^^, urinary_frequency^^",drugs.com,data_sheet,240325
+tasimelteon,n/a,s_1A2,hypnotics,"headache^^, increased_ALT^^, abnormal_dreams^^, UTI^, Upper_RTI^",drugs.com,Drugs@FDA,240325
 
 *work-in-progress*
 
 CYP1A2 substrates
-
-tasimelteon,n/a,s_1A2,
-"
-
-"
 
 theophylline,n/a,m_1A2
 tizanidine,n/a,s_1A2 
