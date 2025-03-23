@@ -73,27 +73,12 @@ melatonin,*,s_1A2,hypnotics,"headache^, sedation^",emc,nzf,190325
 mexiletine,n/a,m_1A2,antiarrhythmics,"anorexia^^, constipation^^, dyspepsia^^, hand_tremor^^, dizziness^^, difficulties_with_coordination^^, pro_arrhythmic_effect^^, palpitation^, chest_pain^, angina^, congestive_heart_failure^, respiratory_abnormalities^, diplopia^, nystagmus^, blurred_vision^, rash^, diarrhea^",drugs.com,nzf,190325
 olanzapine,n/a,m_1A2,antipsychotics,"drowsiness^^, akathisia^^, tremor^^, parkinsonism^^, dizziness^^, headache^^, extrapyramidal_symptoms^^, weight_gain^^, hypertriglyceridemia^^, hypercholesterolemia^^, increased_appetite^^, hyperglycemia^^, dry_mouth^^, constipation^^, dyspepsia^^, decreased_bilirubin^^, increased_ALT^^, increased_AST^^, increased_prolactin^^, fatigue^^, depression^^, insomnia^^, abnormal_gait^, amnesia^, articulation_impairment^, dyskinesia^, dystonia^, hypertonia^, akathisia^, incoordination^, transient_anticholinergic_effects^, paresthesia^, speech_disorder^, diabetic_coma(pm), NMS(pm), seizures(pm), hypersomnia^, chest_pain^, edema^, hypertension^, peripheral_edema^, postural_hypotension^, tachycardia^, cardiac_arrest(pm), deep_vein_thrombosis(pm), torsade_de_pointes(pm), venous_thromboembolism(pm), ventricular_arrhythmia(pm), bradycardia^, hypotension^, increased_uric_acid^, increased_ALP^, increased_GGT^, diabetic_ketoacidosis(pm), pre_existing_diabetes_exacerbation(pm), hypertriglyceridemia(pm), hypercholesterolemia(pm), abdominal_pain^, diarrhea^, hypersalivation^, pancreatitis(pm), tooth_infection^, jaundice(pm), liver_injury(pm), increased_bilirubin(pm), dyspnea^, increased_cough^, nasopharyngitis^, pharyngitis^, pharyngolaryngeal_pain^, upper_RTI^, rhinitis^, sinusitis^, pneumonia^, pulmonary_embolism(pm), eosinophilia^, leukopenia^, neutropenia^, thrombocytopenia(pm), amblyopia^, abnormal_vision^, fever^, pain_in_extremities^, sudden_unexplained_death(pm), ear_pain^, allergic_reaction(pm), anaphylactoid_reaction(pm), angioedema(pm), dysmenorrhea^, sexual_dysfunction^, glucosuria^, urinary_incontinence^, UTI^, vaginitis^, priapism(pm), urinary_hesitation(pm), urinary_retention(pm), arthralgia^, back_pain^, increased_CPK^, joint_pain^, musculoskeletal_stiffness^, rhabdomyolysis(pm), muscle_spasms^, rash^, alopecia(pm), DRESS(pm), pruritus(pm), rash(pm), urticaria(pm), apathy^, confusion^, euphoria^, personality_disorder^, restlessness^, discontinuation_reaction(pm), anxiety(pm), insomnia(pm), abnormal_dreams^, abnormal_thinking^, auditory_hallucinations^",drugs.com,nzf,200325
 pirfenidone,n/a,s_1A2,antifibrotics,"photosensitivity_reaction^^, rash^^, diarrhea^^, abdominal_pain^^, dyspepsia^^, gastroesophageal_reflux_disease^^, headache^^, dizziness^^, fatigue^^, anorexia^^, decreased_weight^^, arthralgia^^, insomnia^^, Upper_RTI^^, sinusitis^^, increased_ALT^, increased_AST^, increased_GGT^, increased_bilirubin(pm), angioedema(pm), pruritus^, erythema^, gastritis^, constipation^, drowsiness^, taste_disturbance^, non_cardiac_chest_pain^, decreased_appetite^, hot_flush^, UTI^, agranulocytosis(pm), myalgia^, cough^",drugs.com,nzf,220325
+pomalidomide,*,m_1A2,immunomodulating_agents,"neutropenia^^, anemia^^, thrombocytopenia^^, leukopenia^^, lymphopenia^^, dizziness^^, peripheral_neuropathy^^, headache^^, tremor^^, confusional_state^^, dyspnea^^, upper_RTI^^, pneumonia^^, cough^^, epistaxis^^, oropharyngeal_pain^^, rash^^, hyperhidrosis^^, pruritus^^, constipation^^, diarrhea^^, UTI^^, decreased_appetite^^, hypercalcemia^^, hyperglycemia^^, weight_loss^^, hyponatremia^^, hypokalemia^^, hypocalcemia^^, weight_gain^^, back_pain^^, musculoskeletal_chest_pain^^, muscle_spasms^^, bone_pain^^, arthralgia^^, muscular_weakness^^, musculoskeletal_pain^^, insomnia^^, anxiety^^, increased_creatinine^^, renal_failure^^, fatigue^^, fever^^, peripheral_edema^^, infection^^, deep_vein_thrombosis^, pulmonary_embolism^, myocardial_infarction^, stroke^, cardiac_failure^, febrile_neutropenia^, neutropenic_sepsis^, pancytopenia^, increased_ALT^, hepatic_failure(pm), allergic_reactions(pm), depressed_level_of_consciousness^, vertigo^, tumor_lysis_syndrome(pm), interstitial_lung_disease^, bronchopneumonia^, bronchitis^, nasopharyngitis^, urinary_retention^, pelvic_pain^, dehydration^, hyperkalemia^, pain_in_extremities^, sepsis^",drugs.com,nzf,240325
+
 
 *work-in-progress*
 
 CYP1A2 substrates
-
-pomalidomide,*,m_1A2,immunomodulating_agents,
-"neutropenia^^, anemia^^, thrombocytopenia^^, leukopenia^^, lymphopenia^^, dizziness^^, peripheral_neuropathy^^, 
-neuropathy^^, headache^^, tremor^^, confusional_state^^, dyspnea^^, upper_RTI^^, 
-pneumonia^^, cough^^, epistaxis^^, productive_cough^^, oropharyngeal_pain^^, rash^^, hyperhidrosis^^, 
-pruritus^^, constipation^^, diarrhea^^, UTI^^, decreased_appetite^^, hypercalcemia^^, hyperglycemia^^, 
-weight_loss^^, hyponatremia^^, hypokalemia^^, hypocalcemia^^, weight_gain^^, Back pain (35%), 
-musculoskeletal_chest_pain^^, muscle_spasms^^ bone_pain^^, arthralgia^^, muscular_weakness^^, 
-musculoskeletal_pain^^, insomnia^^, anxiety^^, increased_blood_creatinine^^, renal_failure^^, 
-fatigue^^, fever^^, peripheral_edema^^, infection^^, 
-
-deep_vein_thrombosis^, pulmonary_embolism^, myocardial_infarction^, stroke^, cardiac_failure^, febrile_neutropenia^, 
-neutropenic_sepsis^, pancytopenia^, increased_ALT^, hepatic_failure(pm), allergic_reactions(pm), 
-depressed_level_of_consciousness^, vertigo^, tumor_lysis_syndrome(pm), interstitial_lung_disease^, 
-bronchopneumonia^, bronchitis^, nasopharyngitis^, urinary_retention^, pelvic_pain^, dehydration^, hyperkalemia^, 
-pain_in_extremities^, sepsis^",drugs.com,
-
 
 tacrine,n/a,s_1A2 
 tasimelteon,n/a,s_1A2 
