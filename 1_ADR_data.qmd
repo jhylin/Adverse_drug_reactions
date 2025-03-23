@@ -156,6 +156,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - pomalidomide (a moderate CYP1A2 substrate) is an immunomodulating drug that has antineoplastic property to treat relapsed multiple myeloma and is structurally related to thalidomide
 
+- tacrine (a strong CYP1A2 substrate) has been withdrawn from the US market in May 2012. An [archived liverTox reference](https://web.archive.org/web/20190702153735/http://www.livertox.nih.gov/Tacrine.htm) has explained in details about the highly common hepatoxicity caused by tacrine which eventually led to the market withdrawal of this drug (while there are also other anticholinesterase inhibitors available for use). For exact drug information references used by drugs.com for the ADRs of tacrine, here's a [list of references](https://www.drugs.com/sfx/tacrine-side-effects.html#refs) (which included the old pharmaceutical manufacturer's data sheet)
+
 <br>
 
 ##### **Abbreviations used**
