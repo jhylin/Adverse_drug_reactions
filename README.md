@@ -3,8 +3,8 @@
 This work can be read in conjunction with the previous "[cytochrome P450 and small drug molecules](https://jhylin.github.io/Data_in_life_blog/posts/20_Cyp3a4_2d6_inh/1_CYP450_drugs.html)" post as it is a continuation of this project.
 
 Ongoing ADRs data collection for other cytochrome P450 (CYP) substrates:
-- ADRs for CYP3A4, 2D6, 2C19 and 2C9 substrates have been collected in February to March 2025
-- ADRs for CYP1A2 are being collected in March 2025
+- ADRs for CYP3A4, 2D6, 2C19, 2C9 and 1A2 substrates have been collected from February to March 2025
+- ADRs for CYP2B6, 2E1 and 2C8 substrates to be collected from March to April 2025 
 
 #### **Documents**:
 
@@ -35,7 +35,7 @@ A few different .tsv/.csv files of CYP3A4 substrates data or their SMILES (note:
 - cyp_substrates_adrs.csv - *work-in-progress* - eventually (hopefully) it'll contain (all) CYP substrates with information such as drug classes, ADRs and references sources
 
 Last checked dates for CYP substrate strengths of evidence: 
-- CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 9th Mar 2025
+- CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 25th Mar 2025
 
 *Please note that all of the CYP substrates curated in the datasets are based on "[The Flockhart Cytochrome P450 Drug-Drug Interaction Table](https://drug-interactions.medicine.iu.edu/MainTable.aspx)" which is continuously being updated over time (at least twice yearly as quoted from source), so the files stored here may not reflect the most up-to-date version - refer to the table directly if needing latest information*
 
