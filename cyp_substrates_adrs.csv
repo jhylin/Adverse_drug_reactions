@@ -1,4 +1,4 @@
-*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6, 2C19 and 2C9 substrates, 
+*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6, 2C19, 2C9 and 1A2 substrates, 
 with plan to slowly add other CYP isoform substrates' ADRs over time*
 
 
@@ -77,9 +77,4 @@ pomalidomide,*,m_1A2,immunomodulating_agents,"neutropenia^^, anemia^^, thrombocy
 tacrine,*,s_1A2,cholinesterase_inhibitors,"increased_LFT^^, diarrhea^^, dyspepsia^^, anorexia^^, restlessness^^, tremors^^, myalgia^^, arthralgia^^, hyperhidrosis, rash^^, urinary_frequency^^",drugs.com,data_sheet,240325
 tasimelteon,n/a,s_1A2,hypnotics,"headache^^, increased_ALT^^, abnormal_dreams^^, UTI^, Upper_RTI^",drugs.com,Drugs@FDA,240325
 theophylline,*,m_1A2,bronchodilators,"sinus_tachycardia(od)^^, ventricular_arrhythmias_with_hemodynamic_instability(od)^^, supraventricular_tachycardias(od)^^, ventricular_premature_beats(od)^^, shock(od)^^, atrial_fibrillation(od)^^, tremors(od)^^, seizures(od)^^, abdominal_pain(od)^^, diarrhea(od)^^, hyperglycemia(od)^^, hypokalemia(od)^^, acid_base_disturbance(od)^^, nervousness(od)^^, disorientation(od)^^, death(od)^^, multifocal_atrial_tachycardia(od)^, hematemesis(od)^",drugs.com,nzf,250325
-
-*work-in-progress*
-
-CYP1A2 substrates
-
-tizanidine,n/a,s_1A2 
+tizanidine,n/a,s_1A2,skeletal_muscle_relaxants,"drowsiness^^, dizziness^^, dry_mouth^^, speech_disorder^, dyskinesia^, convulsion(pm), paresthesia(pm), tremor(pm), constipation^, abnormal_LFT^, hepatitis(pm), bradycardia^, hypotension^, tachycardia^, syncope(pm), ventricular_tachycardia(pm), QT_prolongation(pm), amblyopia^, Stevens_Johnson_syndrome(pm), exfoliative_dermatitis(pm), rash(pm), fatigue^, UTI^, urinary_frequency^, pharyngitis^, rhinitis^, anaphylactic_reaction(pm), infection^, flu_syndrome^, arthralgia(pm), nervousness^, depression(pm)",drugs.com,nzf,250325
