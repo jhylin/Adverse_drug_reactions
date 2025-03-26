@@ -164,6 +164,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - bupropion (a strong CYP2B6 substrate) is also used for smoking cessation
 
+- efavirenz (a strong CYP2B6 substrate) has a very common ADR of rash that often occurs in the first 2 weeks of treatment, it could be minor if there are no blistering, desquamations or any other widespread signs and the drug can be continued with symptoms disappearing usually after about a month; alternatively, if the symptoms are severe, the drug should be discontinued
+
 <br>
 
 ##### **Abbreviations used**
@@ -207,3 +209,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - GI = gastrointestinal
 - EEG = electroencephalogram
 - od = overdose
+- NNRTIs = Non-nucleoside reverse transcriptase inhibitors
