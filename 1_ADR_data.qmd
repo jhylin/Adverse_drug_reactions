@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate strength cytochrome P450 (CYP) enzyme substrates
 date: '2025-1-8'
-date-modified: '2025-3-24'
+date-modified: '2025-3-26'
 author: Jennifer HY Lin
 draft: true
 categories:
@@ -161,6 +161,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - tacrine (a strong CYP1A2 substrate) has been withdrawn from the US market in May 2012. An [archived LiverTox reference](https://web.archive.org/web/20190702153735/http://www.livertox.nih.gov/Tacrine.htm) has explained in details about the highly common hepatoxicity caused by tacrine which eventually led to the market withdrawal of this drug (while there are also other anticholinesterase inhibitors available for use). For exact drug information references used by drugs.com for the ADRs of tacrine, here's a [list of references](https://www.drugs.com/sfx/tacrine-side-effects.html#refs) (which included the old pharmaceutical manufacturer's data sheet)
 
 - theophylline (a moderate CYP1A2 substrate) ADRs are more likely to occur in overdoses (therapeutic drug monitoring is recommended as therapeutic and toxic doses may be very close to each other)
+
+- bupropion (a strong CYP2B6 substrate) is also used for smoking cessation
 
 <br>
 
