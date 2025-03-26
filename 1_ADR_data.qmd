@@ -164,7 +164,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - bupropion (a strong CYP2B6 substrate) is also used for smoking cessation
 
-- efavirenz (a strong CYP2B6 substrate) has a very common ADR of rash that often occurs in the first 2 weeks of treatment, it could be minor if there are no blistering, desquamations or any other widespread signs and the drug can be continued with symptoms disappearing usually after about a month; alternatively, if the symptoms are severe, the drug should be discontinued
+- efavirenz (a strong CYP2B6 substrate) has a very common ADR of rash that often occurs in the first 2 weeks of treatment, it could be minor if there are no blistering, desquamations or any other widespread signs and the drug can be continued with symptoms disappearing usually after about a month; alternatively, if the symptoms are severe, the drug should be discontinued. Central nervous system-type ADRs will usually slowly improve after continuous use of drug, but if there are pre-existing psychiatric conditions, the risk of psychiatric ADRs may need to be further considered before initiating or continuing the drug
 
 <br>
 
@@ -210,3 +210,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - EEG = electroencephalogram
 - od = overdose
 - NNRTIs = Non-nucleoside reverse transcriptase inhibitors
+- HDL = high-density lipoprotein
