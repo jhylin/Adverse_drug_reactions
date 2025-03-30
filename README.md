@@ -3,8 +3,8 @@
 This work can be read in conjunction with the previous "[cytochrome P450 and small drug molecules](https://jhylin.github.io/Data_in_life_blog/posts/20_Cyp3a4_2d6_inh/1_CYP450_drugs.html)" post as it is a continuation of this project.
 
 Ongoing ADRs data collection for other cytochrome P450 (CYP) substrates:
-- ADRs for CYP3A4, 2D6, 2C19, 2C9, 1A2 and 2B6 substrates have been collected from February to March 2025
-- ADRs for CYP2E1 and 2C8 substrates to be collected from March to April 2025 
+- ADRs for CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6 and 2E1 substrates have been collected from February to March 2025
+- ADRs for CYP2C8 substrates to be collected from March to April 2025
 
 #### **Documents**:
 
