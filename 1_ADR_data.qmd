@@ -168,6 +168,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - isoflurane (a strong CYP2E1 substrate) is a type of inhalational anaesthetic agent (in volatile liquid form) that is normally administered through vaporiser and requires highly trained staff for administration and resuscitation if needed
 
+- cerivastatin (a strong CYP2C8 substrate) has been withdrawn from the market since 2001 due to serious adverse effect of rhabdomyolysis leading to kidney failure and subsequently reported deaths ([reference](https://pubmed.ncbi.nlm.nih.gov/11806796/))
+
 <br>
 
 ##### **Abbreviations used**
