@@ -170,6 +170,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - cerivastatin (a strong CYP2C8 substrate) has been withdrawn from the market since 2001 due to serious adverse effect of rhabdomyolysis leading to kidney failure and subsequently reported deaths ([reference](https://pubmed.ncbi.nlm.nih.gov/11806796/))
 
+- enzalutamide (a moderate CYP2C8 substrate) has a known postmarketing report of posterior reversible encephalopathy syndrome, which include symptoms such as seizure, headache, confusion, other visual and neurological disturbances with or without associated hypertension (more details [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC5410886/))
+
 <br>
 
 ##### **Abbreviations used**
@@ -215,3 +217,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - od = overdose
 - NNRTIs = Non-nucleoside reverse transcriptase inhibitors
 - HDL = high-density lipoprotein
+- PRES = posterior reversible encephalopathy syndrome

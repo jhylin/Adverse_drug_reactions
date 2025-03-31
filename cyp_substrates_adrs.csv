@@ -87,7 +87,16 @@ cerivastatin,*,s_2C8,statins,"rhabdomyolysis^^, renal_failure^^",drugs.com,Drugs
 
 2C8 substrates:
 
-enzalutamide,n/a,m_2C8,
+enzalutamide,*,m_2C8,anti_androgens,
+"headache^^, dizziness^^, flushing^^, peripheral_edema^^, hypertension^^, constipation^^, diarrhea^^, 
+neutropenia^^, increased_ALT^^, decreased_appetite^^, weight_loss^^, back_pain^^, arthralgia^^, 
+musculoskeletal_pain^^, fatigue^^, falls^^, upper_RTI^^, dyspnea^^, 
+
+spinal_cord_compression^, paresthesia^, hypoesthesia^, taste_disturbance^, restless_legs_syndrome^, 
+PRES(pm), pruritus^, rash(pm), gynecomastia^, hematuria^, pollakiuria^, thrombocytopenia^, increased_bilirubin^, 
+muscular_weakness^, musculoskeletal_stiffness^, fall_related_injuries^, insomnia^, anxiety^, hallucinations^,
+mental_impairment_disorders^, lower_RTI^, epistaxis^, face_edema(pm), tongue_edema(pm), lip_edema(pm), pharynx_edema(pm)",drugs.com,
+
 repaglinide,n/a,s_2C8,
 rosiglitazone,n/a,m_2C8,
 selexipag,n/a,m_2C8,
