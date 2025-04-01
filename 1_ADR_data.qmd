@@ -218,3 +218,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - NNRTIs = Non-nucleoside reverse transcriptase inhibitors
 - HDL = high-density lipoprotein
 - PRES = posterior reversible encephalopathy syndrome
+- CVS = cardiovascular
