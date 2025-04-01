@@ -82,20 +82,11 @@ bupropion,*,s_2B6,antidepressants,"insomnia^^, agitation^^, abnormal_dreams^^, m
 efavirenz,*,s_2B6,NNRTIs,"rash^^, diarrhea^^, CNS_symptoms^^, dizziness^^, hypercholesterolemia^^, increased_HDL^^, pain^^, hypertriglyceridemia^^, depression^^, insomnia^^, anxiety^^, cardiovascular_dysfunction^, flushing(pm), palpitations(pm), pruritus^, hyperhidrosis^, urticaria^, erythema_multiforme(pm), photoallergic_dermatitis(pm), Stevens_Johnson_syndrome(pm), pruritus(pm), gynecomastia(pm), increased_amylase^, dyspepsia^, abdominal_pain^, constipation^, malabsorption(pm), constipation(pm), abdominal_pain(pm), pancreatitis(pm), neutropenia^, increased_ALT^, increased_AST^, increased_GGT^, hepatic_failure(pm), increased_hepatic_enzymes(pm), hepatitis(pm), autoimmune_hepatitis(pm), allergic_reactions(pm), hyperglycemia^, anorexia^, accumulation_of_body_fat(pm), hypercholesterolemia(pm), hypertriglyceridemia(pm), arthralgia(pm), myalgia(pm), myopathy(pm), impaired_concentration^, headache^, drowsiness^, attention_disturbance^, paresthesia^, abnormal_coordination(pm), ataxia(pm), encephalopathy(pm), cerebellar_coordination_and_balance_disturbance(pm), convulsions(pm), hypoesthesia(pm), paresthesia(pm), neuropathy(pm), tremor(pm), vertigo(pm), tinnitus(pm), abnormal_vision(pm), fatigue^, edema^, fever^, weight_disturbance^, fatigue(pm), contraceptive_failure(pm), nervousness^, abnormal_dreams^, hallucinations^, aggressive_reactions(pm), agitation(pm), delusions(pm), emotional_lability(pm), mania(pm), neurosis(pm), paranoia(pm), psychosis(pm), suicidal_ideation(pm), catatonia(pm), dyspnea(pm)",drugs.com,nzf,270325
 isoflurane,*,s_2E1,general_anaesthetics,"cough^^, hepatic_necrosis(pm), hepatic_failure(pm), breath-holding^, laryngospasm^, cardiac_arrest(pm), cardiorespiratory_depression^",drugs.com,nzf,280325
 cerivastatin,*,s_2C8,statins,"rhabdomyolysis^^, renal_failure^^",drugs.com,Drugs@FDA,310325
+enzalutamide,*,m_2C8,anti_androgens,"headache^^, dizziness^^, flushing^^, peripheral_edema^^, hypertension^^, constipation^^, diarrhea^^, neutropenia^^, increased_ALT^^, decreased_appetite^^, weight_loss^^, back_pain^^, arthralgia^^, musculoskeletal_pain^^, fatigue^^, falls^^, upper_RTI^^, dyspnea^^, spinal_cord_compression^, paresthesia^, hypoesthesia^, taste_disturbance^, restless_legs_syndrome^, PRES(pm), pruritus^, rash(pm), gynecomastia^, hematuria^, pollakiuria^, thrombocytopenia^, increased_bilirubin^, muscular_weakness^, musculoskeletal_stiffness^, fall_related_injuries^, insomnia^, anxiety^, hallucinations^, mental_impairment_disorders^, lower_RTI^, epistaxis^, face_edema(pm), tongue_edema(pm), lip_edema(pm), pharyngeal_edema(pm)",drugs.com,nzf,010425
 
 *work-in-progress*
 
 2C8 substrates:
-
-enzalutamide,*,m_2C8,anti_androgens,
-"headache^^, dizziness^^, flushing^^, peripheral_edema^^, hypertension^^, constipation^^, diarrhea^^, 
-neutropenia^^, increased_ALT^^, decreased_appetite^^, weight_loss^^, back_pain^^, arthralgia^^, 
-musculoskeletal_pain^^, fatigue^^, falls^^, upper_RTI^^, dyspnea^^, 
-
-spinal_cord_compression^, paresthesia^, hypoesthesia^, taste_disturbance^, restless_legs_syndrome^, 
-PRES(pm), pruritus^, rash(pm), gynecomastia^, hematuria^, pollakiuria^, thrombocytopenia^, increased_bilirubin^, 
-muscular_weakness^, musculoskeletal_stiffness^, fall_related_injuries^, insomnia^, anxiety^, hallucinations^,
-mental_impairment_disorders^, lower_RTI^, epistaxis^, face_edema(pm), tongue_edema(pm), lip_edema(pm), pharynx_edema(pm)",drugs.com,
 
 repaglinide,n/a,s_2C8,
 rosiglitazone,n/a,m_2C8,
