@@ -89,6 +89,11 @@ repaglinide,n/a,s_2C8,meglinitides,"hypoglycemia^^, headache^^, Upper_RTI^^, che
 
 2C8 substrates:
 
-rosiglitazone,n/a,m_2C8,
+rosiglitazone,*,m_2C8,thiazolidinediones,
+"edema^, hypertension^, anemia^, hepatitis(pm), increased_LFT(pm), hepatic_failure(pm), hyperglycemia^, 
+hypoglycemia^, hypocholesterolemia^, anaphylactic_reaction(pm), urticaria(pm), angioedema(pm), 
+rash(pm), pruritus(pm), Stevens_Johnson_syndrome(pm), diabetic_macular_edema(pm), upper_RTI^, sinusitis^, 
+congestive_heart_failure(pm), pulmonary_edema(pm), pleural_effusions(pm), back_pain^, diarrhea^, injury^, fatigue^",drugs.com,Drugs@FDA,020425
+
 selexipag,n/a,m_2C8,
 tucatinib,n/a,m_2C8,
