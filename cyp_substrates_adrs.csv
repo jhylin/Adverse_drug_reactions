@@ -1,5 +1,5 @@
-*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6, 2C19, 2C9 and 1A2 substrates, 
-with plan to slowly add other CYP isoform substrates' ADRs over time*
+*This text file currently contains adverse drug reactions (ADRs) 
+for strong & moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6 and 2E1 substrates*
 
 
 generic_drug_name,notes,cyp_type_and_cyp_strength_of_evidence,drug_class,adverse_drug_reactions,first_ref,second_ref,date_checked
