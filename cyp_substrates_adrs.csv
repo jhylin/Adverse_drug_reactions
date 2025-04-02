@@ -84,16 +84,11 @@ isoflurane,*,s_2E1,general_anaesthetics,"cough^^, hepatic_necrosis(pm), hepatic_
 cerivastatin,*,s_2C8,statins,"rhabdomyolysis^^, renal_failure^^",drugs.com,Drugs@FDA,310325
 enzalutamide,*,m_2C8,anti_androgens,"headache^^, dizziness^^, flushing^^, peripheral_edema^^, hypertension^^, constipation^^, diarrhea^^, neutropenia^^, increased_ALT^^, decreased_appetite^^, weight_loss^^, back_pain^^, arthralgia^^, musculoskeletal_pain^^, fatigue^^, falls^^, upper_RTI^^, dyspnea^^, spinal_cord_compression^, paresthesia^, hypoesthesia^, taste_disturbance^, restless_legs_syndrome^, PRES(pm), pruritus^, rash(pm), gynecomastia^, hematuria^, pollakiuria^, thrombocytopenia^, increased_bilirubin^, muscular_weakness^, musculoskeletal_stiffness^, fall_related_injuries^, insomnia^, anxiety^, hallucinations^, mental_impairment_disorders^, lower_RTI^, epistaxis^, face_edema(pm), tongue_edema(pm), lip_edema(pm), pharyngeal_edema(pm)",drugs.com,nzf,010425
 repaglinide,n/a,s_2C8,meglinitides,"hypoglycemia^^, headache^^, Upper_RTI^^, chest_pain^, angina^, serious_CVS_events_including_ischemia^, allergy^, diarrhea^, constipation^, dyspepsia^, pancreatitis(pm), paresthesia^, arthralgia^, back_pain^, tooth_disorder^, sinusitis^, rhinitis^, bronchitis^, severe_hepatic_dysfunction(pm), hemolytic_anemia(pm), alopecia(pm), Stevens_Johnson_syndrome(pm), UTI^",drugs.com,Drugs@FDA,010425
+rosiglitazone,*,m_2C8,thiazolidinediones,"edema^, hypertension^, anemia^, hepatitis(pm), increased_LFT(pm), hepatic_failure(pm), hyperglycemia^, hypoglycemia^, hypocholesterolemia^, anaphylactic_reaction(pm), urticaria(pm), angioedema(pm), rash(pm), pruritus(pm), Stevens_Johnson_syndrome(pm), diabetic_macular_edema(pm), upper_RTI^, sinusitis^, congestive_heart_failure(pm), pulmonary_edema(pm), pleural_effusions(pm), back_pain^, diarrhea^, injury^, fatigue^",drugs.com,Drugs@FDA,020425
 
 *work-in-progress*
 
 2C8 substrates:
-
-rosiglitazone,*,m_2C8,thiazolidinediones,
-"edema^, hypertension^, anemia^, hepatitis(pm), increased_LFT(pm), hepatic_failure(pm), hyperglycemia^, 
-hypoglycemia^, hypocholesterolemia^, anaphylactic_reaction(pm), urticaria(pm), angioedema(pm), 
-rash(pm), pruritus(pm), Stevens_Johnson_syndrome(pm), diabetic_macular_edema(pm), upper_RTI^, sinusitis^, 
-congestive_heart_failure(pm), pulmonary_edema(pm), pleural_effusions(pm), back_pain^, diarrhea^, injury^, fatigue^",drugs.com,Drugs@FDA,020425
 
 selexipag,n/a,m_2C8,
 tucatinib,n/a,m_2C8,

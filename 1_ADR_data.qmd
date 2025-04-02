@@ -172,7 +172,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - enzalutamide (a moderate CYP2C8 substrate) has a known postmarketing ADR report of posterior reversible encephalopathy syndrome, which include symptoms such as seizure, headache, confusion, other visual and neurological disturbances with or without associated hypertension (more details [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC5410886/) or [alternative link](https://academic.oup.com/omcr/article/2017/4/omx011/3098656))
 
-- rosiglitazone (a moderate CYP2C8 substrate) has an ADR of increasing the risk of congestive heart failure reported from postmarketing use and also one of its earlier clinical trials. 
+- rosiglitazone (a moderate CYP2C8 substrate) has an ADR of increasing the risk of congestive heart failure and heart attack reported from postmarketing use and also one of its earlier clinical trials. It was withdrawn for medical use in several countries back in 2011 but US continued its use with restrictions and further removed the restriction ([reference](https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-eliminates-risk-evaluation-and-mitigation-strategy-rems)) when the drug was found not to increase cardiovascular risk in another clinical trial. Currently, the cardiovascular risk is still recommended to be considered before use
 
 <br>
 
