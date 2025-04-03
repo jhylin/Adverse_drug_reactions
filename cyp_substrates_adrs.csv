@@ -1,6 +1,4 @@
-*This text file currently contains adverse drug reactions (ADRs) 
-for strong & moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6 and 2E1 substrates*
-
+*This text file currently contains adverse drug reactions (ADRs) for strong & moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates*
 
 generic_drug_name,notes,cyp_type_and_cyp_strength_of_evidence,drug_class,adverse_drug_reactions,first_ref,second_ref,date_checked
 bosentan,n/a,s_3A4,agents_for_pulmonary_hypertension,"abnormal_LFT^^, headache^^, RTI^^, decreased_hemoglobin^^, decreased_sperm_count^^, edema^^, hepatic_cirrhosis(pm), liver_failure(pm), jaundice(pm), syncope^, sinusitis^, nasal_congestion^, sinus_congestion^, rhinitis^, oropharyngeal_pain^, epistaxis^, nasopharyngitis^, idiopathic_pulmonary_fibrosis^, anemia^, decreased_hematocrit^, thrombocytopenia(pm), neutropenia(pm), leukopenia(pm), flushing^, hypotension^, palpitation^, postural_hypotension^, unstable_angina^, hot_flush^, gastroesophageal_reflux_disease^, diarrhea^, pruritus^, erythema^, angioedema(pm), DRESS(pm), rash(pm), dermatitis(pm), arthralgia^, joint_swelling^, blurred_vision^, chest_pain^, peripheral_edema^, influenza_like_illness^, vertigo^, fever^, chest_pain^, hypersensitivity_reactions^, anaphylaxis(pm)",drugs.com,nzf,270225
@@ -86,9 +84,4 @@ enzalutamide,*,m_2C8,anti_androgens,"headache^^, dizziness^^, flushing^^, periph
 repaglinide,n/a,s_2C8,meglinitides,"hypoglycemia^^, headache^^, Upper_RTI^^, chest_pain^, angina^, serious_CVS_events_including_ischemia^, allergy^, diarrhea^, constipation^, dyspepsia^, pancreatitis(pm), paresthesia^, arthralgia^, back_pain^, tooth_disorder^, sinusitis^, rhinitis^, bronchitis^, severe_hepatic_dysfunction(pm), hemolytic_anemia(pm), alopecia(pm), Stevens_Johnson_syndrome(pm), UTI^",drugs.com,Drugs@FDA,010425
 rosiglitazone,*,m_2C8,thiazolidinediones,"edema^, hypertension^, anemia^, hepatitis(pm), increased_LFT(pm), hepatic_failure(pm), hyperglycemia^, hypoglycemia^, hypocholesterolemia^, anaphylactic_reaction(pm), urticaria(pm), angioedema(pm), rash(pm), pruritus(pm), Stevens_Johnson_syndrome(pm), diabetic_macular_edema(pm), upper_RTI^, sinusitis^, congestive_heart_failure(pm), pulmonary_edema(pm), pleural_effusions(pm), back_pain^, diarrhea^, injury^, fatigue^",drugs.com,Drugs@FDA,020425
 selexipag,n/a,m_2C8,agents_for_pulmonary_hypertension,"diarrhea^^, flushing^^, sinus_tachycardia^^, rash^^, jaw_pain^^, pain_in_extremities^^, myalgia^^, arthralgia^^, headache^^, nasopharyngitis^^, abdominal_pain^, dyspepsia^, hypotension^, symptomatic_hypotension(pm), urticaria^, hyperthyroidism^, decreased_TSH^, anemia^, decreased_hemoglobin^, decreased_appetite^, musculoskeletal_pain^, neck_pain^, eye_pain^, retinal_disorder^, malignancy^, fatigue^, fever^, pain^, influenza^, weight_loss^, nasal_congestion^",drugs.com,nzf,030425
-
-*work-in-progress*
-
-2C8 substrates:
-
-tucatinib,n/a,m_2C8,
+tucatinib,*,m_2C8,tyrosine_kinase_inhibitor,"palmar_plantar_erythrodysesthesia_syndrome^^, rash^^, diarrhea^^, stomatitis^^, decreased_hemoglobin^^, decreased_phosphate^^, anemia^^, increased_bilirubin^^, increased_ALT^^, increased_AST^^, hepatotoxicity^^, anorexia^^, weight_loss^^, decreased_magnesium^^, decreased_potassium^^, increased_ALP^^, arthralgia^^, increased_creatinine^^, epistaxis^^",drugs.com,Drugs@FDA,030425

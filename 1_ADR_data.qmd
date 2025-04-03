@@ -174,6 +174,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - rosiglitazone (a moderate CYP2C8 substrate) has an ADR of increasing the risk of congestive heart failure and heart attack reported from postmarketing use and also one of its earlier clinical trials. It was withdrawn for medical use in several countries back in 2011 but US continued its use with restrictions and further removed the restriction ([reference](https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-eliminates-risk-evaluation-and-mitigation-strategy-rems)) when the drug was found not to increase cardiovascular risk in another clinical trial. Currently, the cardiovascular risk is still recommended to be considered before use
 
+- tucatinib (a moderate CYP2C8 substrate) has been tested along with trastuzumab and capecitabine in clinical trials, therefore its ADRs are based on these combination of treatments, and not solely on tucatinib. One of its ADRs, palmar plantar erythrodysesthesia syndrome is also known as hand-foot syndrome or chemotherapy-induced acral erythema, with symptoms such as tingling, numbness and redness of palms and soles ([reference](https://dermnetnz.org/topics/hand-foot-syndrome))
+
 <br>
 
 ##### **Abbreviations used**
