@@ -1,8 +1,8 @@
 ### **Adverse drug reactions** (ADRs)
 
-This work can be read in conjunction with the previous "[cytochrome P450 and small drug molecules](https://jhylin.github.io/Data_in_life_blog/posts/20_Cyp3a4_2d6_inh/1_CYP450_drugs.html)" post as it is a continuation of this project.
-
 ADRs data collection for cytochrome P450 (CYP) 3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates have all been collected for now (since February till April 2025).
+
+This work can be read in conjunction with the previous [cytochrome P450 and small drug molecules](https://jhylin.github.io/Data_in_life_blog/posts/20_Cyp3a4_2d6_inh/1_CYP450_drugs.html) post as it is a continuation of this project, and contains some background information about CYP enzymes at the beginning.
 
 #### **Documents**:
 
@@ -23,7 +23,7 @@ A few different Python scripts are used in the 2_ADR_regressor.ipynb notebook:
 - words_tensors.py - for converting ADRs into PyTorch tensors
 - Tensors_for_adrs_interactive.py - showing step-by-step outputs how the words_tensors.py is constructed (to be used in VS Code where each line of code can be run like a Jupyter cell)
 
-A few different .tsv/.csv files of CYP3A4 substrates data or their SMILES (*note: this may change later while trying to streamline files after data collections*):
+A few different .tsv/.csv files containing ADRs and/or SMILES data for CYP substrates (*note: this may change later while trying to streamline files after data collections*):
 - All_CYP3A4_substrates - contains all CYP3A4 substrates (drug names), drug classes along with their ADRs and reference sources
 - CYP3A4_mod_substrates.csv - contains only moderate CYP3A4 substrates, drug classes along with their ADRs and reference sources
 - CYP3A4_strong_substrates.csv - contains only strong CYP3A4 substrates, drug classes along with their ADRs and reference sources
