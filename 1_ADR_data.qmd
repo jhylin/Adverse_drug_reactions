@@ -108,7 +108,7 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 ---
 
-- several ADR terms related to lack of physical energy e.g. fatigue, malaise, lethary or asthenia may be repetitive in the datasets (in process to use one ADR term only; *currently keeping two terms: malaise, fatigue* **to be checked in the end**)
+- deduplications of ADR data have been attempted e.g. for fatigue, malaise, lethary or asthenia, I've decided to use fatigue only to cover all of these similar-meaning terms; the only exception is when the same term is reported as an ADR and also during postmarketing period, then both terms are kept (note: there may still be some duplicated terms that I've missed...)
 
 <br>
 

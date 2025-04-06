@@ -30,7 +30,8 @@ A few different .tsv/.csv files containing ADRs and/or SMILES data for CYP subst
 - all_cyp3a4_smiles.tsv - contains SMILES of all the CYP3A4 substrates
 - strong_cyp3a4_smiles.tsv - contains SMILES for strong CYP3A4 substrates only
 - all_cyp2d6_substrates.csv - contains all strong and moderate CYP2D6 substrates, drug classes along with their ADRs and reference sources
-- **cyp_substrates_adrs.csv** - for now it contains ADRs for most CYP substrates with information such as drug classes, ADRs and references sources (likely the main file for use)
+- **cyp_substrates_adrs.csv** - for now it contains ADRs for strong and moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates with information such as drug classes and references sources (likely the main file for use)
+
 
 Last checked dates for CYP substrate strengths of evidence: 
 - CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 25th Mar 2025; 2B6 substrates on 27th Mar 2025; 2E1 and 2C8 substrates on 7th Apr 2025
