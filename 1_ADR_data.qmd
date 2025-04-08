@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate strength cytochrome P450 (CYP) enzyme substrates
 date: '2025-1-8'
-date-modified: '2025-4-8'
+date-modified: '2025-4-9'
 author: Jennifer HY Lin
 draft: true
 categories:
@@ -11,15 +11,13 @@ categories:
 jupyter: python3
 ---
 
-**Additional note re. CYP data on 15th Feb 2025**: **TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses**. A small discovery re. CYP data used in many ADMET prediction apps - most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
-
-Here are the notes regarding the strong and moderate CYP3A4 substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html), and over time, this note will also include drug information for other CYP enzyme substrates.
+Here are the notes regarding the ADRs of strong and moderate cytochrome P450 (CYP) substrates used in the data in the [accompanying notebook](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html). The dataset currently contains ADRs for CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates.
 
 <br>
 
 ##### **drug_name and cyp_strength_of_evidence source** 
 
-*note: "cyp_strength_of_evidence source" column may be renamed as "cyp_type_and_cyp_strength_of_evidence" when other CYP isoform substrates are added*
+*note: "cyp_strength_of_evidence source" column has been renamed as "cyp_type_and_cyp_strength_of_evidence in the cyp_substrates_adrs.csv file"*
 
 This is all based on the Flockhart table of drug interactions: [https://drug-interactions.medicine.iu.edu/MainTable.aspx](https://drug-interactions.medicine.iu.edu/MainTable.aspx)
 
@@ -111,6 +109,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 <br>
 
 ###### **Notes for specific drugs**
+
+*May turn each drug into sub-headings later for quick access from table of contents in blog*
 
 - hydrocortisone (a moderate CYP3A4 substrate) has no reported ADR frequencies at all for its ADRs as they are entirely dependent on the dosage and duration of use (ADRs tend to be unnoticeable at appropriate low doses for short durations)
 
