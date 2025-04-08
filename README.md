@@ -1,14 +1,14 @@
 ### **Adverse drug reactions** (ADRs)
 
-ADRs data collection for cytochrome P450 (CYP) 3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates have all been collected for now (since February till April 2025).
+ADRs data for cytochrome P450 (CYP) 3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates have all been collected for now (since February till April 2025).
 
 This work can be read in conjunction with the previous [cytochrome P450 and small drug molecules](https://jhylin.github.io/Data_in_life_blog/posts/20_Cyp3a4_2d6_inh/1_CYP450_drugs.html) post as it is a continuation of this project, and contains some background information about CYP enzymes at the beginning.
 
 #### **Documents**:
 
-0_Ideas.qmd (draft version) - the very early brainstorming of ideas for this project with some background information
+0_Ideas.qmd (draft version to be updated) - the very early brainstorming of ideas for this project with some background information
 
-1_ADR_data.qmd - all [notes](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/1_ADR_data.html) on ADRs and also a list of reference sources for the ADRs data
+1_ADR_data.qmd - [notes](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/1_ADR_data.html) on ADRs and also a list of drug information reference sources used for the ADRs dataset
 
 2_ADR_regressor.ipynb (.qmd version with same file name) - a notebook ([post link](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/2_ADR_regressor.html)) about building a simple deep neural network (DNN) model to predict therapeutic drug classes for CYP3A4 substrates (which are also drugs)
 
@@ -31,7 +31,6 @@ A few different .tsv/.csv files containing ADRs and/or SMILES data for CYP subst
 - strong_cyp3a4_smiles.tsv - contains SMILES for strong CYP3A4 substrates only
 - all_cyp2d6_substrates.csv - contains all strong and moderate CYP2D6 substrates, drug classes along with their ADRs and reference sources
 - **cyp_substrates_adrs.csv** - for now it contains ADRs for strong and moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates with information such as drug classes and references sources (likely the main file for use)
-
 
 Last checked dates for CYP substrate strengths of evidence: 
 - CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 25th Mar 2025; 2B6 substrates on 27th Mar 2025; 2E1 and 2C8 substrates on 7th Apr 2025
