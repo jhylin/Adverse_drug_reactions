@@ -224,3 +224,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - PRES = posterior reversible encephalopathy syndrome
 - CVS = cardiovascular
 - TSH = thyroid stimulating hormone
+- GERD = gastroesophageal reflux disease (note: otherwise also known as "GORD")
