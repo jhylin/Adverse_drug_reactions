@@ -217,9 +217,10 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - GI = gastrointestinal
 - EEG = electroencephalogram
 - od = overdose
-- NNRTIs = Non-nucleoside reverse transcriptase inhibitors
+- NNRTIs = non-nucleoside reverse transcriptase inhibitors
 - HDL = high-density lipoprotein
 - PRES = posterior reversible encephalopathy syndrome
 - CVS = cardiovascular
 - TSH = thyroid stimulating hormone
 - GERD = gastroesophageal reflux disease (also known as "GORD" due to alternative spelling of "gastro-oesophageal")
+- AF = atrial fibrillation
