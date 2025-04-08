@@ -2,7 +2,7 @@
 title: Notes on adverse drug reactions (ADRs) data
 subtitle: For strong and moderate strength cytochrome P450 (CYP) enzyme substrates
 date: '2025-1-8'
-date-modified: '2025-3-26'
+date-modified: '2025-4-8'
 author: Jennifer HY Lin
 draft: true
 categories:
@@ -78,6 +78,8 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 
 - for ADR terms with similar meanings, e.g. pyrexia/fever - fever is used instead (only one will be used); attempts have been made to use just one ADR term to represent various other similar-meaning ADRs to minimise duplications
 
+- deduplications of ADR data have been attempted e.g. for fatigue, malaise, lethary or asthenia, I've decided to use fatigue only to cover all of these similar-meaning terms; the only exception is when the same term is reported as an ADR and also during postmarketing period, then both terms are kept (note: there may still be some duplicated terms that I've missed...)
+
 ---
 
 - ADR mentioned in common ADR category and repeated in the less common one will have the ADR recorded in the higher incidence rate (at > 10%) only
@@ -105,10 +107,6 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - serotonergic drugs tend to induce serotonin syndrome (e.g. tremor, ataxia, restlestness, shivering, sweating, fever, tachycardia, tachypnoea, confusion, agitation, coma) especially if used in combinations concomitantly (monotherapy tends to have smaller risk) 
 
 - typical ADRs of antipsychotics drugs can include extrapyramidal symptoms (parkinsonian symptoms e.g. tremors, dystonias or dyskinesia (abnormal muscular spasms), akathisia (restlessness) and tardive dyskinesia (most significant antipsychotic ADR causing abnormal involuntary movements of face, jaw and tongue; common in first generation antipsychotics)), constipation, sexual dysfunction, cardiovascular adverse effects, hyperglycaemia, problem with body temperature regulations and neuroleptic malignant syndrome (usually rare but potentially can be fatal)
-
----
-
-- deduplications of ADR data have been attempted e.g. for fatigue, malaise, lethary or asthenia, I've decided to use fatigue only to cover all of these similar-meaning terms; the only exception is when the same term is reported as an ADR and also during postmarketing period, then both terms are kept (note: there may still be some duplicated terms that I've missed...)
 
 <br>
 
@@ -224,4 +222,4 @@ PubChem, ChEMBL, FDA, Micromedex etc. or online drug resources such as Drugs.com
 - PRES = posterior reversible encephalopathy syndrome
 - CVS = cardiovascular
 - TSH = thyroid stimulating hormone
-- GERD = gastroesophageal reflux disease (note: otherwise also known as "GORD")
+- GERD = gastroesophageal reflux disease (also known as "GORD" due to alternative spelling of "gastro-oesophageal")
