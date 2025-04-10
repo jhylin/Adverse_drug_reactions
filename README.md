@@ -16,7 +16,7 @@ This work can be read in conjunction with the previous [cytochrome P450 and smal
 
 4_Prevent_overfit_note.qmd - the [note post](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/4_Prevent_overfit_note.html) that shows 3 different probable strategies that can be used to minimise model overfitting when using PyTorch (may be extended to other machine learning algorithms as well)
 
-#### **Other files:**
+#### **Other files**:
 
 A few different Python scripts are used in the 2_ADR_regressor.ipynb notebook:
 - cyp_drugs.py - for obtaining SMILES of each drug from ChEMBL
@@ -36,6 +36,10 @@ Last checked dates for CYP substrate strengths of evidence:
 - CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 25th Mar 2025; 2B6 substrates on 27th Mar 2025; 2E1 and 2C8 substrates on 7th Apr 2025
 
 *Please note that all of the CYP substrates curated in the datasets are based on "[The Flockhart Cytochrome P450 Drug-Drug Interaction Table](https://drug-interactions.medicine.iu.edu/MainTable.aspx)" which is continuously being updated over time (at least twice yearly as quoted from source), so the files stored here may not reflect the most up-to-date version - refer to the table directly if needing latest information*
+
+#### **Feedback and comments**
+
+The dataset may still contain information that require further refinements, additions or corrections (there may be things I've missed) - feedback and/or comments are welcomed, please submit via issues in this GitHub repo. This also applies to the notebooks listed above.
 
 #### **Dedication**
 
