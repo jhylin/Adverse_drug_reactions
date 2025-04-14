@@ -13,6 +13,11 @@ adr_regressor.pt
 .DS_Store
 4_Prevent_overfit_note.html
 4_Prevent_overfit_note_files
+# Tidying up data files (will leave the full versions in repo instead)
+strong_cyp3a4_smiles.tsv
+CYP3A4_mod_substrates.csv
+CYP3A4_strong_substrates.csv
+all_cyp2d6_substrates.csv
 
 
 # Byte-compiled / optimized / DLL files
