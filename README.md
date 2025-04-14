@@ -23,14 +23,14 @@ A few different Python scripts are used in the 2_ADR_regressor.ipynb notebook:
 - words_tensors.py - for converting ADRs into PyTorch tensors
 - Tensors_for_adrs_interactive.py - showing step-by-step outputs how the words_tensors.py is constructed (to be used in VS Code where each line of code can be run like a Jupyter cell)
 
-A few different .tsv/.csv files containing ADRs and/or SMILES data for CYP substrates (*note: this may change later while trying to streamline files after data collections*):
-- All_CYP3A4_substrates - contains all CYP3A4 substrates (drug names), drug classes along with their ADRs and reference sources
-- CYP3A4_mod_substrates.csv - contains only moderate CYP3A4 substrates, drug classes along with their ADRs and reference sources
-- CYP3A4_strong_substrates.csv - contains only strong CYP3A4 substrates, drug classes along with their ADRs and reference sources
-- all_cyp3a4_smiles.tsv - contains SMILES of all the CYP3A4 substrates
-- strong_cyp3a4_smiles.tsv - contains SMILES for strong CYP3A4 substrates only
-- all_cyp2d6_substrates.csv - contains all strong and moderate CYP2D6 substrates, drug classes along with their ADRs and reference sources
-- **cyp_substrates_adrs.csv** - for now it contains ADRs for strong and moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates with information such as drug classes and references sources (likely the main file for use)
+A few different .tsv/.csv files containing ADRs and/or SMILES data for CYP substrates:
+
+- **cyp_substrates_adrs.csv** - main file for use which contains ADRs for strong and moderate CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates with their drug names, specific notes regarding ADRs documented (for selected drugs only), evidence of CYP substrate strengths, drug classes, two drug references sources and information checking dates
+
+- **cyp3a4_substrates.csv** - contains ADRs for all CYP3A4 substrates with drug names, ADR notes, evidence of CYP strengths, drug classes, two drug references sources and information checking dates (this is the .csv file used in 2_ADR_regressor.ipynb or .qmd file with same file name)
+
+- **cyp3a4_smiles.tsv** - as an example of SMILES retrieved via cyp_drugs.py script for all CYP3A4 substrates 
+
 
 Last checked dates for CYP substrate strengths of evidence: 
 - CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 25th Mar 2025; 2B6 substrates on 27th Mar 2025; 2E1 and 2C8 substrates on 7th Apr 2025
