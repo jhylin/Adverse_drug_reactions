@@ -122,7 +122,7 @@ Next, I'm renaming the drug name column and merging the two dataframes together 
 # Rename column & change lower to uppercase
 df = df.rename(columns={"generic_drug_name": "pref_name"})
 df["pref_name"] = df["pref_name"].str.upper()
-# Merge df & df_3a4 - edited code below, previous merging produced some SMILES as "NaN"! 
+# Merge df & df_3a4 - edited code below, previous merging produced some SMILES as "NaN"! -> likely only applies to .ipynb version as the .qmd version is rendered fine using old line of merging code (as shown in html post version)
 #old code: df = df.merge(df_3a4, how="left", on="pref_name")
 df = df.merge(df_3a4, on="pref_name")
 df.head(3)
