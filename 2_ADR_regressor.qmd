@@ -55,7 +55,7 @@ print(f"Python version used: {sys.version}")
 This is an extremely small set of data compiled manually (by me) via references stated in the dataframe. For details about what and how the data are collected, I've prepared a separate post as a [data note](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/1_ADR_data.html) to explain key things about the data. It may not lead to a very significant result but it is done as an example of what an early or basic deep neural network (DNN) model may look like. Ideally there should be more training data and also more features added or used. I've hypothetically set the goal of this introductory piece to predict therapeutic drug classes from ADRs, molecular fingerprints and cytochrome P450 substrate strengths, but this won't be achieved in this initial post (yet).
 
 ```{python}
-# 14/4/25: edited file name of .csv file to be aligned with the rest and moved to Data folder
+# 14/4/25: edited file name of .csv file and added file path to align with other files in data folder
 data = pd.read_csv("Data/cyp3a4_substrates.csv")
 print(data.shape)
 data.head(3)
@@ -122,8 +122,9 @@ Next, I'm renaming the drug name column and merging the two dataframes together 
 # Rename column & change lower to uppercase
 df = df.rename(columns={"generic_drug_name": "pref_name"})
 df["pref_name"] = df["pref_name"].str.upper()
-# Merge df & df_3a4 
-df = df.merge(df_3a4, how="left", on="pref_name")
+# Merge df & df_3a4 - edited code below, previous merging produced some SMILES as "NaN"! 
+#old code: df = df.merge(df_3a4, how="left", on="pref_name")
+df = df.merge(df_3a4, on="pref_name")
 df.head(3)
 ```
 
