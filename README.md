@@ -39,7 +39,7 @@ Last checked dates for CYP substrate strengths of evidence:
 
 #### **Feedback and comments**
 
-The dataset may still contain information that require further refinements, additions or corrections (there may be things I've missed) - feedback and/or comments are welcomed, please submit via issues in this GitHub repo. This also applies to the notebooks listed above.
+The dataset may still contain information that require further refinements, additions or corrections (there may be things I've missed) - feedback and/or comments are welcomed, please submit via issues/pull requests in this GitHub repo. This also applies to the notebooks and scripts listed above as well.
 
 #### **Dedication**
 
