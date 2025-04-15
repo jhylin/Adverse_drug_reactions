@@ -1,7 +1,8 @@
 ---
-title: Brainstorming ideas for data curation on adverse drug reactions (ADRs) 
+title: Looking at minimising adverse drug reactions (ADRs) 
 date: '2024-11-12'
-date-modified: '2025-4-9'
+date-modified: '2025-4-15'
+author: Jennifer HY Lin
 draft: true
 categories:
   - Data
@@ -10,27 +11,33 @@ jupyter: python3
 
 **This is an evolving document and currently in draft mode only so it may be hard to read or follow.**
 
-***Additional note re. CYP data on 15th Feb 2025***: 
-*TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses*. A small discovery re. CYP data used in many ADMET prediction apps - most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
+##### **How it all begins...**
 
+I have always wondered if there's a more succinct, straightforward or better way to look at ADRs. I'm also aware that ADRs as a subject matter is complicated enough in research, but I also can't help to think that it is also how a newly initiated drug commonly fails in clinical trials (with tons of resources going down the drain after that), and it will be unwise to avoid it in the drug discovery and development landscape. So here's my very tiny attempt at this tremendous task of sorting out how to minimise ADRs by starting at the very beginning, at the preclinical and computational stage.
 
-***Random idea added on 10th Mar 2025***: 
-It may be possible to extend investigations to drugs in the same drug class and look at what CYP enzymes (if any in common) are involved in their metabolisms and what common ADRs they all share -> try to link them back to drug structures -> may be able to set up ADRs profiles for each CYP enzyme that can be drug class-specific (and/or may be able to draw out drug-ADR lineages e.g. parent compound metabolised to a child compound where both may be biologically active with similar or different ADRs)
+My very early idea is to integrate ADRs with cytochrome P450 (CYP) as they're closely linked by the effects of CYP inhibitors and inducers. During my previous role, there are a lot of well-known drug reference sources being used frequently on a daily basis, e.g. Martindale, Micromedex, American society of health-system pharmacists' (ASHP) drug information monographs and so on, and I thought they may be another great sources of drug data, which are known to be absolutely critical in machine learning (ML) tasks (with models being the other crucial component).
 
-***Older notes and ideas below:***
+I then started by having a look at [SIDER database](http://sideeffects.embl.de/), which is also another great resource for ADRs and seems very detailed and useful at the first glance. However upon more closer looks, I've noted a few things that may need to be improved in order for it to be even more useful. I've noted that it is only last updated in 2015 (checked on 16th October 2024), so it's a bit outdated and appears to be no longer maintained by anyone by the look of a few unanswered issues in its repository. There are only 1430 drugs available but I guess that's a good starting point. One of its drug examples, imatinib, has had malignant neoplasm listed as the ADR with highest incidence. I would personally categorise it more under carcinogenicity of the drug instead, and it's dose-related so can be circumvented. Also imatinib is for leukaemia and other bone marrow cancers so it may be a bit misleading to list it as a "side effect" when its therapeutic indication is also for malignancy. At this point, my idea has evolved to see if it's possible to actually curate a small, detailed and thorough dataset about ADRs, aiming for better data quality than quantity. 
 
-**How it all begins...**
+<br>
 
-Wonder if there's a more succinct, straightforward or better way to look at ADRs?
+##### **Other reasons for this work**
 
-A lot of the well-known drug reference texts require subscriptions - Martindale, Micromedex, AHFS Drug Info... so...
+It's been known that combining results from *in vitro* biological assays is a major issue in ML predictions due to the wide variations in *in vitro* experiments running in different labs leading to noises in the ML-predicted outcomes. These variations can be from different equipments used (calibration differences), variations in measurements, transcription errors (possible human errors) and likely many others I haven't mentioned here. So to mitigate this, my thought is to possibly treat clinical trials as live, *in vivo* biological assays and assemble data from clinical trials (which are what the pharmaceutical manufacturers' data sheets usually contain). However, the possible underlying problem here is that there are genetics variations in human populations, age group and gender differences, and likely others as well. The only thing that may possible help then is to document data in details so that these specific factors will need to be taken into account when training ML models.
 
-**Background**
+**---draft updated up until this line only; to be continued below---**
 
-We have problems with combining in vitro biological assays due to many different in vitro experiments running in different labs so very hard to view them as the same as there may be different equipments used, variations in measurements, and possible transcription errors (likely others I haven't mentioned), so a possible thought on this is that if we treat clinical trials as live, in vivo biological assays, we could assemble clinical-type of data from real use cases in clinical trials. Pharmaceutical manufacturers' medicines data sheets also include postmarketing surveillance data for adverse drug effects but only for established drugs, which should be very similar to the documented ADRs in commonly used drug reference textbooks (that are well-known to pharmacists - the practitioners of drug knowledge in healthcare settings).
+*Additional note re. CYP data on 15th Feb 2025*: 
 
+*TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses*. 
 
-**Data sources**
+A small discovery re. CYP data used in many ADMET prediction apps - most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
+
+<br>
+
+##### **Data sources**
+
+Details for data sources used will be documented in the data note (1_ADR_data.qmd). Below are some of the early suggestions for data sources:
 
 * Medicines data sheets from pharmaceutical manufacturers (based on clinical trials with postmarketing surveillance data if available)
 
@@ -41,6 +48,45 @@ We have problems with combining in vitro biological assays due to many different
 * Drug molecular representations for drug structures e.g. SMILES, SMARTS, or chemical fingerprints (as vector representations) etc. from other sources e.g. PubChem or ChEMBL or others
 
 * PyTorch tensors to represent ADRs (?categorical embeddings for tabular data) - the data being collected at the moment are relatively small, so have decided to do it manually by hand (aim to retrieve ADRs with reasonable quality and usefulness)
+
+<br>
+
+##### **Overall scheme**
+
+* Data curation
+
+While curating the ADRs dataset, I also have a feeling that this type of data may have already existed in proprietary settings, but probably not the open-source versions or if they do, it may have a low chance of being curated by a pharmacist/researcher which may have a slightly different angle or perspective on therapeutic drugs in general.
+
+1. First notebook/post is to build a basic DNN regression model initially to try and predict therapeutic drug classes of drugs via using CYP strength, molecule fingerprints and ADRs to infer possible drugs vs. ADRs relationships (hmm this might be a very naive model...)
+
+* Structure-adverse drug reaction relationships (...unsure if this is going to work...): 
+**ADRs <-> (dense vectors of real numbers) <-> 2D drug structures**
+
+* Structure-activity relationships: 
+**drug activities <-> 2d drug structures**
+
+2. 2D drug structures part (much further down the line as separate posts; this may evolve into multiple posts in other relevant aspects...)
+- graph neural networks (GNN - other variations also available): molecules as undirected graphs where the connections between nodes (atoms) and edges (bonds) don't matter (i.e. don't need to be in particular orders or sequences) 
+OR 
+- RNN that uses SMILES (NLP technique) -> tokenize SMILES strings -> converts into a dictionary mapping tokens to indices in the vocabulary -> converts the vocabulary (SMILES strings) into one-hot encodings
+
+<br>
+
+##### **What have been done so far**
+
+- Currently, an introductory or preliminary work is shown through the ADR regressor notebook about representing ADRs as PyTorch tensors, and from there we may be able to elicit some patterns on possible links between molecular fingerprints of each CYP substrate (drug) and ADRs.
+
+- a brief search on PubMed re. ADRs (found 3 papers for critical care settings, primary care settings and for worldwide drug withdrawals due to ADRs - just to get ideas on the frequent types of drugs causing ADRs in real-life scenarios)
+
+-> key problematic therapeutic areas or drug classes for ADRs: 
+
+* antimicrobials (critical medical setting)
+* CVS/anticoagulants (critical & primary settings)
+* analgesics & sedatives (critical surgical setting)
+* hepatic issues
+* CNS issues
+
+- completed curating a CYP substrates dataset with adverse drug reactions focused on ones that are likely going to affect qualities of lives and/or life-threatening types
 
 Below is a flow chart showing interactions between drugs and ADRs, with dotted lines representing possible or indirect relationships, that may lead to further research ideas for ADRs.
 
@@ -65,41 +111,12 @@ flowchart LR
   I --> G(CYP450 substrates)
 ```
 
+<br>
 
-**Overall scheme**
-
-* Structure-adverse drug reaction relationships (...unsure if this is going to work...): 
-**ADRs <-> (dense vectors of real numbers) <-> 2D drug structures**
-
-* Structure-activity relationships: 
-**drug activities <-> 2d drug structures**
-
-1. First post is to build a basic DNN regression model initially to try and predict therapeutic drug classes of drugs via using CYP strength, molecule fingerprints and ADRs to infer possible drugs vs. ADRs relationships (hmm this might be a very naive model...)
-
-2. 2D drug structures part (much further down the line as separate posts; this may evolve into multiple posts in other relevant aspects...)
-- graph neural networks (GNN - other variations also available): molecules as undirected graphs where the connections between nodes (atoms) and edges (bonds) don't matter (i.e. don't need to be in particular orders or sequences) 
-OR 
-- RNN that uses SMILES (NLP technique) -> tokenize SMILES strings -> converts into a dictionary mapping tokens to indices in the vocabulary -> converts the vocabulary (SMILES strings) into one-hot encodings
-
-
-**What have been done so far**
-
-- had a look at [SIDER database](http://sideeffects.embl.de/) - only last updated in 2015 (looks very detailed and useful at first, checked on 16/10/24 - quite outdated and appears to be no longer maintained by the look of a few unanswered issues in its repo, only 1430 drugs available, imatinib had malignant neoplasm listed as the highest ADRs... would categorise it under carcinogenicity instead and it's dose-related so can be circumvented and also imatinib is for leukaemia and other bone marrow cancers... a bit misleading to list it as a "side effect" when its therapeutic indication is for malignancy...)
-
-- a brief search on PubMed re. ADRs (found 3 papers for critical care settings, primary care settings and for worldwide drug withdrawals due to ADRs - just to get ideas on the frequent types of drugs causing ADRs in real-life scenarios)
-
--> key problematic therapeutic areas or drug classes for ADRs: 
-
-* antimicrobials (critical medical setting)
-* CVS/anticoagulants (critical & primary settings)
-* analgesics & sedatives (critical surgical setting)
-* hepatic issues
-* CNS issues
-
-- completed curating a CYP substrates dataset with adverse drug reactions focused on ones that are likely going to affect qualities of lives and/or life-threatening types
-
-**Other thoughts**
+##### **Other thoughts**
 
 This type of work may work better if focussing on a specific therapeutic target, and trying to learn the patterns of ADRs for the same target (this may develop into other new side projects). However, the bigger picture here is trying to formulate a CYP450-ADRs drug profile first.
 
-Currently, an introductory or preliminary work is shown through the ADR regressor notebook about representing ADRs as PyTorch tensors, and from there we may be able to elicit some patterns on possible links between molecular fingerprints of each CYP substrate (drug) and ADRs.
+*Another random project idea added on 10th Mar 2025*: 
+
+It may be possible to extend investigations to drugs in the same drug class and look at what CYP enzymes (if any in common) are involved in their metabolisms and what common ADRs they all share -> try to link them back to drug structures -> may be able to set up ADRs profiles for each CYP enzyme that can be drug class-specific (and/or may be able to draw out drug-ADR lineages e.g. parent compound metabolised to a child compound where both may be biologically active with similar or different ADRs)
