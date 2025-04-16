@@ -25,7 +25,7 @@ I then started by having a look at [SIDER database](http://sideeffects.embl.de/)
 
 It's been known that combining results from *in vitro* biological assays is a major issue in ML predictions due to the wide variations in *in vitro* experiments running in different labs leading to noises in the ML-predicted outcomes. These variations can be from different equipments used (calibration differences), variations in measurements, transcription errors (possible human errors) and likely many others I haven't mentioned here. So to mitigate this, my thought is to possibly treat clinical trials as live, *in vivo* biological assays and assemble data from clinical trials (which are what the pharmaceutical manufacturers' data sheets usually contain). However, the possible underlying problem here is that there are genetics variations in human populations, age group and gender differences, and likely others as well. The only thing that may possibly help then is to document data in details so that these specific factors can be taken into account when training ML models.
 
-**TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses**. One more reason for this work which springs to my mind after viewing a several different ADMET prediction applications are that most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is something *in-vitro* data won't provide.
+**TL;DR: It may be good to add another layer of data complexity (e.g. The Flockhart Cytochrome P450 Drug-Drug Interaction Table) to better reflect real-life drug effects in human uses**. One more reason for this work which springs to my mind after viewing several different ADMET prediction applications are that most of them seem to be using *in vitro*-based data (a few other ones use PubChem, which can vary too from different sources e.g. journal papers or from drugbank etc.). I think if the Flockhart table can be added at the same time (to include *in-vivo* evidence in humans, although as I look through some of the citations for drugs in the table, it is also true that not all of them have *in-vivo* human-use evidence, however it should have a decent number of them in it). Overall, this may make ADMET research more well-covered and may improve data quality even more. Another thing is Flockhart table differentiates drugs with strong clinical evidence from the moderate ones, and also other ones pending reviews - this is probably something *in-vitro* data won't be able to provide.
 
 <br>
 
@@ -33,29 +33,25 @@ It's been known that combining results from *in vitro* biological assays is a ma
 
 ###### **Data sources**
 
-Details of data sources used for the current ADRs dataset (cyp_substrates_adrs.csv) will be documented in the ADRs data note (**1_ADR_data.qmd -> to add updated html version**). 
+Details of data sources used for the current ADRs dataset (file name: cyp_substrates_adrs.csv) will be documented in the ADRs data note (**1_ADR_data.qmd -> to add updated html version**). The same data note also applies to the earlier smaller dataset on ADRs for CYP3A4 substrates (file name: cyp3a4_substrates.csv) as well.
 
 <br>
 
 ###### **Data curation**
 
-Before immersing in the process of curating ADRs data, I've made a visit to PubMed briefly to search for papers regarding ADRs, trying to find out which drugs or therapeutic areas are commonly involved in ADRs in real-life. I've found 3 papers that have investigated within critical care settings within hospitals, primary care settings in the communities and worldwide drug withdrawals regarding ADRs. The key problematic therapeutic areas involved in ADRs are: 
+Before immersing in the process of curating ADRs data, I've made a visit to PubMed briefly to search for papers regarding ADRs, trying to find out which drugs or therapeutic areas are commonly involved in ADRs in real-life. I've found 3 papers (**add citations**) that have investigated within critical care settings within hospitals, primary care settings in the communities and worldwide drug withdrawals regarding ADRs. The key problematic therapeutic areas involved in ADRs are: 
 
 * antimicrobials (for critical medical setting)
 * cardiovascular system/anticoagulants (for critical & primary settings)
-* analgesics & sedatives (for critical surgical setting)
+* analgesics and sedatives (for critical surgical setting)
 * hepatic issues (applies in general)
 * central nervous system issues (applies in general)
 
-**---draft updated up until this line only; to be continued below---**
+While curating the ADRs dataset, I also have a feeling that this type of data may have already existed in proprietary settings, but probably not the open-source versions or if they do, it may have a low chance of being curated by a pharmacist/researcher (me here) who may have a slightly different angle or perspective on therapeutic drugs in general.
 
-While curating the ADRs dataset, I also have a feeling that this type of data may have already existed in proprietary settings, but probably not the open-source versions or if they do, it may have a low chance of being curated by a pharmacist/researcher which may have a slightly different angle or perspective on therapeutic drugs in general.
+Currently, an introductory ADRs regressor notebook has been done showing how ADRs can be represented as PyTorch tensors (with the idea originated from natural language processing) in a simple two-layer deep neural network model after I've initially curated ADRs for CYP3A4 substrates only. From there, I've then attempted to predict therapeutic drug classes for a testing set of molecules within this dataset using shuffled Butina split. The dataset of course is way too small for a deep learning model, and is likely flawed, biased and prone to data leakage etc., but the main idea here is to show that we may be able to observe some patterns or links between drugs (or molecular fingerprints) and ADRs first.
 
-1. First notebook/post is to build a basic DNN regression model initially to try and predict therapeutic drug classes of drugs via using CYP strength, molecule fingerprints and ADRs to infer possible drugs vs. ADRs relationships (hmm this might be a very naive model...)
-
-- Currently, an introductory or preliminary work is shown through the ADR regressor notebook about representing ADRs as PyTorch tensors, and from there we may be able to elicit some patterns on possible links between molecular fingerprints of each CYP substrate (drug) and ADRs.
-
-- completed curating a CYP substrates dataset with adverse drug reactions focused on ones that are likely going to affect qualities of lives and/or life-threatening types
+After that, I've gone on to curate more CYP substrates-ADRs data based on the Flockhart table, which currently contains ADRs for CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates. The ADRs documented in the dataset have focused on ones that are more likely going to affect the qualities of lives of people administering the drugs/CYP substrates and  ones that are potentially going to be life-threatening.
 
 <br>
 
@@ -85,6 +81,8 @@ flowchart LR
 ```
 
 <br>
+
+**---draft updated up until this line only; to be continued below---**
 
 ###### **Possible future work**
 
