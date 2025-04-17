@@ -1,15 +1,13 @@
 ---
 title: Looking at minimising adverse drug reactions (ADRs) 
 date: '2024-11-12'
-date-modified: '2025-4-16'
+date-modified: '2025-4-17'
 author: Jennifer HY Lin
 draft: true
 categories:
-  - Data
+  - Ideas
 jupyter: python3
 ---
-
-**This is an evolving document and currently in draft mode only so it may be hard to read or follow.**
 
 ##### **How it all begins...**
 
@@ -49,9 +47,9 @@ Before immersing in the process of curating ADRs data, I've made a visit to PubM
 
 While curating the ADRs dataset, I also have a feeling that this type of data may have already existed in proprietary settings, but probably not the open-source versions or if they do, it may have a low chance of being curated by a pharmacist/researcher (me here) who may have a slightly different angle or perspective on therapeutic drugs in general.
 
-Currently, an introductory ADRs regressor notebook has been done showing how ADRs can be represented as PyTorch tensors (with the idea originated from natural language processing) in a simple two-layer deep neural network model after I've initially curated ADRs for CYP3A4 substrates only. From there, I've then attempted to predict therapeutic drug classes for a testing set of molecules within this dataset using shuffled Butina split. The dataset of course is way too small for a deep learning model, and is likely flawed, biased and prone to data leakage etc., but the main idea here is to show that we may be able to observe some patterns or links between drugs (or molecular fingerprints) and ADRs first.
+Currently, an introductory ADRs regressor notebook has been done showing how ADRs can be represented as PyTorch tensors (with the idea originated from natural language processing (NLP)) in a simple two-layer deep neural network model after I've initially curated ADRs for CYP3A4 substrates only. From there, I've then attempted to predict therapeutic drug classes for a testing set of molecules within this dataset using shuffled Butina split. The dataset of course is way too small for a deep learning model, and is likely flawed, biased and prone to data leakage etc., but the main idea here is to show that we may be able to observe some patterns or links between drugs (or molecular fingerprints) and ADRs first.
 
-After that, I've gone on to curate more CYP substrates-ADRs data based on the Flockhart table, which currently contains ADRs for CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates. The ADRs documented in the dataset have focused on ones that are more likely going to affect the qualities of lives of people administering the drugs/CYP substrates and  ones that are potentially going to be life-threatening.
+After that, I've gone on to curate more CYP substrates-ADRs data based on the Flockhart table, which currently contains ADRs for CYP3A4, 2D6, 2C19, 2C9, 1A2, 2B6, 2E1 and 2C8 substrates. The ADRs documented in the dataset have focussed on ones that are more likely going to affect the qualities of lives of people administering the drugs/CYP substrates and  ones that are potentially going to be life-threatening.
 
 <br>
 
@@ -82,31 +80,20 @@ flowchart LR
 
 <br>
 
-**---draft updated up until this line only; to be continued below---**
-
 ###### **Possible future work**
 
-* Drug molecular representations for drug structures e.g. SMILES, SMARTS, or chemical fingerprints (as vector representations) etc. from other sources e.g. PubChem or ChEMBL or others
+My very early thoughts on how this ADRs dataset can be further extended in the future:
 
-* PyTorch tensors to represent ADRs (?categorical embeddings for tabular data) - the data being collected at the moment are relatively small, so have decided to do it manually by hand (aim to retrieve ADRs with reasonable quality and usefulness)
+1. Exploring the possibility of structure-adverse drug reaction relationships where we may be able to link ADRs via treating them as dense vectors of real numbers with two-dimensional (2D) drug molecular structures. This is coming from the commonly known structure-activity or property relationships used for small molecules in drug discovery or materials science, where we're actively seeking the connections between drug or molecular activities with their 2D molecular structures. I'm just having a very naive thought here about why not looking at this from the ADRs perspective, rather than the usual activity/property part of the molecules. This may shed some lights about how ADRs relate to chemical structures of drugs, potentially may be useful when desgining drugs.
 
-* Structure-adverse drug reaction relationships (...unsure if this is going to work...): 
-**ADRs <-> (dense vectors of real numbers) <-> 2D drug structures**
+  * Possible ways to do this via machine learning or deep learning:
 
-* Structure-activity relationships: 
-**drug activities <-> 2d drug structures**
+    - Using graph neural networks (GNN) so we may treat molecules as undirected 2D graphs where the connections between nodes (atoms) and edges (bonds) don't matter (i.e. don't need to be in particular orders or sequences), and build model based on this
 
-2. 2D drug structures part (much further down the line as separate posts; this may evolve into multiple posts in other relevant aspects...)
-- graph neural networks (GNN - other variations also available): molecules as undirected graphs where the connections between nodes (atoms) and edges (bonds) don't matter (i.e. don't need to be in particular orders or sequences) 
-OR 
-- RNN that uses SMILES (NLP technique) -> tokenize SMILES strings -> converts into a dictionary mapping tokens to indices in the vocabulary -> converts the vocabulary (SMILES strings) into one-hot encodings
+    - Using recurrent neural networks (RNN) that focusses on using SMILES (similar to the NLP technique), where we may tokenise SMILES strings, convert them into dictionary mapping tokens to indices in the vocabulary and then convert the vocabulary (SMILES strings) into one-hot encodings and build another model based on this concept
 
-<br>
+    - The molecular representations for drugs such as SMILES, SMARTS, or chemical fingerprints (as vector representations) can be obtained from PubChem, ChEMBL or others, and will require more thoughts into them e.g. whether to use canonical SMILES or not and also types of fingerprints to use etc.
 
-##### **Other thoughts**
+    - may be restricted by computational resources available depending on the sizes of datasets, if images are going to be utilised or if other larger datasets are going to be integrated (perhaps active learning can be used; if this is only working off the current CYP substrates ADRs dataset, it shouldn't be a huge problem)
 
-This type of work may work better if focussing on a specific therapeutic target, and trying to learn the patterns of ADRs for the same target (this may develop into other new side projects). However, the bigger picture here is trying to formulate a CYP450-ADRs drug profile first.
-
-*Another random project idea added on 10th Mar 2025*: 
-
-It may be possible to extend investigations to drugs in the same drug class and look at what CYP enzymes (if any in common) are involved in their metabolisms and what common ADRs they all share -> try to link them back to drug structures -> may be able to set up ADRs profiles for each CYP enzyme that can be drug class-specific (and/or may be able to draw out drug-ADR lineages e.g. parent compound metabolised to a child compound where both may be biologically active with similar or different ADRs)
+2. By focussing on specific therapeutic targets (within the same therapeutic drug classes), and trying to learn the patterns of ADRs for the same target. It may be possible look at what common CYP enzymes are involved in their metabolisms and what common ADRs they all share - trying to link them back to drug structures and we may be able to set up ADRs profiles for each CYP enzyme that can be drug class-specific (and/or may be able to draw out drug-ADR lineages e.g. parent compound metabolised to a child compound where both may be biologically active with similar or different ADRs).
