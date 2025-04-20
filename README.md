@@ -6,7 +6,7 @@ This work can be read in conjunction with the previous [cytochrome P450 and smal
 
 #### **Documents**:
 
-0_Ideas.qmd (draft version to be updated) - the very early brainstorming of ideas for this project with some background information
+0_Ideas.qmd - the very early brainstorming of ideas for this project with information on reasons behind this work, what have been done and possible future outlooks
 
 1_ADR_data.qmd - [notes](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/1_ADR_data.html) on ADRs and also a list of drug information reference sources used for the ADRs dataset
 
@@ -35,7 +35,7 @@ A few different .tsv/.csv files containing ADRs and/or SMILES data for CYP subst
 Last checked dates for CYP substrate strengths of evidence: 
 - CYP3A4 and 2D6 substrates on 24th Feb 2025; 2C19 substrates on 6th Mar 2025; 2C9 substrates on 10th Mar 2025; 1A2 substrates on 25th Mar 2025; 2B6 substrates on 27th Mar 2025; 2E1 and 2C8 substrates on 7th Apr 2025
 
-*Please note that all of the CYP substrates curated in the datasets are based on "[The Flockhart Cytochrome P450 Drug-Drug Interaction Table](https://drug-interactions.medicine.iu.edu/MainTable.aspx)" which is continuously being updated over time (at least twice yearly as quoted from source), so the files stored here may not reflect the most up-to-date version - refer to the table directly if needing latest information*
+Please note that all of the CYP substrates curated in the datasets are based on "[The Flockhart Cytochrome P450 Drug-Drug Interaction Table](https://drug-interactions.medicine.iu.edu/MainTable.aspx)" which is continuously being updated over time (at least twice yearly as quoted from source), so the files stored here may not reflect the most up-to-date version - refer to the table directly if needing latest information
 
 #### **Feedback and comments**
 
