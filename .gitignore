@@ -19,6 +19,9 @@ CYP3A4_mod_substrates.csv
 CYP3A4_strong_substrates.csv
 all_cyp2d6_substrates.csv
 
+tensor.pt
+adr_train_tensors.pt
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
