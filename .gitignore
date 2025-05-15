@@ -21,6 +21,8 @@ all_cyp2d6_substrates.csv
 
 tensor.pt
 adr_train_tensors.pt
+# pickle binary file for cyp3a4 adrs texts
+cyp3a4_adrs 
 
 
 # Byte-compiled / optimized / DLL files
