@@ -26,6 +26,8 @@ cyp3a4_adrs
 # test data only
 cyp_adrs.csv
 cyp3a4_adrs.csv
+# reference NER notebook from HF
+token_classification.ipynb
 
 
 # Byte-compiled / optimized / DLL files
