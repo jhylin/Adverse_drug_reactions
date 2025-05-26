@@ -28,6 +28,8 @@ cyp_adrs.csv
 cyp3a4_adrs.csv
 # reference NER notebook from HF
 token_classification.ipynb
+# checkpoint results from running notebook no. 6 (mainly contains .pt/.json files)
+results
 
 
 # Byte-compiled / optimized / DLL files
