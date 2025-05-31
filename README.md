@@ -16,6 +16,8 @@ This work can be read in conjunction with the previous [cytochrome P450 and smal
 
 4_Prevent_overfit_note.qmd - the [note post](https://jhylin.github.io/Data_in_life_blog/posts/22_Simple_dnn_adrs/4_Prevent_overfit_note.html) that shows 3 different probable strategies that can be used to minimise model overfitting when using PyTorch (may be extended to other machine learning algorithms as well)
 
+*Notebooks with file names starting with 5-1 to 5-3 and 6 are currently my draft practise runs only (they may be changed in the near future e.g. reduction in notebook numbers).*
+
 #### **Other files**:
 
 A few different Python scripts are used in the 2_ADR_regressor.ipynb notebook:
@@ -39,7 +41,7 @@ Please note that all of the CYP substrates curated in the datasets are based on 
 
 #### **Feedback and comments**
 
-The dataset may still contain information that require further refinements, additions or corrections (there may be things I've missed) - feedback and/or comments are welcomed, please submit via issues/pull requests in this GitHub repo. This also applies to the notebooks and scripts listed above as well.
+The dataset may still contain information that require further refinements, additions or corrections (there may be things I've missed) - feedback and/or comments are welcomed, please submit via issues/pull requests in this GitHub repo. This also applies to the notebooks and scripts listed above as well. It is also very likely that there are other more valuable data sources that haven't been considered yet - this is open for suggestions (while I'm doing deep data explorations currently).
 
 #### **Dedication**
 
