@@ -31,6 +31,11 @@ token_classification.ipynb
 # checkpoint results from running notebook no. 6 (mainly contains .pt/.json files)
 results
 
+# doing some target-drug scoping work in the interim on 22/6/25
+target_drugs.py
+Target_drug_scoping.ipynb
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
