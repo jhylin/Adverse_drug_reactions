@@ -50,8 +50,9 @@ def chembl_targets(*target: str, file_name: Optional[str] = None):
     directory = Path.home().joinpath(".data", "adr")
     # Create the directory if it doesn't exist
     directory.mkdir(exist_ok=True, parents=True)
-    # Create a file path that corresponds to the previously cached ChEMBL data 
+    # Use latest ChEMBL version
     latest_version = latest()
+    # Create a file path that corresponds to the previously cached ChEMBL data 
     path = directory.joinpath(f"{file_name}_{latest_version}.tsv")
 
     if path.is_file():
