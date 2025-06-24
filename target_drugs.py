@@ -1,18 +1,22 @@
 import chembl_downloader
+from chembl_downloader import latest
+import pandas as pd
 from textwrap import dedent
 from typing import Optional
+from pathlib import Path
 
-def chembl_targets(*target: str,): #file_name: Optional[str] = None):
+def chembl_targets(*target: str, file_name: Optional[str] = None):
 
     """
-    Obtain approved drugs' ChEMBL IDs, generic drug/small molecule names, max phases and canonical SMILES,
-    protein target CHEMBL IDs
-    via using drug names only with an option to save dataframe as tsv files
+    Obtain assay ChEMBL IDs, protein target type (fixed at single target - see SQL in script), tax IDs, 
+    protein target CHEMBL IDs, canonical SMILES, approved drugs/small molecule ChEMBL IDs, 
+    generic drug/small molecule names, max phases, assay standard types, pchembl values
+    via using protein target ChEMBL IDs with an option to save data as .tsv files and load as a dataframe
 
     :param target: Enter protein target CHEMBL ID e.g. CHEMBL1234 to search in ChEMBL database
-    :param file_name: Enter file name if needed in order to save dataframe as a .tsv file in working directory
-    :return: A dataframe of small molecules/drugs derived from ChEMBL database 
-    along with their ChEMBL IDs, max phases and canonical SMILES
+    :param file_name: Enter file name if needed in order to save dataframe as a .tsv file in working directory 
+    (currently set at ~/.data/adr directory)
+    :return: A dataframe containing various protein target and drug data from ChEMBL as explained above
     """
 
     # dedent to remove leading whitespaces from every line
@@ -42,16 +46,23 @@ def chembl_targets(*target: str,): #file_name: Optional[str] = None):
         """
     ).strip().replace('\'(', ' ').strip().replace(",)'", ' ')
 
-    # default query uses the latest ChEMBL version (using version 34 in the meantime)
-    df = chembl_downloader.query(sql, version="34")
+    # Pick any directory, but make sure it's relative to your home directory
+    directory = Path.home().joinpath(".data", "adr")
+    # Create the directory if it doesn't exist
+    directory.mkdir(exist_ok=True, parents=True)
+    # Create a file path that corresponds to the previously cached ChEMBL data 
+    latest_version = latest()
+    path = directory.joinpath(f"{file_name}_{latest_version}.tsv")
 
+    if path.is_file():
+        # If the .tsv file already exists, load it
+        df = pd.read_csv(path, sep=',')
+    elif file_name == None:
+        # If no file name provided, load df from query directly
+        df = chembl_downloader.query(sql)
+    else:
+        # If the .tsv file doesn't already exist, make the query then cache it
+        df = chembl_downloader.query(sql)
+        df.to_csv(path, sep=",", index=False)
+        
     return df
-
-    ## TODO: may try incorporating previous pathlib code below to save data or using the simple version below
-    # if file_name == None:
-    #     return df
-    # else:
-    #     # save df as .tsv files if a file name is added
-    #     df.to_csv(f"{file_name}.tsv", sep='\t', index=False)
-    #     return df
-    
