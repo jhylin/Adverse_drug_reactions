@@ -46,6 +46,11 @@ print(f"PyTorch version used: {torch.__version__}")
 print(f"NumPy version used: {np.__version__}")
 print(f"RDKit version used: {rdkit.__version__}")
 print(f"Python version used: {sys.version}")
+
+# A possible warning may show up when running this notebook re. multiple OpenMP (parallel programming) runtimes, 
+# I've decided to ignore this warning in the meantime in the blog post as it's for demonstration only,
+# and in case anyone comes across this, a reference link for proper workarounds is below
+# https://github.com/joblib/threadpoolctl/blob/master/multiple_openmp.md
 ```
 
 <br>

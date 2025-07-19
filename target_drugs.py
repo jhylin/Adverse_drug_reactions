@@ -13,7 +13,7 @@ def chembl_targets(*target: str, file_name: Optional[str] = None):
     generic drug/small molecule names, max phases, assay standard types, pchembl values
     via using protein target ChEMBL IDs with an option to save data as .tsv files and load as a dataframe
 
-    :param target: Enter protein target CHEMBL ID e.g. CHEMBL1234 to search in ChEMBL database
+    :param target: Enter protein target CHEMBL ID e.g. 'CHEMBL1234' to search in ChEMBL database
     :param file_name: Enter file name if needed in order to save dataframe as a .tsv file in working directory 
     (currently set at ~/.data/adr directory)
     :return: A dataframe containing various protein target and drug data from ChEMBL as explained above
